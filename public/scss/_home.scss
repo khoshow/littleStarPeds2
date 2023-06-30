@@ -1,0 +1,439 @@
+	
+	.boom-container {
+		position: absolute;
+		display: flex;
+		width: 100px;
+		height: 40vh;
+		text-align: center;
+		align-items: center;
+		transform: translateY(-20%);
+    left: 200px;
+    top: 145px;
+		
+		.shape {
+			display: inline-block;
+			position: relative;
+			opacity: 0;
+			transform-origin: center center;
+			
+			
+			&.triangle {
+				width: 0;
+				height: 0;
+				border-style: solid;
+				transform-origin: 50% 80%;
+				animation-duration: 1s;
+				animation-timing-function: ease-out;
+				animation-iteration-count: infinite;
+				margin-left: -15px;
+				border-width: 0 2.5px 5px 2.5px;
+				border-color: transparent transparent #42e599 transparent;
+				animation-name: boom-triangle;
+				
+				&.big {
+					margin-left: -25px;
+					border-width: 0 5px 10px 5px;
+					border-color: transparent transparent #fade28 transparent;
+					animation-name: boom-triangle-big;
+				}
+			}
+			
+			&.disc {
+				width: 8px;
+				height: 8px;
+				border-radius: 100%;
+				background-color: #d15ff4;
+				animation-name: boom-disc;
+				animation-duration: 1s;
+				animation-timing-function: ease-out;
+				animation-iteration-count: infinite;
+			}
+			
+			&.circle {
+				width: 20px;
+				height: 20px;
+				animation-name: boom-circle;
+				animation-duration: 1s;
+				animation-timing-function: ease-out;
+				animation-iteration-count: infinite;
+				border-radius: 100%;
+				margin-left: -30px;
+				z-index: -1;
+				
+				&.white {
+					border: 1px solid white;
+				}
+				
+				&.big {
+					width: 40px;
+					height: 40px;
+					margin-left: 0px;
+					
+					&.white {
+						border: 2px solid white;
+					}
+				}
+			}
+			
+			&:after {
+				background-color: rgba(178, 215, 232, 0.2);
+			}
+		}
+		
+		.shape {
+			&.triangle, &.circle, &.circle.big, &.disc {
+				animation-delay: .38s;
+				animation-duration: 3s;
+			}
+			
+			&.circle {
+				animation-delay: 0.6s;
+			}
+		}
+		
+		&.second {
+			left: 485px;
+			top: 30vh;
+			.shape {
+				&.triangle, &.circle, &.circle.big, &.disc {
+					animation-delay: 1.9s;
+				}
+				&.circle {
+					animation-delay: 2.15s;
+				}
+			}
+		}
+	}
+
+
+@keyframes woosh {
+	0% {
+		width: 12px;
+		transform: translate(0px, 0px) rotate(-35deg);
+	}
+	15% {
+		width: 50px;
+	}
+	30% {
+		width: 12px;
+		transform: translate(214px, -150px) rotate(-35deg);
+	}
+	30.1% {
+		transform: translate(214px, -150px) rotate(46deg);
+	}
+	50% {
+		width: 110px;
+	}
+	70% {
+		width: 12px;
+		transform: translate(500px, 150px) rotate(46deg);
+	}
+	70.1% {
+		transform: translate(500px, 150px) rotate(-37deg);
+	}
+	
+	85% {
+		width: 50px;
+	}
+	100% {
+		width: 12px;
+		transform: translate(700px, 0) rotate(-37deg);
+	}
+}
+
+@keyframes boom-circle {
+	0% {
+		opacity: 0;
+	}
+	5% {
+		opacity: 1;
+	}
+	30% {
+		opacity: 0;
+		transform: scale(3);
+	}
+	100% {
+	}
+}
+
+@keyframes boom-triangle-big {
+	0% {
+		opacity: 0;
+	}
+	5% {
+		opacity: 1;
+	}
+	
+	40% {
+		opacity: 0;
+		transform: scale(2.5) translate(50px, -50px) rotate(360deg);
+	}
+	100% {
+	}
+}
+
+@keyframes boom-triangle {
+	0% {
+		opacity: 0;
+	}
+	5% {
+		opacity: 1;
+	}
+	
+	30% {
+		opacity: 0;
+		transform: scale(3) translate(20px, 40px) rotate(360deg);
+	}
+	
+	100% {
+	}
+}
+
+@keyframes boom-disc {
+	0% {
+		opacity: 0;
+	}
+	5% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 0;
+		transform: scale(2) translate(-70px, -30px);
+	}
+	100% {
+		
+	}
+}
+
+
+// New Site container
+
+
+.newSiteContainer {
+	width: 100%;
+	background: #232323;
+  }
+  .newSiteContainer .newSiteBox {
+	width: 400px;
+	height: 250px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0 auto;
+  }
+  .newSiteBox{
+	width: 400px;
+	height: 250px;
+  }
+  
+  .newSiteContainer .newSiteBox .newSiteTitle {
+	width: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 50px;
+  }
+  .newSiteContainer .newSiteBox .newSiteTitle .newSiteBlock {
+	width: 0%;
+	height: inherit;
+	background: #ffb510;
+	position: absolute;
+	animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards infinite;
+	display: flex;
+  }
+  
+  .newSiteCaption{
+	font-family:"Poppins" !important;
+	color: #fff;
+	font-weight: 700;
+	font-size: 20px;
+  }
+  
+  .newSiteContainer .newSiteBox .newSiteTitle h2 {
+	font-family:"Poppins" !important;
+	color: #fff;
+	font-size: 32px;
+	-webkit-animation: mainFadeIn 2s forwards infinite;
+	-o-animation: mainFadeIn 2s forwards infinite;
+	animation: mainFadeIn 2s forwards;
+	animation-delay: 1.6s;
+	opacity: 0;
+	display: flex;
+	align-items: baseline;
+	position: relative;
+  }
+  .newSiteContainer .newSiteBox .newSiteTitle h2 span {
+	width: 0px;
+	height: 0px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background: #ffb510;
+	-webkit-animation: load 0.6s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards infinite;
+	animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards infinite;
+	animation-delay: 2s;
+	margin-left: 5px;
+	margin-top: -10px;
+	position: absolute;
+	bottom: 13px;
+	right: -12px;
+  }
+  .newSiteContainer .newSiteBox .newSiteRole {
+	width: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 30px;
+	
+  }
+  .newSiteContainer .newSiteBox .newSiteRole .newSiteBlock {
+	width: 0%;
+	height: inherit;
+	background: #e91e63;
+	position: absolute;
+	animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+	animation-delay: 2s;
+	display: flex;
+  }
+  .newSiteContainer .newSiteBox .newSiteRole p {
+	animation: secFadeIn 2s forwards;
+	animation-delay: 3.2s;
+	opacity: 0;
+	font-weight: 400;
+	font-family: "Lato";
+	color: #ffffff;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+  }
+  
+  @keyframes mainBlock {
+	0% {
+	  width: 0%;
+	  left: 0;
+	}
+	50% {
+	  width: 100%;
+	  left: 0;
+	}
+	100% {
+	  width: 0;
+	  left: 100%;
+	}
+  }
+  @keyframes secBlock {
+	0% {
+	  width: 0%;
+	  left: 0;
+	}
+	50% {
+	  width: 100%;
+	  left: 0;
+	}
+	100% {
+	  width: 0;
+	  left: 100%;
+	}
+  }
+  @keyframes mainFadeIn {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  @keyframes popIn {
+	0% {
+	  width: 0px;
+	  height: 0px;
+	  background: #e9d856;
+	  border: 0px solid #ddd;
+	  opacity: 0;
+	}
+	50% {
+	  width: 10px;
+	  height: 10px;
+	  background: #e9d856;
+	  opacity: 1;
+	  bottom: 45px;
+	}
+	65% {
+	  width: 7px;
+	  height: 7px;
+	  bottom: 0px;
+	  width: 15px;
+	}
+	80% {
+	  width: 10px;
+	  height: 10px;
+	  bottom: 20px;
+	}
+	100% {
+	  width: 7px;
+	  height: 7px;
+	  background: #e9d856;
+	  border: 0px solid #222;
+	  bottom: 13px;
+	}
+  }
+  @keyframes secFadeIn {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 0.5;
+	}
+  }
+  @keyframes top {
+	0% {
+	  opacity: 0;
+	  bottom: -80px;
+	}
+	100% {
+	  opacity: 1;
+	  bottom: 0px;
+	}
+  }
+  @keyframes icon {
+	0% {
+	  opacity: 0;
+	  transform: scale(0);
+	}
+	50% {
+	  opacity: 1;
+	  transform: scale(1.3) rotate(-2deg);
+	}
+	100% {
+	  opacity: 1;
+	  bottom: 0px;
+	}
+  }
+
+  .message {
+	background-color: yellow;
+	padding: 5px;
+	color: #333;
+	display: inline;
+	font-weight: 900;
+	overflow: hidden;
+	animation: hello 1s infinite;
+  }
+
+  
+@keyframes hello {
+	0% {
+	  top: 0px;
+	  background: red;
+	  width: 100px;
+	}
+	100% {
+	  top: 200px;
+	  background: yellow;
+	  width: 300px;
+	}
+  }
+  
+  
+  

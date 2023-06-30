@@ -13,6 +13,8 @@ import IntroAbout from "../../components/home-page/home-1/IntroAbout";
 import Service from "../../components/home-page/home-1/Service";
 import Testimonial from "../../components/home-page/home-1/Testimonial";
 import WhyChoose from "../../components/home-page/home-1/WhyChoose";
+import FancyBlock from "../../components/home-page/home-1/FancyBlock";
+import FancyBanner from "../../components/home-page/home-1/FancyBanner";
 
 const Insurance = () => {
   return (
@@ -35,6 +37,71 @@ const Insurance = () => {
 				Feature Section Thirty Four
 			============================================== 
 			--> */}
+      <div style={{ backgroundColor: "#29aae1", padding: "1rem" }}>
+        <div
+          className="card col-md-4 alert-success"
+          style={{ marginLeft: "auto", marginRight: "auto" }}
+        >
+          <div className="card-body">
+            <h5 className="alert-heading" style={{ textAlign: "center" }}>UPDATES</h5>
+            {/* <p >  <span className="message">New</span>Office is currently closed due to Power and Internet outage and we will reopen tomorrow at normal business hours. </p>
+             */}
+            <p style={{ color: "#007BFF" }}>
+              <span className="message">New</span> In observance of Independence Day, clinics will be closed on July 4th & 5th. Happy holiday!
+            </p>
+            {/* <p style={{ color: "#007BFF" }}><span className="message">New</span> In observance of the Labor Day Holiday, clinic will remain closed on 5th September, Monday. </p>
+            <a className="card-link" href="./files/Covid 19.pdf">Updates on Covid-19</a
+            ><br /><br />
+            <a
+              className="card-link"
+              href="http://voyagephoenix.com/interview/meet-ameeta-chowdhary-little-star-pediatrics-avondale/"
+            >
+              In the News: An interview with the founder, Ameeta Chowdhary</a
+            >
+            <br /><br />
+            <a
+              className="card-link"
+              href="https://www.similacrecall.com/us/en/home.html?utm_campaign=rcl-powder-recall-2022&utm_medium=tag-referral&utm_source=rcl-similac-com&utm_content=rcl-powder-recall-site-banner-click&utm_term=20220217"
+            >
+              <span className="message">New</span>
+              Link to Similac Formula recall information for parents</a
+            > */}
+          </div>
+        </div>
+      </div>
+      <div className="newSiteContainer">
+        <div className="newSiteBox">
+          <h3 className="newSiteCaption">Little Star Pediatrics  </h3>
+          <div className="newSiteTitle">
+            <span className="newSiteBlock"></span>
+            <h2>Now at Glendale<span></span></h2>
+          </div>
+
+          {/* <!-- <div classname="newSiteRole">
+              <div className="newSiteBlock"></div>
+              <p>Glendale, AZ</p>
+          </div> --> */}
+          <div><a className="btn btn-outline " target="_blank"
+            style={{ marginTop: "2rem", backgroundColor: "#29aae1", color: "white" }}
+            role="button"
+            aria-pressed="true" href="https://goo.gl/maps/7cNWVCSAfHnWQB4q8">Visit Our New Glendale Pediatric Clinic</a>
+          </div>
+        </div>
+
+      </div>
+      <FancyBanner />
+      <div className="fancy-feature-twentyThree mt-35">
+        <div className="container">
+          <div className="border-top">
+            <div className="row gx-xxl-5">
+              <FancyBlock />
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
       <div className="fancy-feature-thirtyFour mt-50">
         <div className="container">
           <div className="row gx-xxl-5">
