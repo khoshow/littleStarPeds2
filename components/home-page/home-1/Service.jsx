@@ -1,24 +1,45 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const services = [
   {
-    icon: "images/icon/icon_104.svg",
-    title: "Home Loan",
+    icon: "fa fa-baby fa-3x ",
+    title: "New Born Care",   
     delayAnim: 0,
   },
   {
-    icon: "images/icon/icon_105.svg",
-    title: "Travel Insurance",
+    icon: "fa fa-user-nurse fa-3x ",
+    title: "Physical Exams",
     delayAnim: 100,
   },
   {
-    icon: "images/icon/icon_106.svg",
-    title: "Insure the Car",
+    icon: "fa fa-virus fa-3x ",
+    title: "Cold & Flu",
     delayAnim: 200,
   },
   {
-    icon: "images/icon/icon_107.svg",
-    title: "Health Insurance",
+    icon: "fa fa-lungs fa-3x ",
+    title: "Asthma",
+    delayAnim: 300,
+  },
+  {
+    icon: "fa fa-heartbeat fa-3x",
+    title: "Wellness Visit",
+    delayAnim: 300,
+  },
+  {
+    icon: "fa fa-hand-holding-medical fa-3x",
+    title: "Counselling",
+    delayAnim: 300,
+  },
+  {
+    icon: "fa fa-clinic-medical fa-3x",
+    title: "ENT",
+    delayAnim: 300,
+  },
+  {
+    icon: "fa fa-briefcase-medical fa-3x",
+    title: "Preventive Screenings",
     delayAnim: 300,
   },
 ];
@@ -30,15 +51,16 @@ const Service = () => {
         <div
           className="col-xl-3 col-sm-6"
           key={index}
-          data-aos="fade-up"
-          data-aos-delay={service.delayAnim}
+        
         >
-          <div className="card-style-sixteen tran3s text-center position-relative mt-30">
-            <div className="icon">
-              <img src={service.icon} alt="" className="lazy-img m-auto" />
+          <div className="card-style-sixteen tran3s text-center position-relative mt-30 ">
+            <div className="icon services-item">
+            <i className={service.icon  +  " services-icon" }></i>
+              {/* <Image src={service.icon} alt="" width="50" height="50" style={{color}} className="lazy-img m-auto" /> */}
+              <h4 className="tx-white ">{service.title}</h4>
             </div>
-            <p className="fs-20 m0 pt-20">I want</p>
-            <h4 className="tx-dark">{service.title}</h4>
+            
+           
             <Link
               href="/pages-menu/service-details"
               className="read-more rounded-circle text-start tran3s"

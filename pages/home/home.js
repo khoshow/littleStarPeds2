@@ -15,6 +15,7 @@ import Testimonial from "../../components/home-page/home-1/Testimonial";
 import WhyChoose from "../../components/home-page/home-1/WhyChoose";
 import FancyBlock from "../../components/home-page/home-1/FancyBlock";
 import FancyBanner from "../../components/home-page/home-1/FancyBanner";
+import OfficeHours from "../../components/home-page/home-1/OfficeHours";
 
 const Insurance = () => {
   return (
@@ -43,11 +44,14 @@ const Insurance = () => {
           style={{ marginLeft: "auto", marginRight: "auto" }}
         >
           <div className="card-body">
-            <h5 className="alert-heading" style={{ textAlign: "center" }}>UPDATES</h5>
+            <h5 className="alert-heading" style={{ textAlign: "center" }}>
+              UPDATES
+            </h5>
             {/* <p >  <span className="message">New</span>Office is currently closed due to Power and Internet outage and we will reopen tomorrow at normal business hours. </p>
              */}
             <p style={{ color: "#007BFF" }}>
-              <span className="message">New</span> In observance of Independence Day, clinics will be closed on July 4th & 5th. Happy holiday!
+              <span className="message">New</span> In observance of Independence
+              Day, clinics will be closed on July 4th & 5th. Happy holiday!
             </p>
             {/* <p style={{ color: "#007BFF" }}><span className="message">New</span> In observance of the Labor Day Holiday, clinic will remain closed on 5th September, Monday. </p>
             <a className="card-link" href="./files/Covid 19.pdf">Updates on Covid-19</a
@@ -71,26 +75,39 @@ const Insurance = () => {
       </div>
       <div className="newSiteContainer">
         <div className="newSiteBox">
-          <h3 className="newSiteCaption">Little Star Pediatrics  </h3>
+          <h3 className="newSiteCaption">Little Star Pediatrics </h3>
           <div className="newSiteTitle">
             <span className="newSiteBlock"></span>
-            <h2>Now at Glendale<span></span></h2>
+            <h2>
+              Now at Glendale<span></span>
+            </h2>
           </div>
 
           {/* <!-- <div classname="newSiteRole">
               <div className="newSiteBlock"></div>
               <p>Glendale, AZ</p>
           </div> --> */}
-          <div><a className="btn btn-outline " target="_blank"
-            style={{ marginTop: "2rem", backgroundColor: "#29aae1", color: "white" }}
-            role="button"
-            aria-pressed="true" href="https://goo.gl/maps/7cNWVCSAfHnWQB4q8">Visit Our New Glendale Pediatric Clinic</a>
+          <div>
+            <a
+              className="btn btn-outline "
+              target="_blank"
+              style={{
+                marginTop: "2rem",
+                backgroundColor: "#29aae1",
+                color: "white",
+              }}
+              role="button"
+              aria-pressed="true"
+              href="https://goo.gl/maps/7cNWVCSAfHnWQB4q8"
+            >
+              Visit Our New Glendale Pediatric Clinic
+            </a>
           </div>
         </div>
-
       </div>
-      <FancyBanner />
-      <div className="fancy-feature-twentyThree mt-35">
+
+      <div className="fancy-feature-twentyThree mt-35 backgroundBlue">
+        <FancyBanner />
         <div className="container">
           <div className="border-top">
             <div className="row gx-xxl-5">
@@ -98,24 +115,7 @@ const Insurance = () => {
             </div>
           </div>
         </div>
-
       </div>
-
-
-      <div className="fancy-feature-thirtyFour mt-50">
-        <div className="container">
-          <div className="row gx-xxl-5">
-            <Feature />
-          </div>
-        </div>
-        {/* <!-- /.container --> */}
-      </div>
-      {/* <!-- /.fancy-feature-thirtyFour --> */}
-      {/*
-			=====================================================
-				Feature Section Thirty Five
-			=====================================================
-			*/}
       <div className="fancy-feature-thirtyFive mt-90 md-mt-70">
         <div className="container" data-aos="fade-up">
           <Banner />
@@ -130,6 +130,39 @@ const Insurance = () => {
         </div>
         {/* /.bg-wrapper */}
       </div>
+      <div className="fancy-feature-thirtySix pt-100 pb-100 lg-pt-140 backgroundDarkRed">
+        <div className="container">
+          <div className="wrapper position-relative">
+            <div className="row">
+              <div className="col-lg-6">
+                <div
+                  className="title-style-one text-center text-lg-start mb-40 md-mb-20"
+                  data-aos="fade-right"
+                >
+                  <h2 className="main-title fw-500 m0">
+                    Our Services.
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <Service />
+            </div>
+            {/* /.row */}
+          </div>
+        </div>
+        {/* /.container */}
+      </div>
+      {/* <!-- /.fancy-feature-thirtyFour --> */}
+
+<OfficeHours />
+
+      {/*
+			=====================================================
+				Feature Section Thirty Five
+			=====================================================
+			*/}
+    
       {/* /.fancy-feature-thirtyFive */}
       {/* 
 			=============================================

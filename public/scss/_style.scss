@@ -322,6 +322,18 @@ p {
   color: #000;
 }
 
+.tx-light {
+  color: white !important;
+}
+
+.tx-blue {
+  color: var(--little-blue) !important;
+}
+
+.tx-red {
+  color: var(--little-dark-red) !important;
+}
+
 .p-30 {
   padding: 30px;
 }
@@ -8099,10 +8111,14 @@ body .btn-twentyFive:hover {
   border: 1px solid #e9e9e9;
   border-radius: 10px;
   overflow: hidden;
+  border-color: black;
+  background-color: var(--little-dark-red);
 }
 
 .card-style-sixteen:hover {
-  border-color: var(--prime-ten);
+  border-color: white;
+  border-width: 2px;
+
 }
 
 .card-style-sixteen .icon {
@@ -11603,9 +11619,46 @@ body .btn-twentyFive:hover {
 }
 
 .backgroundDarkRed {
-  background-color: var(--little-dark-red);
+  background-color: var(--little-dark-red) !important;
 }
 
 .backgroundDarkBlue{
   background-color: var(--little-purple);
+}
+
+
+.services-icon{
+  color: white;
+}
+
+
+
+.services-item:hover{
+  transform: translateY(-20%);
+  transition-duration: 0.5s;
+}
+
+/* Office Hours Section */
+.office-hours {
+  text-align: center;
+  background-color: #29aae1;
+  color: white;
+  padding: 2rem 0;
+}
+
+.table-structure {
+  text-align: left;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table,
+th,
+td {
+  border-bottom: 1px solid white;
+  border-collapse: collapse;
+  padding-top: 1.2rem;
 }

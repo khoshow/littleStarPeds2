@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script";
 
 export default function Document() {
   return (
@@ -14,6 +15,10 @@ export default function Document() {
         />
 
         <link rel="icon" href="/favicon.ico" />
+        <Script
+          src="https://kit.fontawesome.com/4af13880de.js"
+          crossOrigin="anonymous"
+        ></Script>
       </Head>
       <body>
         <Main />

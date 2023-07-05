@@ -88,18 +88,18 @@ const Hero1 = () => {
         data-aos="fade-left"
         layout="intrinsic"
       />
-      <div class="boom-container">
-        <div class="shape circle big white"></div>
-        <div class="shape circle white"></div>
-        <div class="shape triangle big yellow"></div>
-        <div class="shape disc white"></div>
-        <div class="shape triangle blue"></div>
+      <div className="boom-container">
+        <div className="shape circle big white"></div>
+        <div className="shape circle white"></div>
+        <div className="shape triangle big yellow"></div>
+        <div className="shape disc white"></div>
+        <div className="shape triangle blue"></div>
       </div>
-      <div class="boom-container second">
-        <div class="shape circle big white"></div>
-        <div class="shape circle white"></div>
-        <div class="shape disc white"></div>
-        <div class="shape triangle blue"></div>
+      <div className="boom-container second">
+        <div className="shape circle big white"></div>
+        <div className="shape circle white"></div>
+        <div className="shape disc white"></div>
+        <div className="shape triangle blue"></div>
       </div>
       {/* <Image
         width={537}

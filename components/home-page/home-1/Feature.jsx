@@ -47,9 +47,10 @@ const Feature = () => {
     <>
       {features.map((feature, index) => (
         <div
-          className="col-lg-4 col-sm-6"
+          className="col-lg-3 col-sm-4"
           key={index}
           data-aos="fade-up"
+         
           data-aos-delay={feature.delay}
         >
           <div

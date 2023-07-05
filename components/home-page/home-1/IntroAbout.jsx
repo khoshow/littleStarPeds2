@@ -8,8 +8,8 @@ const IntroAbout = () => {
     {
       id: 1,
       cardNo: "card-one",
-      title: "Happier",
-      subtitle: "Customers",
+      title: "Cost",
+      subtitle: "Effective",
     },
     {
       id: 2,
@@ -19,9 +19,9 @@ const IntroAbout = () => {
     },
     {
       id: 3,
-      title: "Saller Leads",
+      title: "Happier",
       cardNo: "card-three",
-      subtitle: "Who are listing soon",
+      subtitle: "Children",
     },
   ];
 
@@ -31,13 +31,13 @@ const IntroAbout = () => {
         channel="youtube"
         autoplay
         isOpen={isOpen}
-        videoId="rDYdeq3JW_E"
+        videoId="T-_dFkNfvO4"
         onClose={() => setOpen(false)}
       />
 
       <div className="row">
         <div className="col-xl-5 col-md-6 order-md-last">
-          <div className="text-wrapper md-pb-70">
+          <div className=" md-pb-70">
             <Image
               width={66}
               height={66}
@@ -47,8 +47,9 @@ const IntroAbout = () => {
               onClick={() => setOpen(true)}
             />
             <p className="tx-dark pt-30 pb-30 md-pb-15" data-aos="fade-up">
-              The team signed <span className="fw-500">~$7,000,000</span> in new
-              business in July. Accelerator has been a large part of that.
+             Little Star Pediatrics is here to provide<span className="fw-500"> affordable, effective, age-appropriate, and culturally sensitive
+              healthcare</span> for all pediatric patients from infants to young adults
+              in Phoenix, Estrella, Litchfield Park, and Avondale.
             </p>
             <h6
               className="fs-20 tx-dark d-inline-block fst-italic position-relative ps-4"
@@ -69,25 +70,25 @@ const IntroAbout = () => {
               className="lazy-img"
             />
             <Image
-              width={561}
-              height={732}
+              width={372}
+              height={485}
               layout="intrinsic"
-              src="/images/media/img_53.png"
+              src="/images/myImages/baby.png"
               className="lazy-img avatar-img"
               alt="man"
             />
 
             {cardsData.map((item) => (
               <div
-                className={`card-style ${item.cardNo} d-flex justify-content-center`}
+                className={`card-style ${item.cardNo} d-flex justify-content-center backgroundDarkRed`}
                 key={item.id}
               >
                 <div className="icon rounded-circle d-flex align-items-center justify-content-center">
-                  <i className="bi bi-check-lg" />
+                  <i className="bi bi-check-lg tx-light" />
                 </div>
                 <div className="ps-2 ps-lg-4">
-                  <h3>{item.title}</h3>
-                  <p className="fs-20 tx-dark m0">{item.subtitle}</p>
+                  <h3 className="tx-light">{item.title}</h3>
+                  <p className="fs-20 m0 tx-light">{item.subtitle}</p>
                 </div>
               </div>
             ))}
