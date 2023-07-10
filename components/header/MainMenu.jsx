@@ -35,13 +35,25 @@ const MainMenu = () => {
           <li className="d-block d-lg-none">
             <div className="logo">
               <Link href="/" className="d-block">
-                <img src="/images/logo/logo_01.png" alt="" width={95} />
+                <img src="/images/myImages/logo.png" alt="" width={95} />
               </Link>
             </div>
           </li>
           {/* End li */}
 
-          <li className="nav-item dropdown mega-dropdown-md active">
+          <li className="nav-item">
+            <Link className="nav-link" href="/contact" role="button">
+              Home
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" href="/contact" role="button">
+              Telemedicine
+            </Link>
+          </li>
+
+
+          <li className="nav-item dropdown">
             <a
               className="nav-link dropdown-toggle"
               href="#"
@@ -50,31 +62,128 @@ const MainMenu = () => {
               data-bs-auto-close="outside"
               aria-expanded="false"
             >
-              Home
+              About
             </a>
             <ul className="dropdown-menu">
-              <li>
-                <div className="row">
-                  {menuItems.map((menu, index) => (
-                    <div className="col-lg-4" key={index}>
-                      <div className="menu-column">
-                        <h6 className="mega-menu-title">{menu.title}</h6>
-                        <ul className="style-none mega-dropdown-list">
-                          {menu.items.map((item, index) => (
-                            <li key={index}>
-                              <Link href={item.link} className="dropdown-item">
-                                <span>{item.title}</span>
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+
+              <li >
+                <Link href="/about/about-us" className="dropdown-item">
+                  <span>Little Star Pediatrics, Avondale</span>
+                </Link>
               </li>
+              <li >
+                <Link href="" className="dropdown-item">
+                  <span>Little Star Pediatrics, Glendale</span>
+                </Link>
+              </li>
+              <li >
+                <Link href="/about/nurse-practitioners" className="dropdown-item">
+                  <span>What are nurse practitioners?</span>
+                </Link>
+              </li>
+
             </ul>
           </li>
+          <li className="nav-item dropdown">
+            <a
+              className="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              data-bs-auto-close="outside"
+              aria-expanded="false"
+            >
+              Patient Info
+            </a>
+            <ul className="dropdown-menu">
+
+              <li >
+                <Link href="/patient-info/patient-forms" className="dropdown-item">
+                  <span>Patient Forms</span>
+                </Link>
+              </li>
+              <li >
+                <Link href="/patient-info/office-information" className="dropdown-item">
+                  <span>Useful Information</span>
+                </Link>
+              </li>
+              <li >
+                <Link href="/patient-info/useful-resources" className="dropdown-item">
+                  <span>Useful Resources</span>
+                </Link>
+              </li>
+
+            </ul>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" href="/insurance" role="button">
+              Insurance
+            </Link>
+          </li>
+          <li className="nav-item dropdown">
+            <a
+              className="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              data-bs-auto-close="outside"
+              aria-expanded="false"
+            >
+              Treatments
+            </a>
+            <ul className="dropdown-menu">
+
+              <li >
+                <Link href="/services/asthma" className="dropdown-item">
+                  <span>Asthma</span>
+                </Link>
+              </li>
+              <li >
+                <Link href="/services/cold-and-flu" className="dropdown-item">
+                  <span>Cold & Flu</span>
+                </Link>
+              </li>
+
+              <li >
+                <Link href="/services/counseling" className="dropdown-item">
+                  <span>Counseling</span>
+                </Link>
+              </li>
+              <li >
+                <Link href="/services/ent" className="dropdown-item">
+                  <span>ENT</span>
+                </Link>
+              </li>
+              <li >
+                <Link href="/services/newborn-care" className="dropdown-item">
+                  <span>Newborn Care</span>
+                </Link>
+              </li>
+              <li >
+                <Link href="/services/physical-examinations" className="dropdown-item">
+                  <span>Physical Examinations</span>
+                </Link>
+              </li>
+              <li >
+                <Link href="/services/preventive-screenings" className="dropdown-item">
+                  <span>Preventive Screenings</span>
+                </Link>
+              </li>
+              <li >
+                <Link href="/services/wellness-visits" className="dropdown-item">
+                  <span>Wellness Visit</span>
+                </Link>
+              </li>
+
+
+            </ul>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" href="/contact" role="button">
+              Testimonials
+            </Link>
+          </li>
+
           {/* End li (home mega menu) */}
 
           <li className="nav-item  dropdown">

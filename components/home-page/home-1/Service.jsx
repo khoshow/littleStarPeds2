@@ -47,12 +47,15 @@ const services = [
 const Service = () => {
   return (
     <>
+    <div className="row">
+  <h2 className="text-center">Our Services</h2>
       {services.map((service, index) => (
         <div
           className="col-xl-3 col-sm-6"
           key={index}
         
         >
+          
           <div className="card-style-sixteen tran3s text-center position-relative mt-30 ">
             <div className="icon services-item">
             <i className={service.icon  +  " services-icon" }></i>
@@ -71,6 +74,7 @@ const Service = () => {
           {/* /.card-style-sixteen */}
         </div>
       ))}
+      </div>
     </>
   );
 };

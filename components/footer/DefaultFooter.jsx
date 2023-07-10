@@ -5,14 +5,14 @@ import CopyrightFooter2 from "./CopyrightFooter2";
 
 const DefaultFooter = () => {
   return (
-    <div className="footer-style-eleven theme-basic-footer position-relative">
+    <div className="footer-style-eleven theme-basic-footer position-relative backgroundDarkBlue">
       <div className="bg-wrapper position-relative">
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-xl-2 footer-intro mb-40">
               <div className="logo">
                 <Link href="/">
-                  <img src="/images/logo/logo_01.png" alt="brand" />
+                  <img src="/images/myImages/logo.png" alt="brand" />
                 </Link>
               </div>
             </div>
