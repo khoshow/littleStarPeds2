@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Social from "../../pages/services/service-details/Social";
 
 const Servicescategory = () => {
@@ -22,30 +23,30 @@ const Servicescategory = () => {
           <h4 className="tx-dark mb-15">Services</h4>
           <ul className="style-none">
             <li className="current-page">
-              <a href="/services/asthma">Asthma</a>
+              <Link href="/services/asthma">Asthma</Link>
             </li>
             <li>
-              <a href="/services/cold-and-flue">Cold and Flu</a>
+              <Link href="/services/cold-and-flue">Cold and Flu</Link>
             </li>
             <li>
-              <a href="/services/counseling">Counseling</a>
+              <Link href="/services/counseling">Counseling</Link>
             </li>
             <li>
-              <a href="/services/ent">ENT</a>
+              <Link href="/services/ent">ENT</Link>
             </li>
             <li>
-              <a href="/services/newborn-care">Newborn Care</a>
+              <Link href="/services/newborn-care">Newborn Care</Link>
             </li>
             <li>
-              <a href="/services/physical-examinations">Branding</a>
+              <Link href="/services/physical-examinations">Branding</Link>
             </li>
             <li>
-              <a href="/services/preventive-screenings">
+              <Link href="/services/preventive-screenings">
                 Preventive Screenings
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/services/wellness-visits">Wellness Visits</a>
+              <Link href="/services/wellness-visits">Wellness Visits</Link>
             </li>
           </ul>
         </div>

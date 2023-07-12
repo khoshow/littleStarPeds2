@@ -9,25 +9,39 @@ const DefaultFooter = () => {
       <div className="bg-wrapper position-relative">
         <div className="container">
           <div className="row justify-content-between">
-            <div className="col-xl-2 footer-intro mb-40">
+            <div className="col-xl-4 footer-intro mb-40">
               <div className="logo">
                 <Link href="/">
                   <img src="/images/myImages/logo.png" alt="brand" />
                 </Link>
+              </div>
+              <div>
+              <br></br>
+                <ul className="style-none">
+                  <li style={{ color: "white", fontSize: "0.8em" }}>
+                    10575 W. Indian School Rd, Suite E-103, <br></br>
+                    Avondale, AZ 85392
+                  </li><br></br>
+                  <li style={{ color: "white", fontSize: "0.8em" }}>
+                    Phone(appointments):
+                    <a href="tel:480-747-0045">&nbsp; 480-747-0045</a>
+                  </li>
+                  <li style={{ color: "white", fontSize: "0.8em" }}>
+                    Email: &nbsp;
+                    <a
+                      href="mailTo:info@littlestarpeds.com"
+                      style={{ color: "white" }}
+                    >
+                      info@littlestarpeds.com
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
             {/* End .col */}
 
             <Footer2 />
 
-            <div className="col-xl-4 col-lg-5 mb-30 form-widget">
-              <h5 className="footer-title tx-dark fw-normal">Newslettert</h5>
-              <h6 className="pt-15 pb-20 md-pt-10">Join our newsletter</h6>
-              <NewsLetter />
-              <div className="fs-14 mt-10">
-                We only send interesting and relevant emails.
-              </div>
-            </div>
             {/* End .col-xl-4 */}
           </div>
           {/* End .row */}

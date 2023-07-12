@@ -8,20 +8,20 @@ const IntroAbout = () => {
     {
       id: 1,
       cardNo: "card-one",
-      title: "Cost",
-      subtitle: "Effective",
+      title: "Committed",
+      subtitle: "",
     },
     {
       id: 2,
-      title: "30+",
+      title: "Caring",
       cardNo: "card-two",
-      subtitle: "Insurance Item",
+      subtitle: "",
     },
     {
       id: 3,
-      title: "Happier",
+      title: "Trusworthy",
       cardNo: "card-three",
-      subtitle: "Children",
+      subtitle: "",
     },
   ];
 

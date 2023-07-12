@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import Link from "next/link";
 
 const Testimonial = () => {
   return (
@@ -15,7 +16,7 @@ const Testimonial = () => {
                 Love it here, my kids have gone here since they were newborns!
                 Tina at the front desk is also so helpful! My kids love it too!
                 Dr. Ameeta and her whole staff will make you feel confident in
-                your child's health and development!
+                your child&apos;s health and development!
               </p>
               <h3 className="secondTestiName">Shayla Hunter</h3>
               <div>
@@ -53,7 +54,7 @@ const Testimonial = () => {
               <p>
                 Been with Dr. Ameeta for over half a year now and love her. She
                 is very explanatory and takes her time with the us! The staff is
-                super kind and I don't regret choosing this office for my boys
+                super kind and I don&apos;t regret choosing this office for my boys
                 and I have been super picky through the years!
               </p>
               <h3>Cassie Timm</h3>
@@ -106,20 +107,20 @@ const Testimonial = () => {
             </div>
             <div className="secondTesti">
               <p>
-                Ameeta is unlike any other medical professional I've ever met.
-                My child has a complicated case, and I'd been told by several
+                Ameeta is unlike any other medical professional I&apos;ve ever met.
+                My child has a complicated case, and I&apos;d been told by several
                 doctors that there was nothing wrong with my son, even though I
                 knew something was off. When we finally found Ameeta, she sat
                 with us and actually listened. She listened as I told her
                 everything, trusted my mom-intuition, and became determined to
                 find answers. We eventually found that he had a brain tumor and
-                needed surgery. I don't know how long it would've gone
-                untreated, or how long he would've suffered, had we not finally
+                needed surgery. I don&apos;t know how long it would&apos;ve gone
+                untreated, or how long he would&apos;ve suffered, had we not finally
                 found someone who would truly listen to my concerns. Since then,
-                she's gone above and beyond in treatment for my son. She truly
-                cares about his well-being, and doesn't operate by the typical
+                she&apos;s gone above and beyond in treatment for my son. She truly
+                cares about his well-being, and doesn&apos;t operate by the typical
                 standard of care; she goes out of her way to make sure that you
-                AND your children are comfortable and informed. There's no one I
+                AND your children are comfortable and informed. There&apos;s no one I
                 would recommend more than Ameeta and Little Star Pediatrics.
               </p>
               <h3>Cori Schuman</h3>
@@ -158,14 +159,14 @@ const Testimonial = () => {
             </div>
             <div className="firstTesti">
               <p>
-                I'm really glad we found Little Star Pediatrics. We were new to
-                AZ and didn't know anyone who could recommend a pediatrician so
+                I&apos;m really glad we found Little Star Pediatrics. We were new to
+                AZ and didn&apos;t know anyone who could recommend a pediatrician so
                 I went ahead and tried Dr. Chowdhary. Her Google reviews were
-                great and now I know why. We've been going to her for a year now
+                great and now I know why. We&apos;ve been going to her for a year now
                 and her and her staff have made us feel like family. So much
                 like family to where my parents ask about Dr. Chowdhary and she
                 asks about them. 😃 She takes the time to talk to us about
-                what's important for our kids. She's very intelligent and
+                what&apos;s important for our kids. She&apos;s very intelligent and
                 friendly that my three kids feel very comfortable around her. We
                 are blessed to have her practice in our lives.
               </p>
@@ -176,8 +177,8 @@ const Testimonial = () => {
             </div>
             <div className="secondTesti">
               <p>
-                COULDN'T BE MORE SATISFIED AND HAPPY WITH DR. AMEETA. 100%
-                RECOMMENDED! I MADE THE BEST DECISION ON CHANGING MY BABY'S
+                COULDN&apos;T BE MORE SATISFIED AND HAPPY WITH DR. AMEETA. 100%
+                RECOMMENDED! I MADE THE BEST DECISION ON CHANGING MY BABY&apos;S
                 DOCTOR TO HER.
               </p>
               <h3>Ana V.</h3>
@@ -352,20 +353,20 @@ const Testimonial = () => {
             </div>
             <div className="firstTesti">
               <p>
-                Ameeta is unlike any other medical professional I've ever met.
-                My child has a complicated case, and I'd been told by several
+                Ameeta is unlike any other medical professional I&apos;ve ever met.
+                My child has a complicated case, and I&apos;d been told by several
                 doctors that there was nothing wrong with my son, even though I
                 knew something was off.When we finally found Ameeta, she sat
                 with us and actually listened. She listened as I told her
                 everything, trusted my mom-intuition, and became determined to
                 find answers. We eventually found that he had a brain tumor and
-                needed surgery. I don't know how long it would've gone
-                untreated, or how long he would've suffered, had we not finally
+                needed surgery. I don&apos;t know how long it would&apos;ve gone
+                untreated, or how long he would&apos;ve suffered, had we not finally
                 found someone who would truly listen to my concerns.Since then,
-                she's gone above and beyond in treatment for my son. She truly
-                cares about his well-being, and doesn't operate by the typical
+                she&apos;s gone above and beyond in treatment for my son. She truly
+                cares about his well-being, and doesn&apos;t operate by the typical
                 standard of care; she goes out of her way to make sure that you
-                AND your children are comfortable and informed.There's no one I
+                AND your children are comfortable and informed.There&apos;s no one I
                 would recommend more than Ameeta and Little Star Pediatrics.
               </p>
               <h3> Cori Schuman</h3>
@@ -411,7 +412,7 @@ const Testimonial = () => {
                 her. She makes your child feel comfortable and answers any
                 questions you have. The office itself is clean, cute, and also,
                 if you check in, there is a promo for 25% off your first visit,
-                which is a great option if you don't have health insurance and
+                which is a great option if you don&apos;t have health insurance and
                 have to pay cash. They charge $75 for cash pay/self pay (this is
                 not including any additional services). Two thumbs up!
               </p>
@@ -438,14 +439,14 @@ const Testimonial = () => {
               Chowdhary below, and as always, we would love to collect your
               feedback.
             </p>
-            <a
+            <Link
               href="/contact-us"
               class="btn btn-primary"
               role="button"
               aria-pressed="true"
             >
               Share Feedback
-            </a>
+            </Link>
           </div>
         </div>
       </div>

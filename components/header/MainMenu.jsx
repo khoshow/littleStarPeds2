@@ -16,7 +16,7 @@ import { useRouter } from "next/router";
 const MainMenu = () => {
   const router = useRouter();
   return (
-    <nav className="navbar navbar-expand-lg order-lg-2">
+    <nav className="navbar navbar-expand-lg order-lg-2" >
       <button
         className="navbar-toggler d-block d-lg-none"
         type="button"
@@ -42,12 +42,12 @@ const MainMenu = () => {
           {/* End li */}
 
           <li className="nav-item">
-            <Link className="nav-link" href="/contact" role="button">
+            <Link className="nav-link" href="/" role="button">
               Home
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" href="/contact" role="button">
+            <Link className="nav-link" href="/telemedicine" role="button">
               Telemedicine
             </Link>
           </li>
@@ -71,11 +71,11 @@ const MainMenu = () => {
                   <span>Little Star Pediatrics, Avondale</span>
                 </Link>
               </li>
-              <li >
+              {/* <li >
                 <Link href="" className="dropdown-item">
                   <span>Little Star Pediatrics, Glendale</span>
                 </Link>
-              </li>
+              </li> */}
               <li >
                 <Link href="/about/nurse-practitioners" className="dropdown-item">
                   <span>What are nurse practitioners?</span>
@@ -179,121 +179,28 @@ const MainMenu = () => {
             </ul>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" href="/contact" role="button">
+            <Link className="nav-link" href="/testimonials" role="button">
               Testimonials
             </Link>
           </li>
-
-          {/* End li (home mega menu) */}
-
-          <li className="nav-item  dropdown">
-            <a
-              className="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              data-bs-auto-close="outside"
-              aria-expanded="false"
-            >
-              Pages
-            </a>
-            <ul className="dropdown-menu">
-              {pagesItems.map((item, index) => (
-                <li className="dropdown-submenu dropdown" key={index}>
-                  <a
-                    className="dropdown-item dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    data-bs-auto-close="outside"
-                    aria-expanded="false"
-                    href="#"
-                  >
-                    <span>{item.title}</span>
-                  </a>
-                  <ul className="dropdown-menu">
-                    {item.subItems.map((subMenu, i) => (
-                      <li key={i}>
-                        <Link href={subMenu.link} className="dropdown-item">
-                          <span>{subMenu.title}</span>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </li>
-              ))}
-
-              <li>
-                <Link href="/pages-menu/pricing" className="dropdown-item">
-                  <span>Pricing</span>
-                </Link>
-              </li>
-              <li>
-                <Link href="/pages-menu/testimonials" className="dropdown-item">
-                  <span>Testimonials</span>
-                </Link>
-              </li>
-            </ul>
-          </li>
-          {/* End li (pages) */}
-
-          <li className="nav-item dropdown">
-            <a
-              className="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              data-bs-auto-close="outside"
-              aria-expanded="false"
-            >
-              Portfolio
-            </a>
-            <ul className="dropdown-menu">
-              {portfolioItems.map((item, index) => (
-                <li key={index}>
-                  <Link href={item.link} className="dropdown-item">
-                    <span>{item.name}</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </li>
-          {/* End li (portfolio) */}
-
-          <li className="nav-item dropdown">
-            <a
-              className="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              data-bs-auto-close="outside"
-              aria-expanded="false"
-            >
-              Blog
-            </a>
-            <ul className="dropdown-menu">
-              {blogItems.map((blog, index) => (
-                <li key={index}>
-                  <Link href={blog.link} className="dropdown-item">
-                    <span>{blog.text}</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </li>
-          {/* End li (blog) */}
-
           <li className="nav-item">
-            <Link className="nav-link" href="/contact" role="button">
+            <Link className="nav-link" href="/contact-us" role="button">
               Contact
             </Link>
           </li>
-          {/* End li (contact) */}
+          <li className="nav-item">
+            <Link className=" btn-twentyOne fw-500 tran3s d-none d-lg-block" href="tel:(480) 747-0045" role="button">
+              Call Us
+            </Link>
+          </li>
+
         </ul>
-        {/* End ul */}
+       
 
         {/* Mobile Content */}
         <div className="mobile-content d-block d-lg-none">
           <div className="d-flex flex-column align-items-center justify-content-center mt-70">
-            <Link href="/contact" className="btn-twentyOne fw-500 tran3s">
+            <Link href="/contact-us" className="btn-twentyOne fw-500 tran3s">
               Contact us
             </Link>
           </div>

@@ -7,14 +7,14 @@ export default function Document() {
       <Head>
         <meta
           name="description"
-          content="Jano - Creative Multipurpose React NextJS Template"
+          content="Little Star Pediatrics - Modern, Innovative Pediatric Care"
         />
         <meta
           name="keywords"
-          content="agency, bootstrap 5, business, business multipurpose, charity, creative, creative template, crypto, education, hosting, insurance, landing page, portfolio, real estate, responsive, react, nextjs"
+          content=""
         />
 
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.jpg" />
         <Script
           src="https://kit.fontawesome.com/4af13880de.js"
           crossOrigin="anonymous"

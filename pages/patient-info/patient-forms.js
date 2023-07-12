@@ -22,14 +22,14 @@ const Insurance = () => {
            
             <div >
               <div>
-                <a href="/forms/New-Registration">
+                <Link href="/forms/New-Registration">
                   <div
                     class="btn btn-primary btn-lg first-button "
                     style={{margin: "3rem 0"}}
                   >
                     Online registration Form
                   </div>
-                </a>
+                </Link>
               </div>
 
               <div >

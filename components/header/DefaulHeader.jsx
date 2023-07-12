@@ -27,7 +27,9 @@ const DefaulHeader = () => {
         navbar ? "fixed" : ""
       }`}
     >
+    
       <div className="inner-content position-relative">
+       
         <div className="d-flex align-items-center justify-content-between">
           <div className="logo order-lg-0">
             <Link href="/" className="d-block">
@@ -39,20 +41,15 @@ const DefaulHeader = () => {
               />
             </Link>
           </div>
-          <div className="right-widget ms-auto d-flex align-items-center order-lg-3">
-            <Link
-              href="/login"
-              className="login-btn-three rounded-circle tran3s me-3"
-            >
-              <i className="bi bi-person" />
-            </Link>
+          {/* <div className="right-widget ms-auto d-flex align-items-center order-lg-3">
+            
             <Link
               href="/contact"
               className="btn-twentyOne fw-500 tran3s d-none d-lg-block"
             >
               Contact us
             </Link>
-          </div>{" "}
+          </div> */}
           {/* /.right-widget */}
           <MainMenu />
         </div>

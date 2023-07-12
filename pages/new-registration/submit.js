@@ -1,6 +1,7 @@
 import Link from "next/link";
-import LoginForm from "../components/common/LoginForm";
-import Seo from "../components/common/Seo";
+// import LoginForm from "../components/common/LoginForm";
+import Seo from "../../components/common/Seo";
+import DefaulHeader from "../../components/header/DefaulHeader";
 
 const LogIn = () => {
   const currentYear = new Date().getFullYear();
@@ -12,21 +13,7 @@ const LogIn = () => {
         Theme Main Menu
         ============================================== 
         */}
-      <header className="theme-main-menu sticky-menu theme-menu-eight">
-        <div className="inner-content position-relative">
-          <div className="d-flex align-items-center justify-content-between">
-            <div className="logo order-lg-0">
-              <Link href="/" className="d-block">
-                <img src="/images/logo/logo_01.png" alt="" width={95} />
-              </Link>
-            </div>
-            <Link href="/" className="go-back-btn fw-500 tran3s">
-              Go to home
-            </Link>
-          </div>
-        </div>
-        {/* /.inner-content */}
-      </header>
+       <DefaulHeader />
       {/* /.theme-main-menu */}
 
       {/* 
@@ -37,19 +24,23 @@ const LogIn = () => {
       <div className="user-data-section d-flex align-items-center justify-content-center flex-column position-relative">
         <div className="form-wrapper position-relative m-auto">
           <div className="text-center">
-            <h2 className="tx-dark mb-30 lg-mb-10">Login</h2>
-            <p className="fs-20 tx-dark">
-              Still don&lsquo;t have an account?{" "}
-              <Link href="/signup">Sign up</Link>
-            </p>
+            <h2 className="tx-dark mb-30 lg-mb-10">
+              Form successfully sent! Thank you.
+            </h2>
+            <h3 className="tx-dark mb-25 lg-mb-10">
+              We will contact you shortly
+            </h3>
+            <Link href="/forms/New-Registration" className="btn-red fw-500 tran3s m-2">Registration</Link>
+            <Link  href="/" className="btn-red fw-500 tran3s m-2">Home</Link>
           </div>
-          <LoginForm />
         </div>
         {/* End form-wrapper */}
 
-        <p className="mt-auto pt-50">Copyright @{currentYear} jano inc.</p>
+        <p className="mt-auto pt-50">
+          Copyright @{currentYear} Little Star Pediatrics
+        </p>
         <img
-          src="/images/assets/ils_11.png"
+          src="/images/myImages/logo.png"
           alt="illustration"
           className="lazy-img illustration-one wow fadeInRight"
         />

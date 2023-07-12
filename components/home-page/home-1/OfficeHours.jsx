@@ -1,9 +1,9 @@
 const OfficeHours = () => {
   return (
     <>
-      <div className="office-hours p-2 backgroundBlue text-center">
+      <div className="office-hours pt-100 backgroundBlue text-center">
         <div>
-          <h2>Office Hours Designed to Fit Your Schedule</h2>
+          <h2 className="main-title fade-up tx-light">Office Hours Designed to Fit Your Schedule</h2>
           <p>
             Our flexible hours are designed to work within your schedule as our
             doors are open after hours and on weekends to accommodate working
@@ -36,7 +36,8 @@ const OfficeHours = () => {
             <tr>
               <td>Saturday &nbsp; &nbsp;</td>
               <td>
-                8:30 am - 12:00 pm <br />              
+                8:30 am - 12:00 pm <br />   
+                (One Saturday per month. Please call for availability)           
               </td>
             </tr>
             <tr>

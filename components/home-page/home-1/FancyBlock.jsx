@@ -4,19 +4,19 @@ const FancyBlock = () => {
   const cardsData = [
     {
       iconSrc: "/images/icon/icon_70.svg",
-      title: "Committed",
+      title: "Personalised",
       description: "Elit esse cillum dolo fugiat nulla tur nos ullamo.",
       delay: "100",
     },
     {
       iconSrc: "/images/icon/icon_71.svg",
-      title: "Caring",
+      title: "Accessible",
       description: "quis nostrud exerct ullamo sucirity finibus ne derived.",
       delay: "200",
     },
     {
       iconSrc: "/images/icon/icon_72.svg",
-      title: "Trusworthy",
+      title: "Modern",
       description: "Duis aute irure dolor reprehe de Cicero's voluptat velit.",
       delay: "300",
     },

@@ -41,11 +41,11 @@ const PortfolioV1 = () => {
                   </h1>
                   <p>
                     Physical exams are a vital part of making a diagnosis when
-                    your child’s unwell. Physical exams can help prevent ill
+                    your child&apos;s unwell. Physical exams can help prevent ill
                     health in children by catching problems early. Having a
                     healthy lifestyle is important for children. A routine
                     physical exam can help catch problems early, before they
-                    become serious. It's important to have your child examined
+                    become serious. It&apos;s important to have your child examined
                     by a doctor regularly, even if they seem healthy.
                   </p>
                   <p>

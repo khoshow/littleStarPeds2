@@ -48,7 +48,7 @@ const Service = () => {
   return (
     <>
     <div className="row">
-  <h2 className="text-center">Our Services</h2>
+ 
       {services.map((service, index) => (
         <div
           className="col-xl-3 col-sm-6"
@@ -56,13 +56,12 @@ const Service = () => {
         
         >
           
-          <div className="card-style-sixteen tran3s text-center position-relative mt-30 ">
+          <div className="card-style-sixteen tran3s text-center position-relative ">
             <div className="icon services-item">
             <i className={service.icon  +  " services-icon" }></i>
               {/* <Image src={service.icon} alt="" width="50" height="50" style={{color}} className="lazy-img m-auto" /> */}
               <h4 className="tx-white ">{service.title}</h4>
             </div>
-            
            
             <Link
               href="/pages-menu/service-details"

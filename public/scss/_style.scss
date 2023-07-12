@@ -645,7 +645,7 @@ p {
 }
 
 .title-style-eight .main-title {
-  font-size: 68px;
+  font-size: 45px;
   line-height: 1.25em;
   letter-spacing: -1px;
 }
@@ -11787,10 +11787,24 @@ td {
   background-color: var(--little-grey);
 }
 
-.paddingTop20vh{
-padding-top: 20vh;
+.paddingTop20vh {
+  padding-top: 20vh;
 }
 
-.colorWhite{
+.colorWhite {
   color: white;
+}
+
+.formTitleColor {
+  color: #090f32;
+}
+
+.myRegistration a {
+  color: var(--prime-five);
+  border: 1px solid #00bde5;
+  padding: 4px;
+}
+
+.myRegistration h3, h2{
+  color: #090f32;
 }

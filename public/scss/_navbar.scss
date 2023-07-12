@@ -9,6 +9,7 @@
   z-index: 99;
   border: none;
   background: var(--prime-one);
+  right: 0 !important;
 }
 .navbar-toggler:focus {box-shadow: none;}
 .navbar-toggler::before,
@@ -61,10 +62,12 @@
 	line-height: initial;
 	color: white;
 	padding: 13px 0;
-	margin: 0 26px;
+	margin: 0 15px;
 	position: relative;
   transition: all 0.3s ease-in-out;
 }
+
+
 .navbar .navbar-nav .nav-item.active .nav-link,
 .navbar .navbar-nav .nav-item:hover .nav-link {color: var(--prime-one);}
 /*Menu Two*/
@@ -204,8 +207,8 @@
 }
 .navbar [class*="mega-dropdown"] .dropdown-item {line-height: 40px; padding: 0;}
 /*----- For Desktop -------*/
-@media screen and (min-width: 992px) {
-  .theme-main-menu .navbar {position: absolute;left: 50%;transform: translateX(-50%);}
+@media screen and (min-width: 1100px) {
+  .theme-main-menu .navbar {position: relative; right: 0; transform: none;}
   .theme-main-menu.theme-menu-nine .navbar,
   .theme-main-menu.theme-menu-five .navbar,
   .theme-main-menu.theme-menu-ten .navbar,
@@ -248,7 +251,7 @@
 /*(min-width: 992px)*/
 
 /*----- For Mobile ----*/
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1101px) {
   .navbar {padding: 0;}
 	.navbar-collapse .logo {margin-bottom: 8vh;}
   .navbar .dropdown-toggle::after {right: 0; line-height: 50px; font-size: 15px;}
