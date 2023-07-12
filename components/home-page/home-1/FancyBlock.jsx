@@ -5,19 +5,19 @@ const FancyBlock = () => {
     {
       iconSrc: "/images/icon/icon_70.svg",
       title: "Personalised",
-      description: "Elit esse cillum dolo fugiat nulla tur nos ullamo.",
+      description: "Tailored Treatment for Your Little Ones: Discover the Benefits of our Personalized Pediatric Care",
       delay: "100",
     },
     {
       iconSrc: "/images/icon/icon_71.svg",
       title: "Accessible",
-      description: "quis nostrud exerct ullamo sucirity finibus ne derived.",
+      description: "Breaking Barriers: Ensuring Every Child Receives Quality Care:",
       delay: "200",
     },
     {
       iconSrc: "/images/icon/icon_72.svg",
       title: "Modern",
-      description: "Duis aute irure dolor reprehe de Cicero's voluptat velit.",
+      description: "We strive towards Advancements and Innovations in Modern Pediatric Care",
       delay: "300",
     },
   ];

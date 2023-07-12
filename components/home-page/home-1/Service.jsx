@@ -51,7 +51,7 @@ const Service = () => {
  
       {services.map((service, index) => (
         <div
-          className="col-xl-3 col-sm-6"
+          className="col-xl-3 col-sm-6 p-2"
           key={index}
         
         >
@@ -65,7 +65,7 @@ const Service = () => {
            
             <Link
               href="/pages-menu/service-details"
-              className="read-more rounded-circle text-start tran3s"
+              className="read-more rounded-circle text-start tran3s"  style={{backgroundColor:"#29AEE1"}}
             >
               <i className="bi bi-arrow-right" />
             </Link>
