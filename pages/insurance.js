@@ -1,4 +1,4 @@
-import Seo from "../components/common/Seo";
+import Head from "next/head";
 import DefaulHeader from "../components/header/DefaulHeader";
 import DefaultFooter from "../components/footer/DefaultFooter";
 import Link from "next/link";
@@ -6,9 +6,41 @@ import Telemedicine from "../components/home-page/home-1/Telemedicine";
 import TelemedicineFancyBlock from "../components/home-page/home-1/TelemedicineFancyBlock";
 
 const Insurance = () => {
+  const head = () => {
+    const title = "Asthma || Little Star Pediatrics";
+    const metaDesc =
+      "Need to know if we accept your health insurance? Check out our comprehensive list & safeguard your health";
+    const websiteUrl = "https://littlestarpeds.com/";
+    const cononicalURL = websiteUrl + "insurance";
+    const websiteName = "Little Star Pediatrics";
+    const imageUrl = websiteUrl + "images/myImages/baby-girl.webp";
+
+    return (
+      <Head>
+        <title>{title}</title>
+        <meta name="description" content={metaDesc} />
+        <link rel="canonical" href={cononicalURL} />
+
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={metaDesc} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={websiteUrl} />
+        {/* {console.log("Url", process.env.DOMAIN_WEBSITE_URL)} */}
+        <meta property="og:site_name" content={websiteName} />
+        <meta property="og:image" content={imageUrl} />
+
+        <meta property="og:image:type" content="image/png" />
+
+        <link
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet"
+        />
+      </Head>
+    );
+  };
   return (
     <>
-      <Seo pageTitle="Service Details" />
+     {head()}
       {/* <!-- 
       =============================================
       Theme Default Menu
@@ -16,8 +48,8 @@ const Insurance = () => {
       --> */}
       <DefaulHeader />
       <div className="fancy-feature-twentyThree mt-35 backgroundGrey">
-        <div class="container" style={{ paddingTop: "10vh" }}>
-          <h1 class="text-center" style={{ padding: "2rem", color: "#f9ba32" }}>
+        <div className="container" style={{ paddingTop: "10vh" }}>
+          <h1 className="text-center" style={{ padding: "2rem", color: "#f9ba32" }}>
             HEALTH INSURANCE
           </h1>
           <div>

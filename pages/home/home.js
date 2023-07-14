@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Head from "next/head";
 import Seo from "../../components/common/Seo";
 import Footer from "../../components/footer/Footer";
 import DefaulHeader from "../../components/header/DefaulHeader";
@@ -20,9 +21,41 @@ import OfficeHours from "../../components/home-page/home-1/OfficeHours";
 import IntroVideo from "../../components/home-page/home-1/IntroVideo";
 
 const Insurance = () => {
+  const head = () => {
+    const title = "Home || Little Star Pediatrics";
+    const metaDesc =
+      "Looking for expert pediatric care in Avondale & Glendale? Trust our experienced team to keep your child healthy & happy. Schedule a visit today!✨";
+    const websiteUrl = "https://littlestarpeds.com/";
+    const cononicalURL = websiteUrl;
+    const websiteName = "Little Star Pediatrics";
+    const imageUrl = websiteUrl + "images/myImages/AmeetaBoy.jpg";
+
+    return (
+      <Head>
+        <title>{title}</title>
+        <meta name="description" content={metaDesc} />
+        <link rel="canonical" href={cononicalURL} />
+
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={metaDesc} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={websiteUrl} />
+        {/* {console.log("Url", process.env.DOMAIN_WEBSITE_URL)} */}
+        <meta property="og:site_name" content={websiteName} />
+        <meta property="og:image" content={imageUrl} />
+
+        <meta property="og:image:type" content="image/png" />
+
+        <link
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet"
+        />
+      </Head>
+    );
+  };
   return (
     <>
-      <Seo pageTitle="Litte Star Pediatrics" />
+     {head()}
       {/* <!-- 
       =============================================
 			Theme Default Menu

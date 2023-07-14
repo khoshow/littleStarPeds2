@@ -29,41 +29,41 @@ const Testimonial = () => {
   const testimonialData = [
     {
       id: 1,
-      name: "Martin Jonas",
-      location: "USA",
+      name: "Lorena R",
+      location: "",
       rating: 5,
       content:
-        "The passage experienced a surgu popularity during the ios when Letraset used it on their lor bonord dry-transfer sheets &amp; again during the sample.",
+        "My daughter felt very comfortable on her first visit. She seems very good with kids, she explains everything throughly and most of all listened to my concerns.",
       color: "#B67DFF",
       icon: "/images/icon/icon_42.svg",
     },
     {
       id: 2,
-      name: "Rashed Ka",
-      location: "USA",
+      name: "Netia",
+      location: "",
       rating: 5,
       content:
-        "The passage experienced a surgu popularity during the ios when Letraset used it on their lor bonord dry-transfer sheets &amp; again during the sample.",
+        "The best pediatric office! Staff here is so nice and helpful whenever needed. Cancelling and scheduling appointments is easy and convenient and the office is very responsive.",
       color: "#FFBC3A",
       icon: "/images/icon/icon_42.svg",
     },
     {
       id: 3,
-      name: "Martin Jonas",
-      location: "USA",
+      name: "Heather G.",
+      location: "",
       rating: 5,
       content:
-        "The passage experienced a surgu popularity during the ios when Letraset used it on their lor bonord dry-transfer sheets &amp; again during the sample.",
+        "We are so happy to have found Nurse Practitioner Ameeta! She is so caring and thorough. It is worth the drive to have her care for my kids.",
       color: "#49E5EF",
       icon: "/images/icon/icon_42.svg",
     },
     {
       id: 4,
-      name: "Rashed Ka",
-      location: "USA",
+      name: "Anna M.",
+      location: "",
       rating: 5,
       content:
-        "The passage experienced a surgu popularity during the ios when Letraset used it on their lor bonord dry-transfer sheets &amp; again during the sample.",
+        "We love coming here! As a new mom, I always have so many questions and Ameeta always takes the time to explain everything to me. The staff are friendly, personable and make you feel like family! I would highly recommend this place!",
       color: "#8F6BF6",
       icon: "/images/icon/icon_42.svg",
     },

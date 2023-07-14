@@ -11,13 +11,13 @@ import Copyright from "../components/footer/CopyrightFooter2";
 
 const contact = () => {
   const head = () => {
-    const title = "Contact || Alpha 2 Omega Landscaping";
+    const title = "Contact || Little Star Pediatrics";
     const metaDesc =
-      "Transform your outdoor space with our top-rated Landscaping Service in Glendale! Get a free quote today! 🌳🏡✨";
-    const websiteUrl = "https://a2olandscaping.com/";
-    const cononicalURL = websiteUrl + "contact";
-    const websiteName = "Alpha 2 Omega Landscaping";
-    const imageUrl = websiteUrl + "worker.png";
+      "Your child deserves the finest pediatric care - contact us to experience our exceptional services and dedicated team. Connect with us now!✨";
+    const websiteUrl = "https://littlestarpeds.com/";
+    const cononicalURL = websiteUrl + "contact-us";
+    const websiteName = "Little Star Pediatrics";
+    const imageUrl = websiteUrl + "screening.jpg";
 
     return (
       <Head>

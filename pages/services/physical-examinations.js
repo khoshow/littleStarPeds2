@@ -1,18 +1,48 @@
-import Seo from "../../components/common/Seo";
+import Head from "next/head";
 import DefaulHeader from "../../components/header/DefaulHeader";
 import DefaultFooter from "../../components/footer/DefaultFooter";
-import ProgressBar from "./service-details/ProgressBar";
-import Faq from "../../components/home-page/home-2/Faq";
-import Social from "./service-details/Social";
+
 import Link from "next/link";
 import Servicescategory from "../../components/services/ServiceSide";
 import Service from "../../components/home-page/home-1/Service";
 import ContactBanner from "../../components/home-page/home-1/ContactBanner";
 
 const PortfolioV1 = () => {
+  const head = () => {
+    const title = "Physical Examinations || Little Star Pediatrics";
+    const metaDesc =
+      "Get top-notch Physical Exams in Avondale & nearby areas! Experienced nurse practitioners, comprehensive tests, and fast results. Book your appointment now!";
+    const websiteUrl = "https://littlestarpeds.com/";
+    const cononicalURL = websiteUrl + "services/physical-examination";
+    const websiteName = "Little Star Pediatrics";
+    const imageUrl = websiteUrl + "images/myImages/AmeetaBoy.jpg";
+
+    return (
+      <Head>
+        <title>{title}</title>
+        <meta name="description" content={metaDesc} />
+        <link rel="canonical" href={cononicalURL} />
+
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={metaDesc} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={websiteUrl} />
+        {/* {console.log("Url", process.env.DOMAIN_WEBSITE_URL)} */}
+        <meta property="og:site_name" content={websiteName} />
+        <meta property="og:image" content={imageUrl} />
+
+        <meta property="og:image:type" content="image/png" />
+
+        <link
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet"
+        />
+      </Head>
+    );
+  };
   return (
     <>
-      <Seo pageTitle="Service Details" />
+    {head()}
       {/* <!-- 
       =============================================
       Theme Default Menu
@@ -57,7 +87,7 @@ const PortfolioV1 = () => {
                     to find out how she can help.
                   </p>
                   <img
-                    src="/images/media/img_95.jpg"
+                    src="/images/myImages/AmeetaBoy.jpg"
                     alt="media"
                     className="main-img-meta"
                   />

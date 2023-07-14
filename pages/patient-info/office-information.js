@@ -1,12 +1,45 @@
-import Seo from "../../components/common/Seo";
+import Head from "next/head";
 import DefaulHeader from "../../components/header/DefaulHeader";
+import Map from "../../components/contact/Map"
 import DefaultFooter from "../../components/footer/DefaultFooter";
 import Link from "next/link";
 
 const Insurance = () => {
+  const head = () => {
+    const title = "Office Info || Little Star Pediatrics";
+    const metaDesc =
+      "Little Star Pediatrics, a welcoming space for your child's healthcare needs. Schedule a visit with us now!✨";
+    const websiteUrl = "https://littlestarpeds.com/";
+    const cononicalURL = websiteUrl + "patient-info/office-information";
+    const websiteName = "Little Star Pediatrics";
+    const imageUrl = websiteUrl + "images/myImages/ameeta.jpg";
+
+    return (
+      <Head>
+        <title>{title}</title>
+        <meta name="description" content={metaDesc} />
+        <link rel="canonical" href={cononicalURL} />
+
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={metaDesc} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={websiteUrl} />
+        {/* {console.log("Url", process.env.DOMAIN_WEBSITE_URL)} */}
+        <meta property="og:site_name" content={websiteName} />
+        <meta property="og:image" content={imageUrl} />
+
+        <meta property="og:image:type" content="image/png" />
+
+        <link
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet"
+        />
+      </Head>
+    );
+  };
   return (
     <>
-      <Seo pageTitle="Service Details" />
+      {head()}
       {/* <!-- 
       =============================================
       Theme Default Menu
@@ -27,18 +60,7 @@ const Insurance = () => {
           </h1>
           <p>We are located in the retail center south of the Chase Bank.</p>
 
-          <div className="map-area-one mt-40 lg-mt-80 fadeInUp">
-            <div className="box-layout">
-              <div className="mapouter">
-                <div className="gmapCanvas">
-                  <iframe
-                    className="gmap_iframe"
-                    src="https://www.google.com/maps/place/Little+Star+Pediatrics,+10575+W.+Indian+School+Road+%23E-103,+Avondale,+AZ+85392,+United+States/@33.492856,-112.286149,13z/data=!4m6!3m5!1s0x872b41409dff6e87:0x4f42e9113bd9b5f!8m2!3d33.4928558!4d-112.2861491!16s%2Fg%2F11fmvkj8_p?hl=en&gl=IN"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+          <Map />
           <div className="officeHours" style={{ color: "white" }}>
             <div>
               <h2 className="main-title" style={{ color: "white" }}>
