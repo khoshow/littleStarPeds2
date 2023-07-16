@@ -5,41 +5,49 @@ const services = [
   {
     icon: "fa fa-baby fa-3x ",
     title: "New Born Care",   
+    href:"/services/newborn-care",
     delayAnim: 0,
   },
   {
     icon: "fa fa-user-nurse fa-3x ",
     title: "Physical Exams",
+    href:"/services/physical-examinations",
     delayAnim: 100,
   },
   {
     icon: "fa fa-virus fa-3x ",
     title: "Cold & Flu",
+    href:"/services/cold-and-flu",
     delayAnim: 200,
   },
   {
     icon: "fa fa-lungs fa-3x ",
     title: "Asthma",
+    href:"/services/asthma",
     delayAnim: 300,
   },
   {
     icon: "fa fa-heartbeat fa-3x",
     title: "Wellness Visit",
+    href:"/services/wellness-visits",
     delayAnim: 300,
   },
   {
     icon: "fa fa-hand-holding-medical fa-3x",
     title: "Counselling",
+    href:"/services/counseling",
     delayAnim: 300,
   },
   {
     icon: "fa fa-clinic-medical fa-3x",
     title: "ENT",
+    href:"/services/ent",
     delayAnim: 300,
   },
   {
     icon: "fa fa-briefcase-medical fa-3x",
     title: "Preventive Screenings",
+    href:"/services/preventive-screenings",
     delayAnim: 300,
   },
 ];
@@ -64,7 +72,7 @@ const Service = () => {
             </div>
            
             <Link
-              href="/pages-menu/service-details"
+              href={service.href}
               className="read-more rounded-circle text-start tran3s"  style={{backgroundColor:"#29AEE1"}}
             >
               <i className="bi bi-arrow-right" />
