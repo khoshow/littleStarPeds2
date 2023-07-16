@@ -203,7 +203,7 @@ const RegistrationForm = () => {
                             required
                           />
                         </div>
-                        <fieldset className="form-group ">
+                        {/* <fieldset className="form-group ">
                           <div className="row">
                             <legend className="col-form-label col-sm-2 pt-0">
                               Sex
@@ -932,7 +932,7 @@ const RegistrationForm = () => {
                               />
                             </div>
                           </div>
-                        </div>
+                        </div> */}
 
                         <div>
                           <h3>Declaration/Terms and Conditions</h3>

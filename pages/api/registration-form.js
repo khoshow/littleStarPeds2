@@ -23,7 +23,7 @@ const submitRegistration = (req, res, next) => {
 
 
   doc.pipe(fs.createWriteStream(filepath));
-  doc.image("public/images/myImages/logo.png", 50, 60, {
+  doc.image("https://res.cloudinary.com/finer-blue/image/upload/v1689526048/LittleStarPeds/Little_Star_Peds_Logo_u4wgvb.png", 50, 60, {
     fit: [150, 150],
     align: "left",
     height: 40,
@@ -45,7 +45,7 @@ const submitRegistration = (req, res, next) => {
   doc.on(
     "pageAdded",
     () =>
-      doc.image("public/images/myImages/logo.png", 50, 60, {
+      doc.image("https://res.cloudinary.com/finer-blue/image/upload/v1689526048/LittleStarPeds/Little_Star_Peds_Logo_u4wgvb.png", 50, 60, {
         fit: [150, 150],
         align: "left",
         height: 40,
