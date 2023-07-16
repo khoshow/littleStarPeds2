@@ -414,7 +414,7 @@ const RegistrationForm = () => {
                         <br />
                         <br />
                         <h3>Insurance Section</h3>
-                      
+
                         <fieldset className="form-group col-sm-6">
                           <div className="row">
                             <legend className="col-form-label ">
@@ -738,7 +738,7 @@ const RegistrationForm = () => {
                                   Friend
                                 </label>
                               </div>
-                         
+
                               <div className="form-check m-2">
                                 <input
                                   className="form-check-input"
@@ -933,9 +933,8 @@ const RegistrationForm = () => {
                             </div>
                           </div>
                         </div>
-                       
+
                         <div>
-                       
                           <h3>Declaration/Terms and Conditions</h3>
                           <p>
                             (Kindly accept the following terms and conditions
@@ -945,7 +944,7 @@ const RegistrationForm = () => {
                             <h3>Financial Policy</h3>
                           </div>
                           <div>
-                            <p style={{textAlign:"justify"}}>
+                            <p style={{ textAlign: "justify" }}>
                               The above information is true to the best of my
                               knowledge. I authorize my insurance benefits be
                               paid directly to JB Healthcare LLC d/b/a Little
@@ -970,7 +969,7 @@ const RegistrationForm = () => {
                             </h3>
                           </div>
                           <div>
-                          <p style={{textAlign:"justify"}}>
+                            <p style={{ textAlign: "justify" }}>
                               I authorize the medical providers of JB Healthcare
                               LLC d/b/a Little Star Pediatrics to view and
                               obtain my child’s external prescription history
@@ -985,11 +984,11 @@ const RegistrationForm = () => {
                           </div>
                         </div>
                         <div>
-                          <div >
+                          <div>
                             <h3>Notice of privacy practices</h3>
                           </div>
                           <div>
-                          <p style={{textAlign:"justify"}}>
+                            <p style={{ textAlign: "justify" }}>
                               I certify that I have received a copy of Notice of
                               Privacy Practices. The Notice of Privacy Practices
                               describes the types of uses and disclosures of my
@@ -1018,7 +1017,6 @@ const RegistrationForm = () => {
                               </button>
                             </p>
 
-                       
                             <br />
                           </div>
                           <div className="form-group">

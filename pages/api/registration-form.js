@@ -258,7 +258,7 @@ const submitRegistration = (req, res, next) => {
             to: [
               {
                 email: "khoshow@gmail.com",
-                // email: "contact@petkovtherapy.com",
+              
               },
             ],
             bcc: [
@@ -269,11 +269,11 @@ const submitRegistration = (req, res, next) => {
           },
         ],
         subject:
-          "Petkov Bodywork Therapy new Registration from " + req.body.firstName,
+          "Little Star Pediatrics new Registration from " + req.body.firstName,
         text:
-          "Petkov Bodywork Therapy new Registration from " +
+          "Little Star Pediatrics new Registration from " +
           req.body.firstName +
-          " via petkovtherapy.com.",
+          " via littlestarpeds.com",
         attachments: [
           {
             content: attachment,
