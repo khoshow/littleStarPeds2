@@ -21,11 +21,12 @@ export default function Contact() {
       }).then((response) => {
         if (response.error) {
           console.log(response.error);
+          router.push("/new-registration/unsuccessful");
         } else {
           // setMessage(
           //   "Your message has been sent successfully. Will contact you shortly. Thank you."
           // );
-          router.push("/confirmation");
+          router.push("/new-registration/submit");
           //   showSuccessMessage();
         }
       });

@@ -19,7 +19,7 @@ const submitRegistration = (req, res, next) => {
   const doc = new PDFDocument();
   const filepath = path.join("data", "attachment.pdf");
 
-  console.log("Body", req.body.firstName);
+  // console.log("Body", req.body.firstName);
 
   doc.pipe(fs.createWriteStream(filepath));
   doc.image("public/images/myImages/logo.png", 50, 60, {

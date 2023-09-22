@@ -3,7 +3,7 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 async function QuickQuery(req, res) {
   const body = JSON.parse(req.body);
-  console.log(body);
+  // console.log(body);
 
   // console.log("Quickquery Api", process.env.customKey);
 

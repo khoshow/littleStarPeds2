@@ -36,11 +36,11 @@ const RegistrationForm = () => {
         body: JSON.stringify(formData),
       }).then((response) => {
         if (response.error) {
-          console.log("Hello wrin");
+          // console.log("Hello wrin");
           console.log(response.error);
-          console.log("Hello wrin");
+          // console.log("Hello wrin");
         } else {
-          console.log("Success");
+          // console.log("Success");
 
           router.push("/new-registration/submit");
         }
