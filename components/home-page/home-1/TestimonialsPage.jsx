@@ -4,13 +4,13 @@ import Link from "next/link";
 
 const Testimonial = () => {
   return (
-    <div class="wideContainer">
-      <div class="container" style={{paddingTop:"10vh"}}>
-        <h1 class="text-center" style={{ padding: "2rem", color: "#f9ba32" }}>
+    <div className="wideContainer">
+      <div className="container" style={{paddingTop:"10vh"}}>
+        <h1 className="text-center" style={{ padding: "2rem", color: "#f9ba32" }}>
           TESTIMONIALS
         </h1>
-        <div class="row">
-          <div class="col-12 col-sm-8">
+        <div className="row">
+          <div className="col-12 col-sm-8">
             <div className="firstTesti">
               <p>
                 Love it here, my kids have gone here since they were newborns!
@@ -422,14 +422,14 @@ const Testimonial = () => {
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-4" style={{textAlign: "center"}}>
+          <div className="col-12 col-sm-4" style={{textAlign: "center"}}>
             <img
               src="/images/myImages/ameeta.jpg"
               alt=""
               id="profile1"
               style={{ borderRadius: "50%", marginTop: "2rem", margin:"0 auto" }}
             />
-            <label for="profile1" style={{ color: "#f9ba32" }}>
+            <label htmlFor="profile1" style={{ color: "#f9ba32" }}>
               Ameeta Chowdhary, MSN-FNP-C <br />
               Family Nurse Practitioner located in Avondale, AZ
             </label>
@@ -441,7 +441,7 @@ const Testimonial = () => {
             </p>
             <Link
               href="/contact-us"
-              class="btn btn-primary"
+              className="btn btn-primary"
               role="button"
               aria-pressed="true"
             >

@@ -2,8 +2,8 @@ import Seo from "../components/common/Seo";
 import Head from "next/head";
 import Image from "next/image";
 import BlockContact from "../components/contact/BlockContact";
-import ContactForm from "../components/contact/ContactForm";
-import NewContact from "../components/contact/NewContact";
+
+import ContactForm from "../components/contact/NewContact";
 import Map from "../components/contact/Map";
 import DefaultFooter from "../components/footer/DefaultFooter";
 import DefaulHeader from "../components/header/DefaulHeader";
@@ -11,13 +11,13 @@ import Copyright from "../components/footer/CopyrightFooter2";
 
 const contact = () => {
   const head = () => {
-    const title = "Contact || Alpha 2 Omega Landscaping";
+    const title = "Contact || Little Star Pediatrice";
     const metaDesc =
-      "Transform your outdoor space with our top-rated Landscaping Service in Glendale! Get a free quote today! 🌳🏡✨";
-    const websiteUrl = "https://a2olandscaping.com/";
+      "Contact Page for Little Star Pediatrics✨";
+    const websiteUrl = "https://littlestarpeds.com/";
     const cononicalURL = websiteUrl + "contact";
-    const websiteName = "Alpha 2 Omega Landscaping";
-    const imageUrl = websiteUrl + "worker.png";
+    const websiteName = "Little Star Pediatrics";
+    const imageUrl = websiteUrl + "images/myImages/logo.png";
 
     return (
       <Head>

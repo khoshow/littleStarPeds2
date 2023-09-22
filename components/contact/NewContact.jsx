@@ -15,7 +15,7 @@ export default function Contact() {
     });
 
     if (formData.robot2 == 4) {
-      fetch("/api/contactForm", {
+      fetch("/api/contact-form", {
         method: "post",
         body: JSON.stringify(formData),
       }).then((response) => {
@@ -41,7 +41,7 @@ export default function Contact() {
     if (message) {
       return (
         <div
-          className="col-md-6 jumbotron"
+          className="col-md-12 jumbotron"
           style={{
             paddingTop: "2rem",
             textAlign: "center",
@@ -126,13 +126,13 @@ export default function Contact() {
                 <div className="help-block with-errors" />
               </div>
             </div>
-            <div className="col-6">
+            <div className="col-12">
               <div className="input-group-meta form-group mb-30 mt-30">
-                <label htmlFor="robot2">Prove you are not a robot!</label>
+                <label htmlFor="robot2" style={{color:"white"}}>Prove you are not a robot!</label>
                 <input
                   placeholder="What is 2+2?"
                   id="robot2"
-                  type="number"
+                  type="text"
                   name="robot2"
                   required="required"
                   data-error="Prove you are not a robot."

@@ -11,10 +11,8 @@ async function QuickQuery(req, res) {
        You got a new message via website! (Contact Form) Please contact the person below who is looking for your service. \r\n \r\n
         Name: ${body.name}\r\n
         Email: ${body.email} \r\n
-        Phone:  ${body.phone}\r\n
-    
-        Service:  ${body.service} \r\n
-    
+        Phone:  ${body.phone}\r\n    
+        Service:  ${body.message} \r\n
       `;
   const msg = {
     personalizations: [

@@ -50,6 +50,12 @@ const submitRegistration = (req, res, next) => {
         align: "left",
         height: 40,
       }),
+    
+  );
+  doc.on(
+    "pageAdded",
+    () =>
+      
     doc
       .text("10575 W. Indian School Rd. Suite E-103", { align: "right" })
       .text("Avondale, Arizona 85392 ", { align: "right" })
@@ -251,14 +257,14 @@ const submitRegistration = (req, res, next) => {
       const attachment = fs.readFileSync(pathToAttachment).toString("base64");
 
       const msg = {
-        from: "khoshow.developer@gmail.com",
+        from: "info@littlestarpeds.com",
 
         personalizations: [
           {
             to: [
               {
                 email: "khoshow@gmail.com",
-                // email: "contact@petkovtherapy.com",
+                //email: " info@littlestarpeds.com"
               },
             ],
             bcc: [
@@ -269,11 +275,11 @@ const submitRegistration = (req, res, next) => {
           },
         ],
         subject:
-          "Petkov Bodywork Therapy new Registration from " + req.body.firstName,
+          "Little Star Peds new Registration from " + req.body.firstName,
         text:
-          "Petkov Bodywork Therapy new Registration from " +
+          "Little Star Peds new Registration from " +
           req.body.firstName +
-          " via petkovtherapy.com.",
+          " via littlestarpeds.com.",
         attachments: [
           {
             content: attachment,

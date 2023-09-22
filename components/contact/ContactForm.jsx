@@ -35,6 +35,18 @@ const ContactForm = () => {
               <div className="help-block with-errors" />
             </div>
           </div>
+          <div className="col-12">
+            <div className="input-group-meta form-group mb-50">
+              <input
+                type="number"
+                placeholder="Contact Number*"
+                name="phone"
+                required="required"
+                data-error="Contact Number is required."
+              />
+              <div className="help-block with-errors" />
+            </div>
+          </div>
           {/* End .col-12 */}
 
           <div className="col-12">

@@ -86,7 +86,7 @@ const Hero1 = () => {
         alt="ilustration"
         className="lazy-img illustration-one"
         data-aos="fade-left"
-        layout="intrinsic"
+        fill
       />
       <div className="boom-container">
         <div className="shape circle big white"></div>

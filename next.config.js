@@ -1,13 +1,10 @@
-
-
-
-require('dotenv').config()
+require("dotenv").config();
 //For Production
-// module.exports = {  
+// module.exports = {
 //   reactStrictMode: true,
 //     publicRuntimeConfig: {
 //         emailT: process.env.SENDGRID_API_KEY
-       
+
 //     }
 // }
 
@@ -22,7 +19,9 @@ module.exports = {
     return config;
   },
   publicRuntimeConfig: {
-    emailT: process.env.SENDGRID_API_KEY
-   
-}
+    emailT: process.env.SENDGRID_API_KEY,
+  },
+  images: {
+    domains: ["res.cloudinary.com"],
+  },
 };

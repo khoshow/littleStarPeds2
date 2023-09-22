@@ -15,38 +15,34 @@ today = mm + "/" + dd + "/" + yyyy;
 
 const getPDF = (req, res, next) => {
   const theNumber = req.body.robot;
-  const firstName = req.body.firstName
-  const lastName = req.body.lastName
+  const firstName = req.body.firstName;
+  const lastName = req.body.lastName;
   // console.log(firstName.length);
   // console.log("Number "+ theNumber);
-// console.log("Key", process.env.SENDGRID_API_KEY);
-  if (theNumber !== '3') {
+  // console.log("Key", process.env.SENDGRID_API_KEY);
+  if (theNumber !== "3") {
     res.render("formConfirmation.ejs", {
       pageTitle: "Message Not sent",
-      messageSent: "Message not sent. Sorry! Please try again."
+      messageSent: "Message not sent. Sorry! Please try again.",
     });
-    return
- 
+    return;
   }
 
   if (firstName.length > 20) {
     res.render("formConfirmation.ejs", {
       pageTitle: "Message Not sent",
-      messageSent: "Message not sent. Sorry! Please try again."
+      messageSent: "Message not sent. Sorry! Please try again.",
     });
-    return
- 
+    return;
   }
 
   if (lastName.length > 20) {
     res.render("formConfirmation.ejs", {
       pageTitle: "Message Not sent",
-      messageSent: "Message not sent. Sorry! Please try again."
+      messageSent: "Message not sent. Sorry! Please try again.",
     });
-    return
- 
+    return;
   }
-
 
   const doc = new PDFDocument();
   filepath = path.join("data", "attachment.pdf");
@@ -74,12 +70,21 @@ const getPDF = (req, res, next) => {
     )
     .moveDown(1.2);
   doc.on("pageAdded", () =>
+    doc.image("public/image/Little Star Peds Logo.png", 50, 60, {
+      fit: [150, 150],
+      align: "left",
+      height: 40,
+    })
+  );
+  doc.on("pageAdded", () =>
+  doc.image("public/image/Little Star Peds Logo.png", 50, 60, {
+    fit: [150, 150],
+    align: "left",
+    height: 40,
+  })
+);
+  doc.on("pageAdded", () => {
     doc
-      .image("public/image/Little Star Peds Logo.png", 50, 60, {
-        fit: [150, 150],
-        align: "left",
-        height: 40,
-      })
       .text("10575 W. Indian School Rd. Suite E-103", { align: "right" })
       .text("Avondale, Arizona 85392 ", { align: "right" })
       .text("Phone: (480) 747-0045", { align: "right" })
@@ -89,8 +94,9 @@ const getPDF = (req, res, next) => {
         "_____________________________________________________________________",
         { align: "center" }
       )
-      .moveDown(1.2)
-  );
+      .moveDown(1.2);
+  });
+
   doc.fontSize(20);
   doc.text("Registration Form", { align: "center" }).moveDown(1);
   doc.fontSize(12);
@@ -203,12 +209,11 @@ const getPDF = (req, res, next) => {
 
   doc.moveDown(4);
   doc.text(
-    "Signed and Agreed by:  " +
-      req.body.iSign 
-      // +
-      // "                     " +
-      // "Date:  " +
-      // req.body.signedDate
+    "Signed and Agreed by:  " + req.body.iSign
+    // +
+    // "                     " +
+    // "Date:  " +
+    // req.body.signedDate
   );
 
   doc.moveDown(2);
@@ -232,7 +237,6 @@ const getPDF = (req, res, next) => {
         personalizations: [
           {
             to: [
-              
               {
                 // email: "khoshow@gmail.com"
                 email: "info@littlestarpeds.com",
@@ -241,13 +245,13 @@ const getPDF = (req, res, next) => {
               {
                 email: req.body.email2,
               },
-            ],            
-          cc:[
-            {
-              "email": "adela@littlestarpeds.com"
-              // email:"promo.finerblue@gmail.com",
-            }
-          ],
+            ],
+            cc: [
+              {
+                email: "adela@littlestarpeds.com",
+                // email:"promo.finerblue@gmail.com",
+              },
+            ],
             bcc: [
               {
                 email: "khoshow.official@gmail.com",
