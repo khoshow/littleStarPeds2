@@ -605,7 +605,7 @@ const RegistrationForm = () => {
                               name="pharmacyAddress"
                               id="pharmacyAddress"
                               cols="10"
-                              rows="10"
+                              rows="4"
                               maxLength="40"
                             ></textarea>
                           </div>
