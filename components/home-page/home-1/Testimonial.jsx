@@ -29,41 +29,41 @@ const Testimonial = () => {
   const testimonialData = [
     {
       id: 1,
-      name: "Michelle Hernandez",
-      location: "USA",
+      name: "Lorena R",
+      location: "",
       rating: 5,
       content:
-        "Ameeta is absolutely amazing. She really cares about her patients and will take the extra time to make sure everything is addressed. Gone are the days of never being able to get ahold of a pediatrician and having to schedule appointments weeks out.",
+        "My daughter felt very comfortable on her first visit. She seems very good with kids, she explains everything throughly and most of all listened to my concerns.",
       color: "#B67DFF",
       icon: "/images/icon/icon_42.svg",
     },
     {
       id: 2,
-      name: "Anna M.",
-      location: "USA",
+      name: "Netia",
+      location: "",
       rating: 5,
       content:
-        "We love coming here! As a new mom, I always have so many questions and Ameeta always takes the time to explain everything to me. The staff are friendly, personable and make you feel like family! I would highly recommend this place!",
+        "The best pediatric office! Staff here is so nice and helpful whenever needed. Cancelling and scheduling appointments is easy and convenient and the office is very responsive.",
       color: "#FFBC3A",
       icon: "/images/icon/icon_42.svg",
     },
     {
       id: 3,
-      name: "Hannah Wilmot",
-      location: "USA",
+      name: "Heather G.",
+      location: "",
       rating: 5,
       content:
-        "It’s really hard to find good care in Arizona. When it comes to your baby you really strive to find the best out there. Ameeta is the seriously best Pediatrician! I regret not bringing my daughter here from the beginning.",
+        "We are so happy to have found Nurse Practitioner Ameeta! She is so caring and thorough. It is worth the drive to have her care for my kids.",
       color: "#49E5EF",
       icon: "/images/icon/icon_42.svg",
     },
     {
       id: 4,
-      name: "Netia",
-      location: "USA",
+      name: "Anna M.",
+      location: "",
       rating: 5,
       content:
-        "The best pediatric office! Staff here is so nice and helpful whenever needed. Cancelling and scheduling appointments is easy and convenient and the office is very responsive. My son has been going here for 2 years and any time he was ever sick, FNP Chowdhary was helpful and gave me reassurance. Coming here is a joy.",
+        "We love coming here! As a new mom, I always have so many questions and Ameeta always takes the time to explain everything to me. The staff are friendly, personable and make you feel like family! I would highly recommend this place!",
       color: "#8F6BF6",
       icon: "/images/icon/icon_42.svg",
     },

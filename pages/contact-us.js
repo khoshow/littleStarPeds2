@@ -11,13 +11,13 @@ import Copyright from "../components/footer/CopyrightFooter2";
 
 const contact = () => {
   const head = () => {
-    const title = "Contact || Little Star Pediatrice";
+    const title = "Contact || Little Star Pediatrics";
     const metaDesc =
-      "Contact Page for Little Star Pediatrics✨";
+      "Your child deserves the finest pediatric care - contact us to experience our exceptional services and dedicated team. Connect with us now!✨";
     const websiteUrl = "https://littlestarpeds.com/";
-    const cononicalURL = websiteUrl + "contact";
+    const cononicalURL = websiteUrl + "contact-us";
     const websiteName = "Little Star Pediatrics";
-    const imageUrl = websiteUrl + "images/myImages/logo.png";
+    const imageUrl = websiteUrl + "screening.jpg";
 
     return (
       <Head>

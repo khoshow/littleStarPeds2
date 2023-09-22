@@ -1,18 +1,18 @@
-import Seo from "../../components/common/Seo";
 import Head from "next/head";
 import DefaulHeader from "../../components/header/DefaulHeader";
+import Map from "../../components/contact/Map"
 import DefaultFooter from "../../components/footer/DefaultFooter";
 import Link from "next/link";
 
 const Insurance = () => {
   const head = () => {
-    const title = "Contact || Little Star Pediatrics";
+    const title = "Office Info || Little Star Pediatrics";
     const metaDesc =
-      "Contact Page for Little Star Pediatrics✨";
+      "Little Star Pediatrics, a welcoming space for your child's healthcare needs. Schedule a visit with us now!✨";
     const websiteUrl = "https://littlestarpeds.com/";
-    const cononicalURL = websiteUrl + "contact";
+    const cononicalURL = websiteUrl + "patient-info/office-information";
     const websiteName = "Little Star Pediatrics";
-    const imageUrl = websiteUrl + "images/myImages/asthma.png";
+    const imageUrl = websiteUrl + "images/myImages/ameeta.jpg";
 
     return (
       <Head>
@@ -60,18 +60,7 @@ const Insurance = () => {
           </h1>
           <p>We are located in the retail center south of the Chase Bank.</p>
 
-          <div className="map-area-one mt-40 lg-mt-80 fadeInUp">
-            <div className="box-layout">
-              <div className="mapouter">
-                <div className="gmapCanvas">
-                  <iframe
-                    className="gmap_iframe"
-                    src="https://www.google.com/maps/place/Little+Star+Pediatrics,+10575+W.+Indian+School+Road+%23E-103,+Avondale,+AZ+85392,+United+States/@33.492856,-112.286149,13z/data=!4m6!3m5!1s0x872b41409dff6e87:0x4f42e9113bd9b5f!8m2!3d33.4928558!4d-112.2861491!16s%2Fg%2F11fmvkj8_p?hl=en&gl=IN"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+          <Map />
           <div className="officeHours" style={{ color: "white" }}>
             <div>
               <h2 className="main-title" style={{ color: "white" }}>

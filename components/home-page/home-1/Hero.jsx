@@ -62,7 +62,7 @@ const Hero1 = () => {
             <div>
               <div className="approval-info d-inline-flex align-items-center mt-130 lg-mt-80">
                 <img src="/images/icon/icon_99.svg" alt="" className="me-1" />
-                <span style={{ color: "white" }}>Pediatric Care serving Avondale and Glendale.</span>
+                <span style={{ color: "white" }}>Pediatric Care located in Avondale and Glendale.</span>
               </div>
               <div align-items-center>
 
@@ -81,12 +81,12 @@ const Hero1 = () => {
 
       <Image
         width={487}
-        height={1000}
+        height={450}
         src="/images/myImages/young-mother.png"
         alt="ilustration"
         className="lazy-img illustration-one"
         data-aos="fade-left"
-        fill
+      
       />
       <div className="boom-container">
         <div className="shape circle big white"></div>

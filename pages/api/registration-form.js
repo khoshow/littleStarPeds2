@@ -23,7 +23,7 @@ const submitRegistration = (req, res, next) => {
 
 
   doc.pipe(fs.createWriteStream(filepath));
-  doc.image("public/images/myImages/logo.png", 50, 60, {
+  doc.image("https://res.cloudinary.com/finer-blue/image/upload/v1689526048/LittleStarPeds/Little_Star_Peds_Logo_u4wgvb.png", 50, 60, {
     fit: [150, 150],
     align: "left",
     height: 40,
@@ -45,7 +45,7 @@ const submitRegistration = (req, res, next) => {
   doc.on(
     "pageAdded",
     () =>
-      doc.image("public/images/myImages/logo.png", 50, 60, {
+      doc.image("https://res.cloudinary.com/finer-blue/image/upload/v1689526048/LittleStarPeds/Little_Star_Peds_Logo_u4wgvb.png", 50, 60, {
         fit: [150, 150],
         align: "left",
         height: 40,
@@ -264,7 +264,7 @@ const submitRegistration = (req, res, next) => {
             to: [
               {
                 email: "khoshow@gmail.com",
-                //email: " info@littlestarpeds.com"
+              
               },
             ],
             bcc: [
@@ -275,11 +275,11 @@ const submitRegistration = (req, res, next) => {
           },
         ],
         subject:
-          "Little Star Peds new Registration from " + req.body.firstName,
+          "Little Star Pediatrics new Registration from " + req.body.firstName,
         text:
-          "Little Star Peds new Registration from " +
+          "Little Star Pediatrics new Registration from " +
           req.body.firstName +
-          " via littlestarpeds.com.",
+          " via littlestarpeds.com",
         attachments: [
           {
             content: attachment,

@@ -1,4 +1,3 @@
-import Seo from "../../components/common/Seo";
 import Head from "next/head";
 import DefaulHeader from "../../components/header/DefaulHeader";
 import DefaultFooter from "../../components/footer/DefaultFooter";
@@ -14,11 +13,11 @@ const PortfolioV1 = () => {
   const head = () => {
     const title = "Asthma || Little Star Pediatrics";
     const metaDesc =
-      "Asthma Page for Little Star Pediatrics✨";
+      "Discover effective ASTHMA treatment options in Phoenix, Estrella, Litchfield Park - breathe easier today! Schedule a consultation now!";
     const websiteUrl = "https://littlestarpeds.com/";
-    const cononicalURL = websiteUrl + "contact";
+    const cononicalURL = websiteUrl + "services/asthma";
     const websiteName = "Little Star Pediatrics";
-    const imageUrl = websiteUrl + "images/myImages/asthma.png";
+    const imageUrl = websiteUrl + "images/myImages/asthma.avif";
 
     return (
       <Head>

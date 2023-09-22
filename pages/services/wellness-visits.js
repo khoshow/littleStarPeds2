@@ -1,4 +1,3 @@
-import Seo from "../../components/common/Seo";
 import Head from "next/head";
 import DefaulHeader from "../../components/header/DefaulHeader";
 import DefaultFooter from "../../components/footer/DefaultFooter";
@@ -12,13 +11,13 @@ import ContactBanner from "../../components/home-page/home-1/ContactBanner";
 
 const PortfolioV1 = () => {
   const head = () => {
-    const title = "Contact || Little Star Pediatrice";
+    const title = "Wellness Visits || Little Star Pediatrics";
     const metaDesc =
-      "Contact Page for Little Star Pediatrics✨";
+      "Ensure your child's well-being with comprehensive Wellness Visits in Phoenix & nearby areas. Trust Arizona's best pediatric experts! Schedule today. 🏥";
     const websiteUrl = "https://littlestarpeds.com/";
-    const cononicalURL = websiteUrl + "contact";
+    const cononicalURL = websiteUrl + "services/wellness-visits";
     const websiteName = "Little Star Pediatrics";
-    const imageUrl = websiteUrl + "images/myImages/asthma.png";
+    const imageUrl = websiteUrl + "images/myImages/wellness.avif";
 
     return (
       <Head>
@@ -45,7 +44,7 @@ const PortfolioV1 = () => {
   };
   return (
     <>
-      {head()}
+     {head()}
       {/* <!-- 
       =============================================
       Theme Default Menu
@@ -83,8 +82,8 @@ const PortfolioV1 = () => {
                     highly experienced family nurse
                   </p>
                   <img
-                    src="/images/myImages/baby.png"
-                    alt="baby"
+                    src="/images/myImages/wellness.avif"
+                    alt="media"
                     className="main-img-meta"
                   />
                  

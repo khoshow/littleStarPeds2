@@ -1,4 +1,3 @@
-import Seo from "../../components/common/Seo";
 import Head from "next/head";
 import DefaulHeader from "../../components/header/DefaulHeader";
 import DefaultFooter from "../../components/footer/DefaultFooter";
@@ -6,13 +5,13 @@ import Link from "next/link";
 
 const Insurance = () => {
   const head = () => {
-    const title = "patient Forms || Little Star Pediatrics";
+    const title = "Patient Forms || Little Star Pediatrics";
     const metaDesc =
-      "Contact Page for Little Star Pediatrics✨";
+      "Patient forms || Little Star Pediatrics. Important forms and information for the parents of the children.";
     const websiteUrl = "https://littlestarpeds.com/";
-    const cononicalURL = websiteUrl + "contact";
+    const cononicalURL = websiteUrl + "patient-info/patient-forms";
     const websiteName = "Little Star Pediatrics";
-    const imageUrl = websiteUrl + "images/myImages/asthma.png";
+    const imageUrl = websiteUrl + "images/myImages/wellness-visits.jpg";
 
     return (
       <Head>
@@ -47,17 +46,17 @@ const Insurance = () => {
       --> */}
       <DefaulHeader />
       <div className="fancy-feature-twentyThree mt-35 backgroundGrey">
-        <div class="container" style={{ paddingTop: "10vh" }}>
-          <h1 class="text-center" style={{ padding: "2rem", color: "#f9ba32" }}>
+        <div className="container" style={{ paddingTop: "10vh" }}>
+          <h1 className="text-center" style={{ padding: "2rem", color: "#f9ba32" }}>
             Patient Forms
           </h1>
-          <div class="container">
+          <div className="container">
            
             <div >
               <div>
                 <Link href="/forms/New-Registration">
                   <div
-                    class="btn btn-primary btn-lg first-button "
+                    className="btn btn-primary btn-lg first-button "
                     style={{margin: "3rem 0"}}
                   >
                     Online registration Form

@@ -1,4 +1,3 @@
-import Seo from "../../components/common/Seo";
 import Head from "next/head";
 import DefaulHeader from "../../components/header/DefaulHeader";
 import DefaultFooter from "../../components/footer/DefaultFooter";
@@ -12,13 +11,13 @@ import ContactBanner from "../../components/home-page/home-1/ContactBanner";
 
 const PortfolioV1 = () => {
   const head = () => {
-    const title = "Contact || Little Star Pediatrice";
+    const title = "Preventive Screenings || Little Star Pediatrics";
     const metaDesc =
-      "Contact Page for Little Star Pediatrics✨";
+      "Ensure your child's well-being with essential preventive care screenings in Phoenix. Act now for lifelong health benefits!";
     const websiteUrl = "https://littlestarpeds.com/";
-    const cononicalURL = websiteUrl + "contact";
+    const cononicalURL = websiteUrl + "services/preventive-screenings";
     const websiteName = "Little Star Pediatrics";
-    const imageUrl = websiteUrl + "images/myImages/asthma.png";
+    const imageUrl = websiteUrl + "images/myImages/screening.jpg";
 
     return (
       <Head>
@@ -86,8 +85,8 @@ const PortfolioV1 = () => {
                     about helping your child avoid ill health.
                   </p>
                   <img
-                     src="/images/myImages/AmeetaBoy.jpg"
-                    alt="Nurse Ameeta and a boy patient"
+                    src="/images/myImages/screening.jpg"
+                    alt="screening"
                     className="main-img-meta"
                   />
                 

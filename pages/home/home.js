@@ -22,13 +22,13 @@ import IntroVideo from "../../components/home-page/home-1/IntroVideo";
 
 const Insurance = () => {
   const head = () => {
-    const title = "Little Star Pediatrics";
+    const title = "Home || Little Star Pediatrics";
     const metaDesc =
-      "Experience Accessible & Personal Pediatric Care at Little Star Pediatrics in Avondale - Caring for Your Child from Birth to Age 20. Schedule Today!";
+      "Looking for expert pediatric care in Avondale & Glendale? Trust our experienced team to keep your child healthy & happy. Schedule a visit today!✨";
     const websiteUrl = "https://littlestarpeds.com/";
     const cononicalURL = websiteUrl;
     const websiteName = "Little Star Pediatrics";
-    const imageUrl = websiteUrl + "images/myImages/logo.png";
+    const imageUrl = websiteUrl + "images/myImages/AmeetaBoy.jpg";
 
     return (
       <Head>
@@ -55,7 +55,7 @@ const Insurance = () => {
   };
   return (
     <>
-      {head()}
+     {head()}
       {/* <!-- 
       =============================================
 			Theme Default Menu

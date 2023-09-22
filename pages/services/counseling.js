@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Seo from "../../components/common/Seo";
 import DefaulHeader from "../../components/header/DefaulHeader";
 import DefaultFooter from "../../components/footer/DefaultFooter";
 import ProgressBar from "./service-details/ProgressBar";
@@ -14,11 +13,11 @@ const PortfolioV1 = () => {
   const head = () => {
     const title = "Counselling || Little Star Pediatrics";
     const metaDesc =
-      "Contact Page for Little Star Pediatrics✨";
+      "Expert Pediatric Counselors serving Phoenix, Estrella, Litchfield Park & Avondale communities. Prioritize your child's well-being – schedule today!";
     const websiteUrl = "https://littlestarpeds.com/";
-    const cononicalURL = websiteUrl + "contact";
+    const cononicalURL = websiteUrl + "services/counseling";
     const websiteName = "Little Star Pediatrics";
-    const imageUrl = websiteUrl + "images/myImages/asthma.png";
+    const imageUrl = websiteUrl + "images/myImages/counselling.avif";
 
     return (
       <Head>
@@ -45,7 +44,7 @@ const PortfolioV1 = () => {
   };
   return (
     <>
-      {head()}
+   {head()}
       {/* <!-- 
       =============================================
       Theme Default Menu
@@ -85,8 +84,8 @@ const PortfolioV1 = () => {
                     she can help.
                   </p>
                   <img
-                     src="/images/myImages/pedia.webp"
-                    alt="counselling nurse practitioner"
+                    src="/images/myImages/counselling.avif"
+                    alt="counselling"
                     className="main-img-meta"
                   />
                  

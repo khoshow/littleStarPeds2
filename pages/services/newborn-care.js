@@ -1,4 +1,3 @@
-import Seo from "../../components/common/Seo";
 import Head from "next/head";
 import DefaulHeader from "../../components/header/DefaulHeader";
 import DefaultFooter from "../../components/footer/DefaultFooter";
@@ -12,13 +11,13 @@ import ContactBanner from "../../components/home-page/home-1/ContactBanner";
 
 const PortfolioV1 = () => {
   const head = () => {
-    const title = "Contact || Little Star Pediatrice";
+    const title = "Newborn Care || Little Star Pediatrics";
     const metaDesc =
-      "Contact Page for Little Star Pediatrics✨";
+      "Newborn care specialists in Phoenix, AZ are here to help ease your transition into parenthood! Experience the best care for your little one. Call now! 👨‍👩‍👦";
     const websiteUrl = "https://littlestarpeds.com/";
-    const cononicalURL = websiteUrl + "contact";
+    const cononicalURL = websiteUrl + "services/newborn-care";
     const websiteName = "Little Star Pediatrics";
-    const imageUrl = websiteUrl + "images/myImages/asthma.png";
+    const imageUrl = websiteUrl + "images/myImages/newborn.avif";
 
     return (
       <Head>
@@ -45,7 +44,7 @@ const PortfolioV1 = () => {
   };
   return (
     <>
-      {head()}
+     {head()}
       {/* <!-- 
       =============================================
       Theme Default Menu

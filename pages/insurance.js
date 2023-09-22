@@ -1,4 +1,3 @@
-import Seo from "../components/common/Seo";
 import Head from "next/head";
 import DefaulHeader from "../components/header/DefaulHeader";
 import DefaultFooter from "../components/footer/DefaultFooter";
@@ -8,13 +7,13 @@ import TelemedicineFancyBlock from "../components/home-page/home-1/TelemedicineF
 
 const Insurance = () => {
   const head = () => {
-    const title = "Contact || Little Star Pediatrice";
+    const title = "Asthma || Little Star Pediatrics";
     const metaDesc =
-      "Contact Page for Little Star Pediatrics✨";
+      "Need to know if we accept your health insurance? Check out our comprehensive list & safeguard your health";
     const websiteUrl = "https://littlestarpeds.com/";
-    const cononicalURL = websiteUrl + "contact";
+    const cononicalURL = websiteUrl + "insurance";
     const websiteName = "Little Star Pediatrics";
-    const imageUrl = websiteUrl + "images/myImages/asthma.png";
+    const imageUrl = websiteUrl + "images/myImages/baby-girl.webp";
 
     return (
       <Head>
@@ -41,7 +40,7 @@ const Insurance = () => {
   };
   return (
     <>
-      {head()}
+     {head()}
       {/* <!-- 
       =============================================
       Theme Default Menu
@@ -49,8 +48,8 @@ const Insurance = () => {
       --> */}
       <DefaulHeader />
       <div className="fancy-feature-twentyThree mt-35 backgroundGrey">
-        <div class="container" style={{ paddingTop: "10vh" }}>
-          <h1 class="text-center" style={{ padding: "2rem", color: "#f9ba32" }}>
+        <div className="container" style={{ paddingTop: "10vh" }}>
+          <h1 className="text-center" style={{ padding: "2rem", color: "#f9ba32" }}>
             HEALTH INSURANCE
           </h1>
           <div>

@@ -1,4 +1,3 @@
-import Seo from "../../components/common/Seo";
 import Head from "next/head";
 import DefaulHeader from "../../components/header/DefaulHeader";
 import DefaultFooter from "../../components/footer/DefaultFooter";
@@ -14,11 +13,11 @@ const PortfolioV1 = () => {
   const head = () => {
     const title = "ENT || Little Star Pediatrics";
     const metaDesc =
-      "Contact Page for Little Star Pediatrics✨";
+      "Get the best ENT Care in Avondale, AZ for all the young ones! Improve your quality of life – make an appointment now!";
     const websiteUrl = "https://littlestarpeds.com/";
-    const cononicalURL = websiteUrl + "contact";
+    const cononicalURL = websiteUrl + "services/ent";
     const websiteName = "Little Star Pediatrics";
-    const imageUrl = websiteUrl + "images/myImages/asthma.png";
+    const imageUrl = websiteUrl + "images/myImages/ent.avif";
 
     return (
       <Head>
@@ -85,7 +84,7 @@ const PortfolioV1 = () => {
                     find out more.
                   </p>
                   <img
-                    src="/images/myImages/ent.jpeg"
+                    src="/images/myImages/ent.avif"
                     alt="media"
                     className="main-img-meta"
                   />

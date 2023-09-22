@@ -1,10 +1,7 @@
-import Seo from "../../components/common/Seo";
 import Head from "next/head";
 import DefaulHeader from "../../components/header/DefaulHeader";
 import DefaultFooter from "../../components/footer/DefaultFooter";
-import ProgressBar from "./service-details/ProgressBar";
-import Faq from "../../components/home-page/home-2/Faq";
-import Social from "./service-details/Social";
+
 import Link from "next/link";
 import Servicescategory from "../../components/services/ServiceSide";
 import Service from "../../components/home-page/home-1/Service";
@@ -12,13 +9,13 @@ import ContactBanner from "../../components/home-page/home-1/ContactBanner";
 
 const PortfolioV1 = () => {
   const head = () => {
-    const title = "Contact || Little Star Pediatrice";
+    const title = "Physical Examinations || Little Star Pediatrics";
     const metaDesc =
-      "Contact Page for Little Star Pediatrics✨";
+      "Get top-notch Physical Exams in Avondale & nearby areas! Experienced nurse practitioners, comprehensive tests, and fast results. Book your appointment now!";
     const websiteUrl = "https://littlestarpeds.com/";
-    const cononicalURL = websiteUrl + "contact";
+    const cononicalURL = websiteUrl + "services/physical-examination";
     const websiteName = "Little Star Pediatrics";
-    const imageUrl = websiteUrl + "images/myImages/asthma.png";
+    const imageUrl = websiteUrl + "images/myImages/AmeetaBoy.jpg";
 
     return (
       <Head>
@@ -45,7 +42,7 @@ const PortfolioV1 = () => {
   };
   return (
     <>
-      {head()}
+    {head()}
       {/* <!-- 
       =============================================
       Theme Default Menu
@@ -90,8 +87,8 @@ const PortfolioV1 = () => {
                     to find out how she can help.
                   </p>
                   <img
-                    src="/images/myImages/AmeetaAndGirl.jpg"
-                    alt="Nurse Ameeta and a girl"
+                    src="/images/myImages/AmeetaBoy.jpg"
+                    alt="media"
                     className="main-img-meta"
                   />
                  

@@ -8,13 +8,13 @@ import TelemedicineFancyBlock from "../components/home-page/home-1/TelemedicineF
 
 const PortfolioV1 = () => {
   const head = () => {
-    const title = "Contact || Little Star Pediatrice";
+    const title = "Telemedicine || Little Star Pediatrics";
     const metaDesc =
-      "Contact Page for Little Star Pediatrics✨";
+      "Get expert Pediatric Telemedicine care in Arizona - convenient, accessible, and reliable. Schedule your visit now!";
     const websiteUrl = "https://littlestarpeds.com/";
-    const cononicalURL = websiteUrl + "contact";
+    const cononicalURL = websiteUrl + "services/telemedicine";
     const websiteName = "Little Star Pediatrics";
-    const imageUrl = websiteUrl + "images/myImages/asthma.png";
+    const imageUrl = websiteUrl + "images/myImages/online-assistance.avif";
 
     return (
       <Head>
@@ -41,7 +41,7 @@ const PortfolioV1 = () => {
   };
   return (
     <>
-      {head()}
+      <Seo pageTitle="Service Details" />
       {/* <!-- 
       =============================================
       Theme Default Menu

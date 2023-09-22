@@ -1,4 +1,3 @@
-import Seo from "../components/common/Seo";
 import Head from "next/head";
 import DefaulHeader from "../components/header/DefaulHeader";
 import DefaultFooter from "../components/footer/DefaultFooter";
@@ -8,13 +7,13 @@ import Testimonials from "../components/home-page/home-1/TestimonialsPage"
 
 const PortfolioV1 = () => {
   const head = () => {
-    const title = "Contact || Little Star Pediatrice";
+    const title = "Testimonials || Little Star Pediatrics";
     const metaDesc =
-      "Contact Page for Little Star Pediatrics✨";
+      "Read what our patients and parents have to say about our pediatric care in Arizona! Schedule a consultation today!";
     const websiteUrl = "https://littlestarpeds.com/";
-    const cononicalURL = websiteUrl + "contact";
+    const cononicalURL = websiteUrl + "services/testimonials";
     const websiteName = "Little Star Pediatrics";
-    const imageUrl = websiteUrl + "images/myImages/asthma.png";
+    const imageUrl = websiteUrl + "images/myImages/ameeta.jpg";
 
     return (
       <Head>

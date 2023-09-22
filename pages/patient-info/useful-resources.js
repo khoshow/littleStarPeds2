@@ -1,4 +1,3 @@
-import Seo from "../../components/common/Seo";
 import Head from "next/head";
 import DefaulHeader from "../../components/header/DefaulHeader";
 import DefaultFooter from "../../components/footer/DefaultFooter";
@@ -6,13 +5,13 @@ import Link from "next/link";
 
 const Insurance = () => {
   const head = () => {
-    const title = "Useful Resources || Little Star Pediatrics";
+    const title = "Useful Resources|| Little Star Pediatrics";
     const metaDesc =
-      "Useful Resources for Little Star Pediatrics✨";
+      "Useful resources || Little Star Pediatrics. Important resources and information for the parents and children.";
     const websiteUrl = "https://littlestarpeds.com/";
-    const cononicalURL = websiteUrl + "contact";
+    const cononicalURL = websiteUrl + "patient-info/useful-resources";
     const websiteName = "Little Star Pediatrics";
-    const imageUrl = websiteUrl + "images/myImages/asthma.png";
+    const imageUrl = websiteUrl + "images/myImages/wellness-visits.jpg";
 
     return (
       <Head>
@@ -39,7 +38,7 @@ const Insurance = () => {
   };
   return (
     <>
-      {head()}
+     {head()}
       {/* <!-- 
       =============================================
       Theme Default Menu
@@ -47,9 +46,9 @@ const Insurance = () => {
       --> */}
       <DefaulHeader />
       <div className="backgroundBlue">
-        <div class="container" style={{ paddingTop: "20vh" }}>
-          <h1 class="text-center">USEFUL RESOURCES</h1>
-          <div class="" style={{ paddingTop: "2rem" }}>
+        <div className="container" style={{ paddingTop: "20vh" }}>
+          <h1 className="text-center">USEFUL RESOURCES</h1>
+          <div className="" style={{ paddingTop: "2rem" }}>
             <ul>
               <li>
                 <a href="https://www.azdhs.gov/documents/preparedness/epidemiology-disease-control/immunization/school-childcare/immunizations-preschool.pdf">
@@ -88,18 +87,18 @@ const Insurance = () => {
             </ul>
           </div>
           <br />
-          <div class="card" style={{ width: "18rem" }}>
-            <div class="card-body">
+          <div className="card" style={{ width: "18rem" }}>
+            <div className="card-body">
               <a href="https://www.similacrecall.com/us/en/home.html?utm_campaign=rcl-powder-recall-2022&utm_medium=tag-referral&utm_source=rcl-similac-com&utm_content=rcl-powder-recall-site-banner-click&utm_term=20220217">
                 <img
-                  class="card-img-top"
+                  className="card-img-top"
                   src="/images/myImages/abbott.jpg"
                   alt="Abbott formula Arizona"
                 />{" "}
               </a>
               <a
                 href="https://www.similacrecall.com/us/en/home.html?utm_campaign=rcl-powder-recall-2022&utm_medium=tag-referral&utm_source=rcl-similac-com&utm_content=rcl-powder-recall-site-banner-click&utm_term=20220217"
-                class="card-link" style={{color:"black"}}
+                className="card-link" style={{color:"black"}}
               >
                 Link to Similac Formula recall information for parents
               </a>
