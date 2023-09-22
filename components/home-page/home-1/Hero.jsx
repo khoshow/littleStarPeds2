@@ -25,11 +25,11 @@ const Hero1 = () => {
             data-aos="fade-up"
           >
             <h1 className="hero-heading fw-300 tx-white">
-              Finally, You have a  <span style={{ color: "#483D8B" }}>New Choice</span> for Modern, Innovative Pediatric Care
+              Finally, You have a{" "}
+              <span style={{ color: "#483D8B" }}>New Choice</span> for Modern,
+              Innovative Pediatric Care
             </h1>
-            <p className="text-lg mt-45 mb-50 lg-mt-30 lg-mb-40">
-
-            </p>
+            <p className="text-lg mt-45 mb-50 lg-mt-30 lg-mb-40"></p>
             <div className="">
               <div className="text-center xs-mt-40">
                 <Link
@@ -48,30 +48,38 @@ const Hero1 = () => {
                 </Link>
               </div>
               <div className="text-center xs-mt-40">
-                <Link
-                  href=""
-                  className="btn-red fw-500 tran3s m-2"
-                  data-aos=""
-                >
+                <Link href="" className="btn-red fw-500 tran3s m-2" data-aos="">
                   After Hours Phone
                 </Link>
-
               </div>
             </div>
 
             <div>
               <div className="approval-info d-inline-flex align-items-center mt-130 lg-mt-80">
                 <img src="/images/icon/icon_99.svg" alt="" className="me-1" />
-                <span style={{ color: "white" }}>Pediatric Care located in Avondale and Glendale.</span>
+                <span style={{ color: "white" }}>
+                  Pediatric Care located in Avondale and Glendale.
+                </span>
               </div>
               <div align-items-center>
-
-
-                <a href="https://www.facebook.com/LittleStarPediatrics/"
-                ><Image src="/images/icon/fb.png" alt="" className="me-1 m-2" width={"40"} height={"40"} />
+                <a href="https://www.facebook.com/LittleStarPediatrics/">
+                  <Image
+                    src="/images/icon/fb.png"
+                    alt=""
+                    className="me-1 m-2"
+                    width={"40"}
+                    height={"40"}
+                  />
                 </a>
-                <a href="https://www.instagram.com/little_star_pediatrics/"
-                ><Image src="/images/icon/insta.png" alt="" className="me-1 m-2" width={"40"} height={"40"} /></a>
+                <a href="https://www.instagram.com/little_star_pediatrics/">
+                  <Image
+                    src="/images/icon/insta.png"
+                    alt=""
+                    className="me-1 m-2"
+                    width={"40"}
+                    height={"40"}
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -84,9 +92,8 @@ const Hero1 = () => {
         height={450}
         src="/images/myImages/young-mother.png"
         alt="ilustration"
-        className="lazy-img illustration-one"
+        className="lazy-img illustration-one homeFirstImage"
         data-aos="fade-left"
-      
       />
       <div className="boom-container">
         <div className="shape circle big white"></div>
