@@ -19,11 +19,11 @@ async function QuickQuery(req, res) {
       {
         to: [
           {
-            email: "khoshow@gmail.com",
-            // email: "info@littlestarpeds.com",
+            // email: "khoshow@gmail.com",
+            email: "info@littlestarpeds.com",
           },
         ],
-        // cc: [{ email: "adela@littlestarpeds.com",  }],
+        cc: [{ email: "adela@littlestarpeds.com",  }],
         bcc: [
           {
             email: "khoshow.official@gmail.com",
@@ -31,7 +31,7 @@ async function QuickQuery(req, res) {
         ],
       },
     ],
-    from: "khoshow.developer@gmail.com", // Change to your verified sender
+    from: "info@littlestarpeds.com", // Change to your verified sender
     subject: `Little Star Pediatrics received new contact details from ${body.name} via website.`,
     text: message,
   };

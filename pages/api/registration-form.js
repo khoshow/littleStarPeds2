@@ -21,9 +21,8 @@ const submitRegistration = (req, res, next) => {
 
   console.log("Body", req.body.firstName);
 
-
   doc.pipe(fs.createWriteStream(filepath));
-  doc.image("https://res.cloudinary.com/finer-blue/image/upload/v1689526048/LittleStarPeds/Little_Star_Peds_Logo_u4wgvb.png", 50, 60, {
+  doc.image("public/images/myImages/logo.png", 50, 60, {
     fit: [150, 150],
     align: "left",
     height: 40,
@@ -42,20 +41,14 @@ const submitRegistration = (req, res, next) => {
       { align: "center" }
     )
     .moveDown(1.2);
-  doc.on(
-    "pageAdded",
-    () =>
-      doc.image("https://res.cloudinary.com/finer-blue/image/upload/v1689526048/LittleStarPeds/Little_Star_Peds_Logo_u4wgvb.png", 50, 60, {
-        fit: [150, 150],
-        align: "left",
-        height: 40,
-      }),
-    
+  doc.on("pageAdded", () =>
+    doc.image("public/images/myImages/logo.png", 50, 60, {
+      fit: [150, 150],
+      align: "left",
+      height: 40,
+    })
   );
-  doc.on(
-    "pageAdded",
-    () =>
-      
+  doc.on("pageAdded", () =>
     doc
       .text("10575 W. Indian School Rd. Suite E-103", { align: "right" })
       .text("Avondale, Arizona 85392 ", { align: "right" })
@@ -130,6 +123,9 @@ const submitRegistration = (req, res, next) => {
   doc.text("Generated form received at:  " + req.body.email2);
 
   // Reason for Visit
+  doc.moveDown(1.2);
+  doc.fontSize(12);
+  doc.text("Preferred Clinic Location:  " + req.body.preferredLocation);
 
   doc.moveDown(1.2);
   doc.fontSize(12);
@@ -263,10 +259,11 @@ const submitRegistration = (req, res, next) => {
           {
             to: [
               {
-                email: "khoshow@gmail.com",
-              
+                // email: "khoshow@gmail.com",
+                email: " info@littlestarpeds.com"
               },
             ],
+            cc: [{ email: "adela@littlestarpeds.com",  }],
             bcc: [
               {
                 email: "khoshow.official@gmail.com",
@@ -274,12 +271,11 @@ const submitRegistration = (req, res, next) => {
             ],
           },
         ],
-        subject:
-          "Little Star Pediatrics new Registration from " + req.body.firstName,
+        subject: "Little Star Peds new Registration from " + req.body.firstName,
         text:
-          "Little Star Pediatrics new Registration from " +
+          "Little Star Peds new Registration from " +
           req.body.firstName +
-          " via littlestarpeds.com",
+          " via littlestarpeds.com.",
         attachments: [
           {
             content: attachment,
