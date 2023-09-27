@@ -48,7 +48,11 @@ const Hero1 = () => {
                 </Link>
               </div>
               <div className="text-center xs-mt-40">
-                <Link href="" className="btn-red fw-500 tran3s m-2" data-aos="">
+                <Link
+                  href="/after-hours"
+                  className="btn-red fw-500 tran3s m-2"
+                  data-aos=""
+                >
                   After Hours Phone
                 </Link>
               </div>

@@ -7,7 +7,7 @@ import TelemedicineFancyBlock from "../components/home-page/home-1/TelemedicineF
 
 const Insurance = () => {
   const head = () => {
-    const title = "Asthma || Little Star Pediatrics";
+    const title = "Insurance || Little Star Pediatrics";
     const metaDesc =
       "Need to know if we accept your health insurance? Check out our comprehensive list & safeguard your health";
     const websiteUrl = "https://littlestarpeds.com/";

@@ -13,7 +13,7 @@ const PortfolioV1 = () => {
     const metaDesc =
       "Get top-notch Physical Exams in Avondale & nearby areas! Experienced nurse practitioners, comprehensive tests, and fast results. Book your appointment now!";
     const websiteUrl = "https://littlestarpeds.com/";
-    const cononicalURL = websiteUrl + "services/physical-examination";
+    const cononicalURL = websiteUrl + "services/physical-examinations";
     const websiteName = "Little Star Pediatrics";
     const imageUrl = websiteUrl + "images/myImages/AmeetaBoy.jpg";
 
