@@ -38,7 +38,7 @@ const Servicescategory = () => {
               <Link href="/services/newborn-care">Newborn Care</Link>
             </li>
             <li>
-              <Link href="/services/physical-examinations">Branding</Link>
+              <Link href="/services/physical-examinations">Physical Examinations</Link>
             </li>
             <li>
               <Link href="/services/preventive-screenings">
