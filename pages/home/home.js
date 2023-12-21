@@ -55,7 +55,7 @@ const Insurance = () => {
   };
   return (
     <>
-     {head()}
+      {head()}
       {/* <!-- 
       =============================================
 			Theme Default Menu
@@ -110,11 +110,11 @@ const Insurance = () => {
       </div>
       <div className="newSiteContainer">
         <div className="newSiteBox">
-          <h3 className="newSiteCaption">Little Star Pediatrics </h3>
+          <h3 className="newSiteCaption">Our clinic at Glendale is now </h3>
           <div className="newSiteTitle">
             <span className="newSiteBlock"></span>
             <h2>
-              Now at Glendale<span></span>
+              CLOSED<span></span>
             </h2>
           </div>
 
@@ -122,22 +122,7 @@ const Insurance = () => {
               <div className="newSiteBlock"></div>
               <p>Glendale, AZ</p>
           </div> --> */}
-          <div>
-            <a
-              className="btn btn-outline "
-              target="_blank"
-              style={{
-                marginTop: "2rem",
-                backgroundColor: "#29aae1",
-                color: "white",
-              }}
-              role="button"
-              aria-pressed="true"
-              href="https://goo.gl/maps/7cNWVCSAfHnWQB4q8"
-            >
-              Visit Our New Glendale Pediatric Clinic
-            </a>
-          </div>
+          <div></div>
         </div>
       </div>
 
@@ -183,7 +168,9 @@ const Insurance = () => {
                   className="title-style-one text-center text-lg-start mb-40 md-mb-20 title-style-eight"
                   data-aos="fade-right"
                 >
-                  <h2 className="main-title fw-500 m0 tx-light">Our Services.</h2>
+                  <h2 className="main-title fw-500 m0 tx-light">
+                    Our Services.
+                  </h2>
                 </div>
               </div>
             </div>
@@ -196,7 +183,7 @@ const Insurance = () => {
         {/* /.container */}
       </div>
       {/* <!-- /.fancy-feature-thirtyFour --> */}
-      <div className="title-style-eight " >
+      <div className="title-style-eight ">
         <OfficeHours />
       </div>
 
@@ -211,7 +198,6 @@ const Insurance = () => {
         </div>
         <div className="inner-content">
           <div className="feedback_slider_seven container">
-
             <Testimonial />
           </div>
         </div>
@@ -251,12 +237,22 @@ const Insurance = () => {
                       /> */}
                       <div className="title-style-one">
                         <h2 className="main-title fw-500 tx-dark m0">
-                         Get in touch with us today.
+                          Get in touch with us today.
                         </h2>
                       </div>
-                      
-                      <Link href="/contact-us" className="btn-twentyTwo fw-300 tran3s m-2">Call</Link>
-                      <Link href="/forms/New-Registration" className="btn-red fw-300 tran3s m-2">New Registration</Link>
+
+                      <Link
+                        href="/contact-us"
+                        className="btn-twentyTwo fw-300 tran3s m-2"
+                      >
+                        Call
+                      </Link>
+                      <Link
+                        href="/forms/New-Registration"
+                        className="btn-red fw-300 tran3s m-2"
+                      >
+                        New Registration
+                      </Link>
                     </div>
                   </div>
                   <div className="col-xl-5 col-lg-6 order-lg-first">
@@ -296,7 +292,7 @@ const Insurance = () => {
 				Footer
 			=====================================================
 			*/}
-       <DefaultFooter />
+      <DefaultFooter />
       {/* /.footer-style-ten */}
     </>
   );
