@@ -82,8 +82,11 @@ const Insurance = () => {
             <h5 className="alert-heading" style={{ textAlign: "center" }}>
               UPDATES
             </h5>
-            {/* <p >  <span className="message">New</span>Office is currently closed due to Power and Internet outage and we will reopen tomorrow at normal business hours. </p>
-             */}
+            <p>
+              <span className="message">New</span>We are closed for Monday
+              December 25. Happy Holidays!
+            </p>
+
             {/* <p style={{ color: "#007BFF" }}>
               <span className="message">New</span> In observance of Independence
               Day, clinics will be closed on July 4th & 5th. Happy holiday!
@@ -105,6 +108,21 @@ const Insurance = () => {
               <span className="message">New</span>
               Link to Similac Formula recall information for parents</a
             > */}
+          </div>
+        </div>
+      </div>
+      <div style={{ backgroundColor: "#f00b42", padding: "1rem" }}>
+        <div
+          className="card col-md-4 alert-success"
+          style={{ marginLeft: "auto", marginRight: "auto" }}
+        >
+          <div className="">
+            <img
+              src="/images/myImages/Greet.jpg"
+              alt="shape"
+
+              // style={{ height: "400px", width: "500px" }}
+            />
           </div>
         </div>
       </div>
