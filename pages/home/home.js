@@ -118,7 +118,7 @@ const Insurance = () => {
         >
           <div className="">
             <img
-              src="/images/myImages/Greet.jpg"
+              src="/images/myImages/wishes.jpg"
               alt="shape"
 
               // style={{ height: "400px", width: "500px" }}
