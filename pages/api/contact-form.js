@@ -3,9 +3,7 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 async function QuickQuery(req, res) {
   const body = JSON.parse(req.body);
-  // console.log(body);
 
-  // console.log("Quickquery Api", process.env.customKey);
 
   const message = `
        You got a new message via website! (Contact Form) Please contact the person below who is looking for your service. \r\n \r\n
@@ -14,6 +12,7 @@ async function QuickQuery(req, res) {
         Phone:  ${body.phone}\r\n    
         Service:  ${body.message} \r\n
       `;
+
   const msg = {
     personalizations: [
       {
