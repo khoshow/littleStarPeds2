@@ -40,7 +40,7 @@ const Hero1 = () => {
                   (480) 747-0045
                 </Link>
                 <Link
-                  href="/forms/New-Registration"
+                  href="/forms/new-registration"
                   className="btn-twentyTwo fw-500 tran3s m-2"
                   data-aos=""
                 >

@@ -266,7 +266,7 @@ const Insurance = () => {
                         Call
                       </Link>
                       <Link
-                        href="/forms/New-Registration"
+                        href="/forms/new-registration"
                         className="btn-red fw-300 tran3s m-2"
                       >
                         New Registration
