@@ -21,6 +21,12 @@ export default function Document() {
               height="0" width="0" style="display:none;visibility:hidden"></iframe>`
           }}
         ></noscript>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-WSP1FR31HT"
+        ></script>
+       
+       
       </Head>
       <body>
         <Main />
