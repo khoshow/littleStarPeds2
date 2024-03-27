@@ -613,7 +613,7 @@ const RegistrationForm = () => {
                         <br />
                         <br />
 
-                        <h3>Your preferred clinic location?</h3>
+                        {/* <h3>Your preferred clinic location?</h3>
                         <fieldset className="form-group">
                           <div className="row">
                             <legend className="col-form-label ">
@@ -654,7 +654,7 @@ const RegistrationForm = () => {
                               </div>
                             </div>
                           </div>
-                        </fieldset>
+                        </fieldset> */}
                         <h3>How did you hear about us?</h3>
                         <fieldset className="form-group">
                           <div className="row">
@@ -1053,7 +1053,7 @@ const RegistrationForm = () => {
                             required
                           />
                         </div>
-                        <div className="form-group">
+                        {/* <div className="form-group">
                           <label htmlFor="signedDate">Date</label>
                           <input
                             type="date"
@@ -1061,7 +1061,7 @@ const RegistrationForm = () => {
                             id="signedDate"
                             required
                           />
-                        </div>
+                        </div> */}
                         <div className="form-group">
                           <label htmlFor="exampleFormControlInput1">
                             Email address where the generated form should be

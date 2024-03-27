@@ -123,9 +123,9 @@ const submitRegistration = (req, res, next) => {
   doc.text("Generated form received at:  " + req.body.email2);
 
   // Reason for Visit
-  doc.moveDown(1.2);
-  doc.fontSize(12);
-  doc.text("Preferred Clinic Location:  " + req.body.preferredLocation);
+  // doc.moveDown(1.2);
+  // doc.fontSize(12);
+  // doc.text("Preferred Clinic Location:  " + req.body.preferredLocation);
 
   doc.moveDown(1.2);
   doc.fontSize(12);
