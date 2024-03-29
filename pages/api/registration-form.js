@@ -260,10 +260,10 @@ const submitRegistration = (req, res, next) => {
             to: [
               {
                 // email: "khoshow@gmail.com",
-                email: " info@littlestarpeds.com"
+                email: "info@littlestarpeds.com"
               },
             ],
-            cc: [{ email: "adela@littlestarpeds.com",  }],
+            cc: [{ email: "littlestarpediatrics@gmail.com",  }],
             bcc: [
               {
                 email: "khoshow.official@gmail.com",

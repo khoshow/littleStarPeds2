@@ -22,7 +22,7 @@ async function QuickQuery(req, res) {
             email: "info@littlestarpeds.com",
           },
         ],
-        cc: [{ email: "adela@littlestarpeds.com",  }],
+        cc: [{ email: "littlestarpediatrics@gmail.com",  }],
         bcc: [
           {
             email: "khoshow.official@gmail.com",
