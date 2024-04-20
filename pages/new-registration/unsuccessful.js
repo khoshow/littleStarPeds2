@@ -63,7 +63,7 @@ const Unsuccess = () => {
             <p>If you are not able to send, please report it to us.</p>
           
             <Link
-              href="/forms/new-registration"
+              href="/forms/new-registration-1"
               className="btn-red fw-500 tran3s m-2"
             >
               Registration

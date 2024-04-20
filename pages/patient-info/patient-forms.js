@@ -54,7 +54,7 @@ const Insurance = () => {
            
             <div >
               <div>
-                <Link href="/forms/new-registration">
+                <Link href="/forms/new-registration-1">
                   <div
                     className="btn btn-primary btn-lg first-button "
                     style={{margin: "3rem 0"}}
