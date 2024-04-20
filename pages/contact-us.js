@@ -46,24 +46,11 @@ const contact = () => {
   return (
     <>
       {head()}
-      {/* <!-- 
-      =============================================
-      Theme Default Menu
-      ============================================== 	
-      --> */}
+   
       <DefaulHeader />
 
-      {/* 
-        =============================================
-        Feature Section Fifty One
-        ============================================== 
-        */}
       <div className=" paddingTop20vh">
-        {/* 
-        =============================================
-        Contact Section One
-        ============================================== 
-        */}
+      
         <div className="contact-section-one mt-60 lg-mt-30 ">
           <div className="container">
             <div className="bg-wrapper zn2 position-relative ">
@@ -142,19 +129,15 @@ const contact = () => {
                   </div>
                 </div>
               </div>
-              {/* End .row */}
+           
             </div>
-            {/* /.bg-wrapper */}
+      
           </div>
 
           <Map />
         </div>
       </div>
-      {/* 
-        =============================================
-        Contact Section One
-        ============================================== 
-        */}
+    
       <DefaultFooter />
     </>
   );

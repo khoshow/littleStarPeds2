@@ -73,7 +73,7 @@ const Insurance = () => {
 				Feature Section Thirty Four
 			============================================== 
 			--> */}
-       {/* <div style={{ backgroundColor: "#29aae1", padding: "1rem" }}>
+      {/* <div style={{ backgroundColor: "#29aae1", padding: "1rem" }}>
         <div
           className="card col-md-4 alert-success"
           style={{ marginLeft: "auto", marginRight: "auto" }}
@@ -126,7 +126,7 @@ const Insurance = () => {
           </div>
         </div>
       </div> */}
-      <div className="newSiteContainer">
+      {/* <div className="newSiteContainer">
         <div className="newSiteBox">
           <h3 className="newSiteCaption">Our clinic at Glendale is now </h3>
           <div className="newSiteTitle">
@@ -136,13 +136,13 @@ const Insurance = () => {
             </h2>
           </div>
 
-          {/* <!-- <div classname="newSiteRole">
+         <div classname="newSiteRole">
               <div className="newSiteBlock"></div>
               <p>Glendale, AZ</p>
-          </div> --> */}
+          </div> 
           <div></div>
         </div>
-      </div>
+      </div>  */}
 
       <div className="fancy-feature-twentyThree mt-35 backgroundBlue">
         <FancyBanner />
@@ -282,7 +282,7 @@ const Insurance = () => {
                 </div>
               </div>
             </div>
-            {/* End .row */}
+         
 
             <div className="shapes shape-text fw-500 fs-20 tx-dark text-center">
               Fill the <br />
@@ -299,19 +299,12 @@ const Insurance = () => {
               className="lazy-img shapes shape-two"
             />
           </div>
-          {/* /.bg-wrapper */}
+         
         </div>
       </div>
-      {/* /.fancy-short-banner-thirteen */}
-      {/* =============================================
-		 
-       
-			=====================================================
-				Footer
-			=====================================================
-			*/}
+      
       <DefaultFooter />
-      {/* /.footer-style-ten */}
+     
     </>
   );
 };

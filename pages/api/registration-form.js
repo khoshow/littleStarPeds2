@@ -34,13 +34,13 @@ const submitRegistration = (req, res, next) => {
     .text("Phone: (480) 747-0045", { align: "right" })
     .text("Fax: (480) 454-4115", { align: "right" })
 
-    .moveDown(1.2);
+    .moveDown(.8);
   doc
     .text(
       "_____________________________________________________________________",
       { align: "center" }
     )
-    .moveDown(1.2);
+    .moveDown(.8);
   doc.on("pageAdded", () =>
     doc.image("public/images/myImages/logo.png", 50, 60, {
       fit: [150, 150],
@@ -54,15 +54,15 @@ const submitRegistration = (req, res, next) => {
       .text("Avondale, Arizona 85392 ", { align: "right" })
       .text("Phone: (480) 747-0045", { align: "right" })
       .text("Fax: (480) 454-4115", { align: "right" })
-      .moveDown(1.2)
+      .moveDown(.8)
       .text(
         "_____________________________________________________________________",
         { align: "center" }
       )
-      .moveDown(1.2)
+      .moveDown(.8)
   );
   doc.fontSize(20);
-  doc.text("Registration Form", { align: "center" }).moveDown(1);
+  doc.text("Registration Form", { align: "center" }).moveDown(.8);
   doc.fontSize(12);
   doc.text(
     "Date:  " +
@@ -72,10 +72,10 @@ const submitRegistration = (req, res, next) => {
       req.body.comeToKnow
   );
   // doc.text("Referred By:  " + req.body.referredBy, { align: "right" });
-  doc.moveDown(1.2);
+  doc.moveDown(.8);
   doc.text("PATIENT INFORMATION", { align: "center", underline: true });
   doc.fontSize(12);
-  doc.moveDown(1.2);
+  doc.moveDown(.8);
   // if (typeof req.body.middleName === "undefined") {
   //   req.body.middleName = " ";
   //   var x = req.body.middleName;
@@ -85,7 +85,7 @@ const submitRegistration = (req, res, next) => {
   // }
 
   doc.text("Name:" + " " + req.body.firstName + " " + req.body.lastName);
-  doc.moveDown(1.2);
+  doc.moveDown(.8);
   doc.text(
     "Birth Date:  " +
       req.body.patientDOB +
@@ -97,7 +97,7 @@ const submitRegistration = (req, res, next) => {
       "Sex:  " +
       req.body.patientSex
   );
-  doc.moveDown(1.2);
+  doc.moveDown(.8);
   // doc.text("Age:  " + req.body.patientAge)
   // doc.text("Sex:  :" + " " + req.body.patientSex)
   doc.text("Address:  " + req.body.inputAddress + req.body.inputAddress2);
@@ -109,7 +109,7 @@ const submitRegistration = (req, res, next) => {
       "," +
       req.body.inputZip
   );
-  doc.moveDown(1.2);
+  doc.moveDown(.8);
   doc.text(
     "Primary Phone No.:  " +
       req.body.phone1 +
@@ -117,17 +117,17 @@ const submitRegistration = (req, res, next) => {
       "Emergency Contact No. " +
       req.body.phone2
   );
-  doc.moveDown(1.2);
+  doc.moveDown(.8);
   doc.text("Guardian email address:  " + req.body.email);
-  doc.moveDown(1.2);
+  doc.moveDown(.8);
   doc.text("Generated form received at:  " + req.body.email2);
 
   // Reason for Visit
-  // doc.moveDown(1.2);
+  // doc.moveDown(.8);
   // doc.fontSize(12);
   // doc.text("Preferred Clinic Location:  " + req.body.preferredLocation);
 
-  doc.moveDown(1.2);
+  doc.moveDown(.8);
   doc.fontSize(12);
   doc.text("REASON FOR VISIT:  " + req.body.visitPurpose);
 
@@ -139,31 +139,31 @@ const submitRegistration = (req, res, next) => {
   doc.text("(Please give your insurance card(s)and ID to the receptionist.)", {
     align: "center",
   });
-  doc.moveDown(1.2);
+  doc.moveDown(.8);
   doc.text("Insurance Name:  " + req.body.insuranceName);
-  doc.moveDown(1.2);
+  doc.moveDown(.8);
   doc.text("Insurance ID No.  " + req.body.insuranceID);
-  doc.moveDown(1.2);
+  doc.moveDown(.8);
   doc.text("Group No.:  " + req.body.groupNo);
-  doc.moveDown(1.2);
+  doc.moveDown(.8);
   doc.text("Subscriber's Name:  " + req.body.subscriberName);
-  doc.moveDown(1.2);
+  doc.moveDown(.8);
   doc.text("Subscriber's DOB:  " + req.body.subscriberDob);
-  doc.moveDown(1.2);
+  doc.moveDown(.8);
   doc.text(
     "Patient Relationship to subscriber:  " + req.body.subscriberRelation
   );
 
-  doc.moveDown(4);
+  doc.moveDown(2);
   doc.text("PHARMACY INFORMATION", { align: "center", underline: "true" });
-  doc.moveDown(1.2);
+  doc.moveDown(.8);
   doc.text("Pharmacy Name:  " + req.body.pharmacyName);
-  doc.moveDown(1.2);
+  doc.moveDown(.8);
   doc.text("Pharmacy Address.:  " + req.body.pharmacyAddress);
 
-  doc.moveDown(3);
+  doc.moveDown(2);
   doc.text("EMERGENCY CONTACT", { align: "center", underline: "true" });
-  doc.moveDown(1.2);
+  doc.moveDown(.8);
   doc.text(
     "Name:  " +
       req.body.authorizedPerson1 +
@@ -171,7 +171,7 @@ const submitRegistration = (req, res, next) => {
       "Relationship to patient:  " +
       req.body.authorizedRelationship
   );
-  doc.moveDown(1.2);
+  doc.moveDown(.8);
   doc.text("Phone No.:  " + req.body.authorizedPhone1);
 
   doc.moveDown(4);
@@ -185,7 +185,7 @@ const submitRegistration = (req, res, next) => {
 
   doc.moveDown(2);
 
-  doc.moveDown(10);
+  doc.moveDown(8);
   doc.text(
     "Life, love, and laughter, what priceless gifts to give our children.",
     { align: "center" }
@@ -258,21 +258,11 @@ const submitRegistration = (req, res, next) => {
         personalizations: [
           {
             to: [
-              {
-                // email: "khoshow@gmail.com",
-                email: "info@littlestarpeds.com",
-              },
-              {
-                // email: "khoshow@gmail.com",
-                email: req.body.email2,
-              },
+              { email: process.env.emailSendTo },
+              { email: req.body.email2 },
             ],
-            cc: [{ email: "littlestarpediatrics@gmail.com" }],
-            bcc: [
-              {
-                email: "khoshow.official@gmail.com",
-              },
-            ],
+            cc: [{ email: process.env.emailSendToCC }],
+            bcc: [{ email: process.env.emailSendToBCC }],
           },
         ],
         subject: "Little Star Peds new Registration from " + req.body.firstName,
@@ -286,7 +276,7 @@ const submitRegistration = (req, res, next) => {
             filename: "attachment.pdf",
             type: "application/pdf",
             disposition: "attachment",
-          },
+          }, 
         ],
       };
 

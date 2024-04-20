@@ -64,7 +64,7 @@ const LogIn = () => {
             <h3 className="tx-dark mb-25 lg-mb-10">
               We will contact you shortly
             </h3>
-            <Link href="/forms/New-Registration" className="btn-red fw-500 tran3s m-2">Registration</Link>
+            <Link href="/forms/new-registration" className="btn-red fw-500 tran3s m-2">Registration</Link>
             <Link  href="/" className="btn-red fw-500 tran3s m-2">Home</Link>
           </div>
         </div>
