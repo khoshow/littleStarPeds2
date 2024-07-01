@@ -73,7 +73,7 @@ const Insurance = () => {
 				Feature Section Thirty Four
 			============================================== 
 			--> */}
-      {/* <div style={{ backgroundColor: "#29aae1", padding: "1rem" }}>
+      <div style={{ backgroundColor: "#29aae1", padding: "1rem" }}>
         <div
           className="card col-md-4 alert-success"
           style={{ marginLeft: "auto", marginRight: "auto" }}
@@ -82,16 +82,16 @@ const Insurance = () => {
            <h5 className="alert-heading" style={{ textAlign: "center" }}>
               UPDATES
             </h5>
-            <p>
+            {/* <p>
               <span className="message">New</span>We are closed for Monday
               December 25. Happy Holidays!
-            </p>
+            </p> */}
 
             <p style={{ color: "#007BFF" }}>
               <span className="message">New</span> In observance of Independence
               Day, clinics will be closed on July 4th & 5th. Happy holiday!
             </p> 
-          <p style={{ color: "#007BFF" }}><span className="message">New</span> In observance of the Labor Day Holiday, clinic will remain closed on 5th September, Monday. </p>
+          {/* <p style={{ color: "#007BFF" }}><span className="message">New</span> In observance of the Labor Day Holiday, clinic will remain closed on 5th September, Monday. </p>
             <a className="card-link" href="./files/Covid 19.pdf">Updates on Covid-19</a
             ><br /><br />
             <a
@@ -107,10 +107,10 @@ const Insurance = () => {
             >
               <span className="message">New</span>
               Link to Similac Formula recall information for parents</a
-            > 
+            >  */}
           </div>
         </div>
-      </div>  */}
+      </div> 
       {/* <div style={{ backgroundColor: "#f00b42", padding: "1rem" }}>
         <div
           className="card col-md-4 alert-success"
