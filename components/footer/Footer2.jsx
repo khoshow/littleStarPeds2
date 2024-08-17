@@ -18,7 +18,7 @@ const columns = [
     links: [
       { label: "Asthma", url: "/services/asthma" },
       { label: "Cold & Flu", url: "/services/cold-and-flu" },
-      { label: "Counseling", url: "/services/counseling" },
+      { label: "Counselling", url: "/services/counselling" },
       { label: "ENT", url: "/services/ent" },
       { label: "Newborn Care", url: "/services/newborn-care" },
       { label: "Physical Examinations", url: "/services/physical-examinations" },

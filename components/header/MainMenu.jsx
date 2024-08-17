@@ -146,8 +146,8 @@ const MainMenu = () => {
               </li>
 
               <li >
-                <Link href="/services/counseling" className="dropdown-item">
-                  <span>Counseling</span>
+                <Link href="/services/counselling" className="dropdown-item">
+                  <span>Counselling</span>
                 </Link>
               </li>
               <li >
