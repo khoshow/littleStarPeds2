@@ -82,7 +82,7 @@ const Insurance = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="../files/Financial Policy.pdf">Financial Policy</a>
+                    <a href="../files/Financial%20Policy.pdf">Financial Policy</a>
                   </li>
                   <li>
                     <a href="../files/Fax Cover Sheet.pdf">Fax Cover Sheet</a>
