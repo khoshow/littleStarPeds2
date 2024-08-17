@@ -33,8 +33,8 @@ const columns = [
       { label: "Resources", url: "/patient-info/useful-resources" },
       { label: "Insurance", url: "/insurance" },
       { label: "Financial Policy", url: "/files/financial-policy.pdf" },
-      { label: "Patient Privacy", url: "/files/Notice of Private Practices.pdf" },
-      { label: "Covid Policy", url: "/files/Covid 19.pdf" },
+      { label: "Patient Privacy", url: "/files/notice-of-private-practices.pdf" },
+      { label: "Covid Policy", url: "/files/covid-19.pdf" },
     ],
   },
 ];

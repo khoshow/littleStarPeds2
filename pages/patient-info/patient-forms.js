@@ -93,7 +93,7 @@ const Insurance = () => {
                 <h4>Patient Privacy</h4>
                 <ul>
                   <li>
-                    <a href="../files/Notice of Private Practices.pdf" style={{color:"white"}} target="_blank">
+                    <a href="../files/notice-of-private-practices.pdf" style={{color:"white"}} target="_blank">
                       Notice of Privacy Practices
                     </a>
                   </li>
