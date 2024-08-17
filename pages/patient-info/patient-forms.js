@@ -82,7 +82,7 @@ const Insurance = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="../files/Financial%20Policy.pdf" target="_blank">Financial Policy</a>
+                    <a href="../files/financial-policy.pdf" target="_blank">Financial Policy</a>
                   </li>
                   <li>
                     <a href="../files/Fax%20Cover%20Sheet.pdf" target="_blank">Fax Cover Sheet</a>
@@ -93,7 +93,7 @@ const Insurance = () => {
                 <h4>Patient Privacy</h4>
                 <ul>
                   <li>
-                    <a href="../files/Notice%20of%20Private%20Practices.pdf" style={{color:"white"}} target="_blank">
+                    <a href="../files/Notice of Private Practices.pdf" style={{color:"white"}} target="_blank">
                       Notice of Privacy Practices
                     </a>
                   </li>
