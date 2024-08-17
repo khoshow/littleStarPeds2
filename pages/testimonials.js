@@ -11,7 +11,7 @@ const PortfolioV1 = () => {
     const metaDesc =
       "Read what our patients and parents have to say about our pediatric care in Arizona! Schedule a consultation today!";
     const websiteUrl = "https://littlestarpeds.com/";
-    const cononicalURL = websiteUrl + "services/testimonials";
+    const cononicalURL = websiteUrl + "testimonials";
     const websiteName = "Little Star Pediatrics";
     const imageUrl = websiteUrl + "images/myImages/ameeta.jpg";
 
