@@ -32,9 +32,9 @@ const columns = [
       { label: "Office Info", url: "/patient-info/office-information" },
       { label: "Resources", url: "/patient-info/useful-resources" },
       { label: "Insurance", url: "/insurance" },
-      { label: "Financial Policy", url: "/files/FInancial Policy.pdf" },
-      { label: "Patient Privacy", url: "/files/notice of Private Practices.pdf" },
-      { label: "Covid Policy", url: "/files/Covid.pdf" },
+      { label: "Financial Policy", url: "/files/financialPolicy1.pdf" },
+      { label: "Patient Privacy", url: "/files/Notice of Private Practices.pdf" },
+      { label: "Covid Policy", url: "/files/Covid 19.pdf" },
     ],
   },
 ];
@@ -48,7 +48,7 @@ const Footer2 = () => {
           <ul className="footer-nav-link style-none">
             {column.links.map((link, index) => (
               <li key={index}>
-                <a href={link.url} style={{color:"white"}}>{link.label}</a>
+                <a href={link.url} style={{color:"white"}} target="_blank">{link.label}</a>
               </li>
             ))}
           </ul>
