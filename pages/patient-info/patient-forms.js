@@ -72,20 +72,20 @@ const Insurance = () => {
                 </h4>
                 <ul style={{color: "white"}}>
                   <li>
-                    <a href="../files/New Patient Welcome Letter.pdf" target="_blank">
+                    <a href="../files/New%20Patient%20Welcome%20Letter.pdf" target="_blank">
                       New Patient Welcome Letter
                     </a>
                   </li>
                   <li>
-                    <a href="../files/New Patient Reg Form.pdf" target="_blank">
+                    <a href="../files/New%20Patient%20Reg%20Form.pdf" target="_blank">
                       New Patient Registration Form
                     </a>
                   </li>
                   <li>
-                    <a href="../files/financialPolicy1.pdf" target="_blank">Financial Policy</a>
+                    <a href="../files/Financial%20Policy.pdf" target="_blank">Financial Policy</a>
                   </li>
                   <li>
-                    <a href="../files/Fax Cover Sheet.pdf" target="_blank">Fax Cover Sheet</a>
+                    <a href="../files/Fax%20Cover%20Sheet.pdf" target="_blank">Fax Cover Sheet</a>
                   </li>
                 </ul>
               </div>
@@ -93,7 +93,7 @@ const Insurance = () => {
                 <h4>Patient Privacy</h4>
                 <ul>
                   <li>
-                    <a href="../files/Notice of Private Practices.pdf" style={{color:"white"}} target="_blank">
+                    <a href="../files/Notice%20of%20Private%20Practices.pdf" style={{color:"white"}} target="_blank">
                       Notice of Privacy Practices
                     </a>
                   </li>
@@ -107,7 +107,7 @@ const Insurance = () => {
                 </p>
                 <ul>
                   <li>
-                    <a href="../files/Release and Authorization.pdf" style={{color:"white"}} target="_blank">
+                    <a href="../files/Release%20and%20Authorization.pdf" style={{color:"white"}} target="_blank">
                       Release and Authorization of PHI
                     </a>
                   </li>
