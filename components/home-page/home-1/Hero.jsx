@@ -62,7 +62,7 @@ const Hero1 = () => {
               <div className="approval-info d-inline-flex align-items-center mt-130 lg-mt-80">
                 <img src="/images/icon/icon_99.svg" alt="" className="me-1" />
                 <span style={{ color: "white" }}>
-                  Pediatric Care located in Avondale and Glendale.
+                  Pediatric Care located in Avondale.
                 </span>
               </div>
               <div align-items-center>

@@ -46,11 +46,12 @@ const MainMenu = () => {
               Home
             </Link>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <Link className="nav-link" href="/telemedicine" role="button">
               Telemedicine
             </Link>
-          </li>
+          </li> */}
+        
 
 
           <li className="nav-item dropdown">
@@ -177,6 +178,11 @@ const MainMenu = () => {
 
 
             </ul>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" href="/forms/new-registration-1" role="button">
+              Registration
+            </Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" href="/testimonials" role="button">
