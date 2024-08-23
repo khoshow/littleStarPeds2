@@ -8,8 +8,6 @@ async function QuickQuery(req, res) {
     const ccEmail = process.env.emailSendToCC;
     const bccEmail = process.env.emailSendToBCC;
 
-
-
     const message = `
        You got a new message via website! (Contact Form) Please contact the person below who is looking for your service. \r\n \r\n
         Name: ${body.name}\r\n
@@ -21,7 +19,7 @@ async function QuickQuery(req, res) {
     const msg = {
       personalizations: [
         {
-          to: [{ email: toEmail }],
+          to: [{ email: toEmail }, { email: process.env.emailSendTo2 }],
           cc: [{ email: ccEmail }],
           bcc: [{ email: bccEmail }],
         },

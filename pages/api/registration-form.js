@@ -259,6 +259,7 @@ const submitRegistration = (req, res, next) => {
           {
             to: [
               { email: process.env.emailSendTo },
+              { email: process.env.emailSendTo2 },
               { email: req.body.email2 },
             ],
             cc: [{ email: process.env.emailSendToCC }],
