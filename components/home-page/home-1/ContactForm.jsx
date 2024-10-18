@@ -5,67 +5,62 @@ const ContactForm = () => {
   const router = useRouter();
   const [route, setRoute] = useState();
   const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
 
   async function handleSubmit(e) {
     e.preventDefault();
     const formData = {};
-
+    setLoading(true);
     Array.from(e.currentTarget.elements).forEach((field) => {
       if (!field.name) return;
       formData[field.name] = field.value;
     });
-  
+
     if (formData.robot2 == 4) {
-      fetch("/api/contact-form", {
-        method: "post",
+      setLoading(true); // Start loading before the fetch request
+      fetch("/api/contact-form-nodemailer", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json", // Ensure the content type is set to JSON
+        },
         body: JSON.stringify(formData),
-      }).then((response) => {
-        if (response.error) {
-          console.log("Hello wrin");
-          console.log(response.error);
-          console.log("Hello wrin");
-        } else {
-          router.push("/new-registration/submit");
-        }
-      });
+      })
+        .then((response) => {
+          // Check if the response is okay (status 200-299)
+          if (!response.ok) {
+            console.log("Error with response:", response);
+            return response.json().then((errorData) => {
+              console.log("Error:", errorData);
+              setMessage(
+                "There was an error sending your message. Please try again."
+              );
+
+              setLoading(false); // Stop loading after error handling
+            });
+          }
+          // Parse the JSON response if the response is OK
+          return response.json();
+        })
+        .then((data) => {
+          if (data && data.message) {
+            setMessage(data.message); // Set the message from the response
+          } else {
+            setMessage("Unexpected response format. Please try again.");
+          }
+          setLoading(false); // Stop loading after success
+        })
+        .catch((error) => {
+          console.log("Fetch error:", error);
+          setMessage("There was a network error. Please try again later.");
+
+          setLoading(false); // Stop loading after network error
+        });
     } else {
-      setMessage("You seems to be a robot. Please try again");
-      showSuccessMessage();
-      // router.push('/confirmation')
+      setMessage("You seem to be a robot. Or solve the sum to send.");
+
+      setLoading(false); // Stop loading if the robot check fails
     }
   }
-
-  const showSuccessMessage = () => {
-    if (message) {
-      return (
-        <div
-          className="col-md-6 jumbotron"
-          style={{
-            padding: "2rem 0",
-            textAlign: "center",
-          }}
-        >
-          <p
-            style={{
-              position: "relative",
-              display: "block",
-              alignItems: "center",
-              backgroundColor: "red",
-              height: "100px",
-              width: "100%",
-              padding: "1rem",
-              color: "white",
-              float: "left",
-            }}
-          >
-            {message}
-          </p>
-        </div>
-
-        // alert("Hello! I am an alert box!!");
-      );
-    } else return "";
-  };
 
   return (
     <form onSubmit={handleSubmit}>
@@ -120,6 +115,41 @@ const ContactForm = () => {
           >
             SEND MESSAGE
           </button>
+          {loading ? (
+            <div class="spinner-border text-primary" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+          ) : (
+            ""
+          )}
+          {message ? (
+            <div
+              className="col-md-6 jumbotron"
+              style={{
+                padding: "2rem 0",
+                textAlign: "center",
+                margin: "auto auto",
+              }}
+            >
+              <p
+                style={{
+                  position: "relative",
+
+                  alignItems: "center",
+                  backgroundColor: "red",
+                  height: "100px",
+
+                  padding: "1rem",
+                  color: "white",
+                  float: "left",
+                }}
+              >
+                {message}
+              </p>
+            </div>
+          ) : (
+            ""
+          )}
         </div>
         {/* End .col-12 */}
       </div>

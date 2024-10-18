@@ -4,10 +4,12 @@ export default function Contact() {
   const router = useRouter();
   const [route, setRoute] = useState();
   const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
 
   async function handleOnSubmit(e) {
     e.preventDefault();
     const formData = {};
+    setLoading(true);
     // console.log("fier: "+e.currentTarget.elements.robot[4])
     Array.from(e.currentTarget.elements).forEach((field) => {
       if (!field.name) return;
@@ -15,26 +17,49 @@ export default function Contact() {
     });
 
     if (formData.robot2 == 4) {
-      fetch("/api/contact-form", {
-        method: "post",
+      setLoading(true); // Start loading before the fetch request
+      fetch("/api/contact-form-nodemailer", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json", // Ensure the content type is set to JSON
+        },
         body: JSON.stringify(formData),
-      }).then((response) => {
-        if (response.error) {
-          console.log(response.error);
-          router.push("/new-registration/unsuccessful");
-        } else {
-          // setMessage(
-          //   "Your message has been sent successfully. Will contact you shortly. Thank you."
-          // );
-          router.push("/new-registration/submit");
-          //   showSuccessMessage();
-        }
-      });
+      })
+        .then((response) => {
+          // Check if the response is okay (status 200-299)
+          if (!response.ok) {
+            console.log("Error with response:", response);
+            return response.json().then((errorData) => {
+              console.log("Error:", errorData);
+              setMessage(
+                "There was an error sending your message. Please try again."
+              );
+              showSuccessMessage();
+              setLoading(false); // Stop loading after error handling
+            });
+          }
+          // Parse the JSON response if the response is OK
+          return response.json();
+        })
+        .then((data) => {
+          if (data && data.message) {
+            setMessage(data.message); // Set the message from the response
+            showSuccessMessage(); // Call function to show success message
+          } else {
+            setMessage("Unexpected response format. Please try again.");
+          }
+          setLoading(false); // Stop loading after success
+        })
+        .catch((error) => {
+          console.log("Fetch error:", error);
+          setMessage("There was a network error. Please try again later.");
+          showSuccessMessage();
+          setLoading(false); // Stop loading after network error
+        });
     } else {
-      setMessage("You seems to be a robot. Or solve the sum to send.");
-
+      setMessage("You seem to be a robot. Or solve the sum to send.");
       showSuccessMessage();
-      // Router.push('/confirmation')
+      setLoading(false); // Stop loading if the robot check fails
     }
   }
 
@@ -129,7 +154,9 @@ export default function Contact() {
             </div>
             <div className="col-12">
               <div className="input-group-meta form-group mb-30 mt-30">
-                <label htmlFor="robot2" style={{color:"white"}}>Prove you are not a robot!</label>
+                <label htmlFor="robot2" style={{ color: "white" }}>
+                  Prove you are not a robot!
+                </label>
                 <input
                   placeholder="What is 2+2?"
                   id="robot2"
@@ -147,6 +174,13 @@ export default function Contact() {
               <button className="btn-twentyOne fw-500 tran3s d-block">
                 Send Message
               </button>
+              {loading ? (
+                <div class="spinner-border text-primary" role="status">
+                  <span class="sr-only">Loading...</span>
+                </div>
+              ) : (
+                ""
+              )}
               <div> {showSuccessMessage()}</div>
             </div>
           </div>
