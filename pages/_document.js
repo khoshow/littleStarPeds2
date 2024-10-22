@@ -10,16 +10,44 @@ export default function Document() {
           src="https://kit.fontawesome.com/4af13880de.js"
           crossOrigin="anonymous"
         ></Script>
-        <noscript
-          dangerouslySetInnerHTML={{
-            __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=G-WSP1FR31HT"
-              height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
-          }}
-        ></noscript>
-        <script
+        {/* Google Analytics gtag.js */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-697801085"
+          strategy="afterInteractive"
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-WSP1FR31HT"
-        ></script>
+        />
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-697801085');
+            `,
+          }}
+        />
+        <Script
+          id="gtag-contact-conversion"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              function gtag_report_conversion(url) {
+                var callback = function () {
+                  if (typeof(url) != 'undefined') {
+                    window.location = url;
+                  }
+                };
+                gtag('event', 'conversion', {
+                  'send_to': 'AW-697801085/TlJtCJzzsOAZEP2y3swC',
+                  'event_callback': callback
+                });
+                return false;
+              }
+            `,
+          }}
+        />
       </Head>
       <body>
         <Main />

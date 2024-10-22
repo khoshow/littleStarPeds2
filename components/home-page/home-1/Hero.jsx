@@ -16,6 +16,16 @@ const Hero1 = () => {
     // handle form submission
   };
 
+  const handlePhoneClick = (event) => {
+    event.preventDefault(); // Prevents the default phone link action initially
+    gtag_report_conversion("tel:(480) 747-0045"); // Replace with your actual phone number
+
+    // After triggering the conversion event, allow the link action
+    setTimeout(() => {
+      window.location.href = "tel:(480) 747-0045";
+    }, 300); // Small delay to ensure conversion is tracked before the redirect
+  };
+
   return (
     <div className="hero-banner-ten position-relative zn2">
       <div className="container">
@@ -36,6 +46,7 @@ const Hero1 = () => {
                   href="tel:(480) 747-0045"
                   className="btn-twentyTwo fw-500 tran3s m-2"
                   data-aos=""
+                  onClick={handlePhoneClick}
                 >
                   (480) 747-0045
                 </Link>

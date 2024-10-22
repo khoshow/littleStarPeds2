@@ -15,8 +15,19 @@ import { useRouter } from "next/router";
 
 const MainMenu = () => {
   const router = useRouter();
+
+  const handlePhoneClick = (event) => {
+    event.preventDefault(); // Prevents the default phone link action initially
+    gtag_report_conversion("tel:(480) 747-0045"); // Replace with your actual phone number
+
+    // After triggering the conversion event, allow the link action
+    setTimeout(() => {
+      window.location.href = "tel:(480) 747-0045";
+    }, 300); // Small delay to ensure conversion is tracked before the redirect
+  };
+
   return (
-    <nav className="navbar navbar-expand-lg order-lg-2" >
+    <nav className="navbar navbar-expand-lg order-lg-2">
       <button
         className="navbar-toggler d-block d-lg-none"
         type="button"
@@ -51,8 +62,6 @@ const MainMenu = () => {
               Telemedicine
             </Link>
           </li> */}
-        
-
 
           <li className="nav-item dropdown">
             <a
@@ -66,8 +75,7 @@ const MainMenu = () => {
               About
             </a>
             <ul className="dropdown-menu">
-
-              <li >
+              <li>
                 <Link href="/about/about-us" className="dropdown-item">
                   <span>Little Star Pediatrics, Avondale</span>
                 </Link>
@@ -77,12 +85,14 @@ const MainMenu = () => {
                   <span>Little Star Pediatrics, Glendale</span>
                 </Link>
               </li> */}
-              <li >
-                <Link href="/about/nurse-practitioners" className="dropdown-item">
+              <li>
+                <Link
+                  href="/about/nurse-practitioners"
+                  className="dropdown-item"
+                >
                   <span>What are nurse practitioners?</span>
                 </Link>
               </li>
-
             </ul>
           </li>
           <li className="nav-item dropdown">
@@ -97,23 +107,30 @@ const MainMenu = () => {
               Patient Info
             </a>
             <ul className="dropdown-menu">
-
-              <li >
-                <Link href="/patient-info/patient-forms" className="dropdown-item">
+              <li>
+                <Link
+                  href="/patient-info/patient-forms"
+                  className="dropdown-item"
+                >
                   <span>Patient Forms</span>
                 </Link>
               </li>
-              <li >
-                <Link href="/patient-info/office-information" className="dropdown-item">
+              <li>
+                <Link
+                  href="/patient-info/office-information"
+                  className="dropdown-item"
+                >
                   <span>Useful Information</span>
                 </Link>
               </li>
-              <li >
-                <Link href="/patient-info/useful-resources" className="dropdown-item">
+              <li>
+                <Link
+                  href="/patient-info/useful-resources"
+                  className="dropdown-item"
+                >
                   <span>Useful Resources</span>
                 </Link>
               </li>
-
             </ul>
           </li>
           <li className="nav-item">
@@ -133,54 +150,64 @@ const MainMenu = () => {
               Treatments
             </a>
             <ul className="dropdown-menu">
-
-              <li >
+              <li>
                 <Link href="/services/asthma" className="dropdown-item">
                   <span>Asthma</span>
                 </Link>
               </li>
-              <li >
+              <li>
                 <Link href="/services/cold-and-flu" className="dropdown-item">
                   <span>Cold & Flu</span>
                 </Link>
               </li>
 
-              <li >
+              <li>
                 <Link href="/services/counselling" className="dropdown-item">
                   <span>Counselling</span>
                 </Link>
               </li>
-              <li >
+              <li>
                 <Link href="/services/ent" className="dropdown-item">
                   <span>ENT</span>
                 </Link>
               </li>
-              <li >
+              <li>
                 <Link href="/services/newborn-care" className="dropdown-item">
                   <span>Newborn Care</span>
                 </Link>
               </li>
-              <li >
-                <Link href="/services/physical-examinations" className="dropdown-item">
+              <li>
+                <Link
+                  href="/services/physical-examinations"
+                  className="dropdown-item"
+                >
                   <span>Physical Examinations</span>
                 </Link>
               </li>
-              <li >
-                <Link href="/services/preventive-screenings" className="dropdown-item">
+              <li>
+                <Link
+                  href="/services/preventive-screenings"
+                  className="dropdown-item"
+                >
                   <span>Preventive Screenings</span>
                 </Link>
               </li>
-              <li >
-                <Link href="/services/wellness-visits" className="dropdown-item">
+              <li>
+                <Link
+                  href="/services/wellness-visits"
+                  className="dropdown-item"
+                >
                   <span>Wellness Visit</span>
                 </Link>
               </li>
-
-
             </ul>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" href="/forms/new-registration-1" role="button">
+            <Link
+              className="nav-link"
+              href="/forms/new-registration-1"
+              role="button"
+            >
               Registration
             </Link>
           </li>
@@ -195,13 +222,16 @@ const MainMenu = () => {
             </Link>
           </li>
           <li className="nav-item">
-            <Link className=" btn-twentyOne fw-500 tran3s d-none d-lg-block" href="tel:(480) 747-0045" role="button">
+            <Link
+              className=" btn-twentyOne fw-500 tran3s d-none d-lg-block"
+              href="tel:(480) 747-0045"
+              role="button"
+              onClick={handlePhoneClick}
+            >
               Call Us
             </Link>
           </li>
-
         </ul>
-       
 
         {/* Mobile Content */}
         <div className="mobile-content d-block d-lg-none">

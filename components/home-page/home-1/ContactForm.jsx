@@ -61,7 +61,6 @@ const ContactForm = () => {
       setLoading(false); // Stop loading if the robot check fails
     }
   }
-
   return (
     <form onSubmit={handleSubmit}>
       <div className="messages" />

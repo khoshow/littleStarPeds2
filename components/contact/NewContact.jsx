@@ -8,6 +8,7 @@ export default function Contact() {
 
   async function handleOnSubmit(e) {
     e.preventDefault();
+    gtag_report_conversion(); // Call the conversion function
     const formData = {};
     setLoading(true);
     // console.log("fier: "+e.currentTarget.elements.robot[4])
