@@ -73,21 +73,22 @@ const Insurance = () => {
 				Feature Section Thirty Four
 			============================================== 
 			--> */}
-      {/* <div style={{ backgroundColor: "#29aae1", padding: "1rem" }}>
+      <div style={{ backgroundColor: "#29aae1", padding: "1rem" }}>
         <div
           className="card col-md-4 alert-success"
           style={{ marginLeft: "auto", marginRight: "auto" }}
         >
           <div className="card-body">
-           <h5 className="alert-heading" style={{ textAlign: "center" }}>
+            <h5 className="alert-heading" style={{ textAlign: "center" }}>
               UPDATES
             </h5>
             <p>
-              <span className="message">New</span>We are closed for Monday
-              December 25. Happy Holidays!
+              <span className="message">New</span>Little Star Pediatrics will
+              operate for a half day on Wednesday and remain closed on Thursday
+              and Friday in observance of the Thanksgiving holiday.
             </p>
 
-            <p style={{ color: "#007BFF" }}>
+            {/* <p style={{ color: "#007BFF" }}>
               <span className="message">New</span> In observance of Independence
               Day, clinics will be closed on July 4th & 5th. Happy holiday!
             </p> 
@@ -107,10 +108,10 @@ const Insurance = () => {
             >
               <span className="message">New</span>
               Link to Similac Formula recall information for parents</a
-            > 
+            >  */}
           </div>
         </div>
-      </div>  */}
+      </div>
       {/* <div style={{ backgroundColor: "#f00b42", padding: "1rem" }}>
         <div
           className="card col-md-4 alert-success"
@@ -282,7 +283,6 @@ const Insurance = () => {
                 </div>
               </div>
             </div>
-         
 
             <div className="shapes shape-text fw-500 fs-20 tx-dark text-center">
               Fill the <br />
@@ -299,12 +299,10 @@ const Insurance = () => {
               className="lazy-img shapes shape-two"
             />
           </div>
-         
         </div>
       </div>
-      
+
       <DefaultFooter />
-     
     </>
   );
 };
