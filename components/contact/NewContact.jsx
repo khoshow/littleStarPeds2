@@ -11,15 +11,13 @@ export default function Contact() {
     gtag_report_conversion(); // Call the conversion function
     const formData = {};
     setLoading(true);
-    // console.log("fier: "+e.currentTarget.elements.robot[4])
     Array.from(e.currentTarget.elements).forEach((field) => {
       if (!field.name) return;
       formData[field.name] = field.value;
     });
-
     if (formData.robot2 == 4) {
       setLoading(true); // Start loading before the fetch request
-      fetch("/api/contact-form-nodemailer", {
+      fetch("/api/contact-form-zoho", {
         method: "POST",
         headers: {
           "Content-Type": "application/json", // Ensure the content type is set to JSON

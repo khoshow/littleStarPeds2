@@ -19,7 +19,8 @@ import FancyBlock from "../../components/home-page/home-1/FancyBlock";
 import FancyBanner from "../../components/home-page/home-1/FancyBanner";
 import OfficeHours from "../../components/home-page/home-1/OfficeHours";
 import IntroVideo from "../../components/home-page/home-1/IntroVideo";
-
+import QuickQueryForm from "../../components/forms/QuickQuery";
+import Contact from "../../components/contact/NewContact";
 const Insurance = () => {
   const head = () => {
     const title = "Home || Little Star Pediatrics";
@@ -140,6 +141,7 @@ const Insurance = () => {
           <div></div>
         </div>
       </div>  */}
+      {/* <QuickQueryForm /> */}
 
       <div className="fancy-feature-twentyThree mt-35 backgroundBlue">
         <FancyBanner />

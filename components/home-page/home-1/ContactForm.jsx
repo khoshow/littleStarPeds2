@@ -18,7 +18,7 @@ const ContactForm = () => {
 
     if (formData.robot2 == 4) {
       setLoading(true); // Start loading before the fetch request
-      fetch("/api/contact-form-nodemailer", {
+      fetch("/api/contact-form-zoho", {
         method: "POST",
         headers: {
           "Content-Type": "application/json", // Ensure the content type is set to JSON

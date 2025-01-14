@@ -29,7 +29,7 @@ const RegistrationForm = () => {
 
     if (formData.robot == 3) {
       setLoading(true); // Start loading before the fetch request
-      fetch("/api/registration-form-nodemailer", {
+      fetch("/api/registration-form-zoho", {
         method: "POST",
         headers: {
           "Content-Type": "application/json", // Ensure the content type is set to JSON

@@ -2,6 +2,7 @@ const nodemailer = require("nodemailer");
 const path = require("path");
 const PDFDocument = require("pdfkit");
 const fs = require("fs");
+import { SendMailClient } from "zeptomail";
 
 var today = new Date();
 var dd = String(today.getDate()).padStart(2, "0");
@@ -16,12 +17,11 @@ const submitRegistration = (req, res) => {
   }
 
   const filepath = path.join(dataDir, "attachment.pdf");
-  const fileContent = fs.readFileSync(filepath, { encoding: "base64" }); // Read and encode to Base64
-
-  const doc = new PDFDocument();
 
   // Pipe to write the PDF file
   const pdfStream = fs.createWriteStream(filepath);
+  const fileContent = fs.readFileSync(filepath, { encoding: "base64" }); // Read and encode to Base64
+  const doc = new PDFDocument();
   doc.pipe(pdfStream);
 
   // Generate the PDF content
@@ -197,53 +197,81 @@ const submitRegistration = (req, res) => {
 
   // Wait for PDF stream to finish writing
   pdfStream.on("finish", () => {
-    // Nodemailer configuration
-    const transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-        user: "khoshow.developer@gmail.com", // Replace with your Gmail address
-        pass: "ejnj nywc bbbp norg", // Replace with your Gmail app password
-      },
-    });
+    try {
+      const body = req.body;
+      const url = process.env.ZEPTO_URL;
+      const token = process.env.ZEPTO_API_KEY;
 
-    // Define email options
-    const mailOptions = {
-      from: "khoshow.developer@gmail.com",
-      to: process.env.SEND_TO_EMAIL,
-      bcc: process.env.SEND_TO_EMAIL_BCC,
-      subject: "Little Star Peds new Registration from ",
-      text:
-        "Little Star Peds new Registration from " +
-        req.body.firstName +
-        " via littlestarpeds.com.",
-      attachments: [
-        {
-          filename: "attachment.pdf", // Name of the PDF attachment
-          path: filepath, // Path to the PDF file
-        },
-      ],
-    };
+      let client = new SendMailClient({ url, token });
+      client
+        .sendMail({
+          from: {
+            address: "info@littlestarpeds.com", //Valid domain required
+            name: "Little Star Pediatrics",
+          },
+          to: [
+            {
+              email_address: {
+                address: process.env.SEND_TO_EMAIL,
+                //   address: "khoshow.developer@gmail.com",
+                name: "Contact",
+              },
+            },
+            {
+              email_address: {
+                address: process.env.SEND_TO_EMAIL2,
+                name: "Office",
+              },
+            },
+          ],
+          bcc: [
+            {
+              email_address: {
+                address: "khoshow.official@gmail.com",
+                name: "Khoshow",
+              },
+            },
+          ],
+          reply_to: {
+            address: "info@littlestarpeds.com",
+            name: "Little Star Pediatrics",
+          },
+          subject: `Registration form from ${body.firstName} via website`,
+          htmlbody: `
+          <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; background: #f9f9f9; border: 1px solid #ddd; border-radius: 8px;">
+            <p style="text-align: center; color: #808080;">New Registration form from ${body.firstName} via website</p>
+          </div>
+        `,
+          attachments: [
+            {
+              name: "registration-form-lsp.pdf", // The name of the file
+              mime_type: "application/pdf", // The MIME type of the file
+              content: fileContent,
+            },
+          ],
+        })
+        .then((response) => {
+          res
+            .status(200)
+            .json({ success: true, message: "Email sent successfully" });
+        })
+        .catch((error) => {
+          console.error("Error sending email:", error);
 
-    // Send email with PDF attachment
-    transporter.sendMail(mailOptions, (error, info) => {
-      if (error) {
-        console.error("Error sending email:", error);
-        return res.status(500).json({ message: "Error sending email" });
-      }
-
-      res
-        .status(200)
-        .json({ message: "Email sent successfully with PDF attachment" });
-
-      // Optionally, delete the generated PDF after sending the email
-      fs.unlink(filepath, (err) => {
-        if (err) {
-          console.error("Error deleting PDF:", err);
-        } else {
-          console.log("PDF deleted successfully");
-        }
+          res.status(500).json({
+            success: false,
+            message: "Failed to send email",
+            error: error.message,
+          });
+        });
+    } catch (error) {
+      console.error("Error processing request:", error);
+      res.status(500).json({
+        success: false,
+        message: "Internal server error",
+        error: error.message,
       });
-    });
+    }
   });
 
   // Handle errors in PDF generation
