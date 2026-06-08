@@ -25,6 +25,7 @@ import QuickQueryForm from "../../components/forms/QuickQuery";
 import Contact from "../../components/contact/NewContact";
 const Insurance = () => {
   const [showNotice, setShowNotice] = useState(true);
+  const [expanded, setExpanded] = useState(false);
   const head = () => {
     const title = "Home || Little Star Pediatrics";
     const metaDesc =
@@ -331,13 +332,14 @@ const Insurance = () => {
             style={{
               background: "#fff",
               borderRadius: "12px",
-              maxWidth: "600px",
+              maxWidth: "520px",
               width: "100%",
+              maxHeight: "85vh",
               display: "flex",
               flexDirection: "column",
-              maxHeight: "85vh",
             }}
           >
+            {/* Header */}
             <div
               style={{
                 padding: "16px 20px 12px",
@@ -367,15 +369,6 @@ const Insurance = () => {
                   <h2 style={{ fontSize: "17px", fontWeight: 500, margin: 0 }}>
                     A message from Ameeta Chowdhary, MSN, APRN, FNP-C
                   </h2>
-                  {/* <p
-                    style={{
-                      fontSize: "12px",
-                      color: "#666",
-                      margin: "4px 0 0",
-                    }}
-                  >
-                    Effective May 4th, 2026
-                  </p> */}
                 </div>
                 <button
                   onClick={handleClose}
@@ -392,6 +385,7 @@ const Insurance = () => {
               </div>
             </div>
 
+            {/* Body */}
             <div
               style={{
                 overflowY: "auto",
@@ -407,59 +401,97 @@ const Insurance = () => {
                 I want to personally share an important update regarding our
                 practice effective date May 4th, 2026. Little Star Pediatrics
                 will be entering into a partnership with Moon Valley Pediatrics
-                led by Dr. Kamaljeet "Kam" Sachdeva. This decision comes from my
+                led by Dr. Kamaljeet “Kam” Sachdeva. This decision comes from my
                 desire to spend more time focusing on my family and continue to
                 be your child&apos;s primary care provider without
                 business/administrative responsibilities. This transition has
                 been made very thoughtfully keeping your families and continuity
                 of care at the center of every decision.
               </p>
-              <p>
-                Dr. Sachdeva is a board-certified pediatrician with over 30
-                years of experience caring for children both internationally and
-                here in the United States. He completed his pediatric residency
-                at Texas Tech University and has been serving families in the
-                Phoenix community for many years. He is widely known for being
-                approachable, compassionate, and highly experienced, with a
-                strong ability to connect with both children and parents.
-                Families often appreciate his thoughtful approach, clear
-                communication, and dedication to patient-centered care.
-              </p>
-              <p>
-                As I looked for the right partner for Little Star Pediatrics, it
-                was very important to me to find someone who shares the same
-                philosophy of care that I have always prioritized here at Little
-                Star Pediatrics. I carefully chose Moon Valley Pediatrics
-                because I truly believe they share the same values-
-                compassionate, personalized, and high-quality care for every
-                child. Dr. Sachdeva and I share a commitment to building
-                long-term relationships with families, providing personalized
-                and compassionate pediatric care, and partnering closely with
-                parents at every stage of a child&apos;s growth. You will continue
-                seeing me as your child&apos;s primary care provider, and you will
-                now also have access to Dr. Sachdeva and his team as an extended
-                support system. Together, we will ensure continuity,
-                accessibility, and excellent care for your children.
-              </p>
-              <p>
-                We will be working closely together as I am confident that this
-                partnership will allow us to continue providing the same
-                high-quality care you have come to expect while also
-                strengthening our ability to serve you even better. I also
-                assure you there will be no interruption in patient care and
-                making appointments for your child during this transition. My
-                commitment to you and your children remains exactly the same. I
-                am grateful for the trust you place in me, and I will keep
-                providing care to your families. If you have any questions,
-                please do not hesitate to reach out.
-              </p>
-              <p>
-                With gratitude,
-                <br />
-                <strong>Ameeta Chowdhary, MSN, APRN, FNP-C</strong>
-              </p>
+
+              {!expanded ? (
+                <button
+                  onClick={() => setExpanded(true)}
+                  style={{
+                    background: "none",
+                    border: "none",
+                    color: "#185FA5",
+                    fontSize: "14px",
+                    fontWeight: 500,
+                    cursor: "pointer",
+                    padding: 0,
+                    marginTop: "4px",
+                  }}
+                >
+                  Read more ↓
+                </button>
+              ) : (
+                <>
+                  <p>
+                    Dr. Sachdeva is a board-certified pediatrician with over 30
+                    years of experience caring for children both internationally
+                    and here in the United States. He completed his pediatric
+                    residency at Texas Tech University and has been serving
+                    families in the Phoenix community for many years. He is
+                    widely known for being approachable, compassionate, and
+                    highly experienced, with a strong ability to connect with
+                    both children and parents. Families often appreciate his
+                    thoughtful approach, clear communication, and dedication to
+                    patient-centered care.
+                  </p>
+                  <p>
+                    As I looked for the right partner for Little Star
+                    Pediatrics, it was very important to me to find someone who
+                    shares the same philosophy of care that I have always
+                    prioritized here at Little Star Pediatrics. I carefully
+                    chose Moon Valley Pediatrics because I truly believe they
+                    share the same values- compassionate, personalized, and
+                    high-quality care for every child. Dr. Sachdeva and I share
+                    a commitment to building long-term relationships with
+                    families, providing personalized and compassionate pediatric
+                    care, and partnering closely with parents at every stage of
+                    a child&apos;s growth. You will continue seeing me as your
+                    child&apos;s primary care provider, and you will now also
+                    have access to Dr. Sachdeva and his team as an extended
+                    support system. Together, we will ensure continuity,
+                    accessibility, and excellent care for your children.
+                  </p>
+                  <p>
+                    We will be working closely together as I am confident that
+                    this partnership will allow us to continue providing the
+                    same high-quality care you have come to expect while also
+                    strengthening our ability to serve you even better. I also
+                    assure you there will be no interruption in patient care and
+                    making appointments for your child during this transition.
+                    My commitment to you and your children remains exactly the
+                    same. I am grateful for the trust you place in me, and I
+                    will keep providing care to your families. If you have any
+                    questions, please do not hesitate to reach out.
+                  </p>
+                  <p>
+                    With gratitude,
+                    <br />
+                    <strong>Ameeta Chowdhary, MSN, APRN, FNP-C</strong>
+                  </p>
+                  <button
+                    onClick={() => setExpanded(false)}
+                    style={{
+                      background: "none",
+                      border: "none",
+                      color: "#185FA5",
+                      fontSize: "14px",
+                      fontWeight: 500,
+                      cursor: "pointer",
+                      padding: 0,
+                    }}
+                  >
+                    Show less ↑
+                  </button>
+                </>
+              )}
             </div>
 
+            {/* Footer */}
             <div
               style={{
                 padding: "12px 20px",
