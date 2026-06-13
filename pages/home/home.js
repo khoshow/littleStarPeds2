@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 import Link from "next/link";
+
 import Head from "next/head";
 import Seo from "../../components/common/Seo";
 import Footer from "../../components/footer/Footer";
@@ -351,25 +352,25 @@ const Insurance = () => {
                 style={{
                   display: "flex",
                   justifyContent: "space-between",
-                  alignItems: "flex-start",
+                  alignItems: "center",
                 }}
               >
-                <div>
-                  <p
-                    style={{
-                      fontSize: "11px",
-                      fontWeight: 500,
-                      color: "#185FA5",
-                      letterSpacing: "0.06em",
-                      margin: "0 0 4px",
-                    }}
-                  >
-                    IMPORTANT NOTICE
-                  </p>
-                  <h2 style={{ fontSize: "17px", fontWeight: 500, margin: 0 }}>
-                    A message from Ameeta Chowdhary, MSN, APRN, FNP-C
-                  </h2>
-                </div>
+                <p
+                  style={{
+                    display: "inline-block",
+                    padding: "10px 10px",
+                    background: "#E8F1FB",
+                    color: "#185FA5",
+                    borderRadius: "999px",
+                    fontSize: "11px",
+                    fontWeight: 600,
+                    letterSpacing: ".08em",
+                    margin: 0,
+                    lineHeight: 1,
+                  }}
+                >
+                  IMPORTANT NOTICE
+                </p>
                 <button
                   onClick={handleClose}
                   style={{
@@ -396,99 +397,14 @@ const Insurance = () => {
                 color: "#444",
               }}
             >
-              <p>Dear Little Star Pediatrics Families,</p>
               <p>
-                I want to personally share an important update regarding our
-                practice effective date May 4th, 2026. Little Star Pediatrics
-                will be entering into a partnership with Moon Valley Pediatrics
-                led by Dr. Kamaljeet “Kam” Sachdeva. This decision comes from my
-                desire to spend more time focusing on my family and continue to
-                be your child&apos;s primary care provider without
-                business/administrative responsibilities. This transition has
-                been made very thoughtfully keeping your families and continuity
-                of care at the center of every decision.
+                Little Star Pediatrics have exciting news to share. Little Star
+                Pediatrics has partnered with Moon Valley Pediatrics and we want
+                to reassure all families that Nurse Practitioner Ameeta
+                Chowdhary will continue to care for your children as their
+                primary care provider. Click below to read more about this
+                transition.
               </p>
-
-              {!expanded ? (
-                <button
-                  onClick={() => setExpanded(true)}
-                  style={{
-                    background: "none",
-                    border: "none",
-                    color: "#185FA5",
-                    fontSize: "14px",
-                    fontWeight: 500,
-                    cursor: "pointer",
-                    padding: 0,
-                    marginTop: "4px",
-                  }}
-                >
-                  Read more ↓
-                </button>
-              ) : (
-                <>
-                  <p>
-                    Dr. Sachdeva is a board-certified pediatrician with over 30
-                    years of experience caring for children both internationally
-                    and here in the United States. He completed his pediatric
-                    residency at Texas Tech University and has been serving
-                    families in the Phoenix community for many years. He is
-                    widely known for being approachable, compassionate, and
-                    highly experienced, with a strong ability to connect with
-                    both children and parents. Families often appreciate his
-                    thoughtful approach, clear communication, and dedication to
-                    patient-centered care.
-                  </p>
-                  <p>
-                    As I looked for the right partner for Little Star
-                    Pediatrics, it was very important to me to find someone who
-                    shares the same philosophy of care that I have always
-                    prioritized here at Little Star Pediatrics. I carefully
-                    chose Moon Valley Pediatrics because I truly believe they
-                    share the same values- compassionate, personalized, and
-                    high-quality care for every child. Dr. Sachdeva and I share
-                    a commitment to building long-term relationships with
-                    families, providing personalized and compassionate pediatric
-                    care, and partnering closely with parents at every stage of
-                    a child&apos;s growth. You will continue seeing me as your
-                    child&apos;s primary care provider, and you will now also
-                    have access to Dr. Sachdeva and his team as an extended
-                    support system. Together, we will ensure continuity,
-                    accessibility, and excellent care for your children.
-                  </p>
-                  <p>
-                    We will be working closely together as I am confident that
-                    this partnership will allow us to continue providing the
-                    same high-quality care you have come to expect while also
-                    strengthening our ability to serve you even better. I also
-                    assure you there will be no interruption in patient care and
-                    making appointments for your child during this transition.
-                    My commitment to you and your children remains exactly the
-                    same. I am grateful for the trust you place in me, and I
-                    will keep providing care to your families. If you have any
-                    questions, please do not hesitate to reach out.
-                  </p>
-                  <p>
-                    With gratitude,
-                    <br />
-                    <strong>Ameeta Chowdhary, MSN, APRN, FNP-C</strong>
-                  </p>
-                  <button
-                    onClick={() => setExpanded(false)}
-                    style={{
-                      background: "none",
-                      border: "none",
-                      color: "#185FA5",
-                      fontSize: "14px",
-                      fontWeight: 500,
-                      cursor: "pointer",
-                      padding: 0,
-                    }}
-                  >
-                    Show less ↑
-                  </button>
-                </>
-              )}
             </div>
 
             {/* Footer */}
@@ -501,21 +417,20 @@ const Insurance = () => {
                 justifyContent: "flex-end",
               }}
             >
-              <button
-                onClick={handleClose}
+              <Link
+                href="/notice/partnership-notice"
                 style={{
-                  padding: "8px 20px",
-                  fontSize: "13px",
-                  fontWeight: 500,
-                  borderRadius: "8px",
-                  border: "none",
-                  background: "#185FA5",
+                  background: "#f00b42",
                   color: "#fff",
-                  cursor: "pointer",
+                  textDecoration: "none",
+                  padding: "12px 22px",
+                  borderRadius: "10px",
+                  fontSize: "14px",
+                  fontWeight: 600,
                 }}
               >
-                I understand
-              </button>
+                Read more
+              </Link>
             </div>
           </div>
         </div>
