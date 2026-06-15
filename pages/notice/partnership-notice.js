@@ -44,64 +44,48 @@ export default function NoticePage() {
       <main className={styles.wrapper}>
         <div className={styles.card}>
           <p className={styles.label}>IMPORTANT NOTICE</p>
-          <h2 className={styles.heading}>
-            A message from Ameeta Chowdhary, MSN, APRN, FNP-C
-          </h2>
+          <h2 className={styles.heading}>A message from Ameeta Chowdhary</h2>
 
           <div className={styles.content}>
             <p>Dear Little Star Pediatrics Families,</p>
 
             <p>
-              I want to personally share an important update regarding our
-              practice effective date May 4th, 2026. Little Star Pediatrics will
-              be entering into a partnership with Moon Valley Pediatrics led by
-              Dr. Kamaljeet &ldquo;Kam&rdquo; Sachdeva. This decision comes from
-              my desire to spend more time focusing on my family and continue to
-              be your child&apos;s primary care provider without
-              business/administrative responsibilities. This transition has been
-              made very thoughtfully keeping your families and continuity of
-              care at the center of every decision.
+              I would like to share an important update regarding our practice.
+              Effective May 4, 2026, Little Star Pediatrics entered into a
+              partnership with Moon Valley Pediatrics.
             </p>
 
             <p>
-              Dr. Sachdeva is a board-certified pediatrician with over 30 years
-              of experience caring for children both internationally and here in
-              the United States. He completed his pediatric residency at Texas
-              Tech University and has been serving families in the Phoenix
-              community for many years. He is widely known for being
-              approachable, compassionate, and highly experienced, with a strong
-              ability to connect with both children and parents. Families often
-              appreciate his thoughtful approach, clear communication, and
-              dedication to patient-centered care.
+              As part of this transition, Dr. Kamaljeet “Kam” Sachdeva, a
+              board-certified pediatrician, has joined our practice leadership
+              team. Together, we will continue working to support the healthcare
+              needs of our patients and families.
             </p>
 
             <p>
-              As I looked for the right partner for Little Star Pediatrics, it
-              was very important to me to find someone who shares the same
-              philosophy of care that I have always prioritized here at Little
-              Star Pediatrics. I carefully chose Moon Valley Pediatrics because
-              I truly believe they share the same values &mdash; compassionate,
-              personalized, and high-quality care for every child. Dr. Sachdeva
-              and I share a commitment to building long-term relationships with
-              families, providing personalized and compassionate pediatric care,
-              and partnering closely with parents at every stage of a
-              child&apos;s growth. You will continue seeing me as your
-              child&apos;s primary care provider, and you will now also have
-              access to Dr. Sachdeva and his team as an extended support system.
-              Together, we will ensure continuity, accessibility, and excellent
-              care for your children.
+              This decision was made to allow me to focus more on patient care
+              and my family while reducing the administrative responsibilities
+              associated with operating an independent practice. My priority
+              throughout this process has been ensuring continuity of care for
+              the families who have trusted Little Star Pediatrics with their
+              children’s healthcare.
             </p>
 
             <p>
-              We will be working closely together as I am confident that this
-              partnership will allow us to continue providing the same
-              high-quality care you have come to expect while also strengthening
-              our ability to serve you even better. I also assure you there will
-              be no interruption in patient care and making appointments for
-              your child during this transition. My commitment to you and your
-              children remains exactly the same. I am grateful for the trust you
-              place in me, and I will keep providing care to your families. If
-              you have any questions, please do not hesitate to reach out.
+              I want to reassure you that I will continue serving as your
+              child’s primary care provider and remain committed to providing
+              the same personalized, compassionate care that you have come to
+              expect. There will be no interruption in patient care or access to
+              services as a result of this transition.
+            </p>
+            <p>
+              I am grateful for the trust and support you have shown me over the
+              years. Caring for your children continues to be both a privilege
+              and a responsibility that I value deeply.
+            </p>
+            <p>
+              If you have any questions, please do not hesitate to contact our
+              office.
             </p>
 
             <p className={styles.signature}>
