@@ -1,4 +1,7 @@
+import { useState, useEffect } from "react";
+
 import Link from "next/link";
+
 import Head from "next/head";
 import Seo from "../../components/common/Seo";
 import Footer from "../../components/footer/Footer";
@@ -22,6 +25,8 @@ import IntroVideo from "../../components/home-page/home-1/IntroVideo";
 import QuickQueryForm from "../../components/forms/QuickQuery";
 import Contact from "../../components/contact/NewContact";
 const Insurance = () => {
+  const [showNotice, setShowNotice] = useState(true);
+  const [expanded, setExpanded] = useState(false);
   const head = () => {
     const title = "Home || Little Star Pediatrics";
     const metaDesc =
@@ -53,6 +58,17 @@ const Insurance = () => {
         />
       </Head>
     );
+  };
+
+  // useEffect(() => {
+  //   // Show once per session
+  //   const seen = sessionStorage.getItem("noticeSeen");
+  //   if (!seen) setShowNotice(true);
+  // }, []);
+
+  const handleClose = () => {
+    // sessionStorage.setItem("noticeSeen", "true");
+    setShowNotice(false);
   };
   return (
     <>
@@ -299,6 +315,126 @@ const Insurance = () => {
           </div>
         </div>
       </div>
+
+      {showNotice && (
+        <div
+          style={{
+            position: "fixed",
+            inset: 0,
+            zIndex: 9999,
+            background: "rgba(0,0,0,0.5)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            padding: "1rem",
+          }}
+        >
+          <div
+            style={{
+              background: "#fff",
+              borderRadius: "12px",
+              maxWidth: "520px",
+              width: "100%",
+              maxHeight: "85vh",
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
+            {/* Header */}
+            <div
+              style={{
+                padding: "16px 20px 12px",
+                borderBottom: "1px solid #eee",
+                flexShrink: 0,
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                }}
+              >
+                <p
+                  style={{
+                    display: "inline-block",
+                    padding: "10px 10px",
+                    background: "#E8F1FB",
+                    color: "#185FA5",
+                    borderRadius: "999px",
+                    fontSize: "11px",
+                    fontWeight: 600,
+                    letterSpacing: ".08em",
+                    margin: 0,
+                    lineHeight: 1,
+                  }}
+                >
+                  IMPORTANT NOTICE
+                </p>
+                <button
+                  onClick={handleClose}
+                  style={{
+                    border: "none",
+                    background: "transparent",
+                    fontSize: "20px",
+                    cursor: "pointer",
+                    color: "#888",
+                  }}
+                >
+                  ✕
+                </button>
+              </div>
+            </div>
+
+            {/* Body */}
+            <div
+              style={{
+                overflowY: "auto",
+                padding: "16px 20px",
+                flex: 1,
+                fontSize: "14px",
+                lineHeight: 1.75,
+                color: "#444",
+              }}
+            >
+              <p>
+                Little Star Pediatrics have exciting news to share. Little Star
+                Pediatrics has partnered with Moon Valley Pediatrics and we want
+                to reassure all families that Nurse Practitioner Ameeta
+                Chowdhary will continue to care for your children as their
+                primary care provider. Click below to read more about this
+                transition.
+              </p>
+            </div>
+
+            {/* Footer */}
+            <div
+              style={{
+                padding: "12px 20px",
+                borderTop: "1px solid #eee",
+                flexShrink: 0,
+                display: "flex",
+                justifyContent: "flex-end",
+              }}
+            >
+              <Link
+                href="/notice/partnership-notice"
+                style={{
+                  background: "#f00b42",
+                  color: "#fff",
+                  textDecoration: "none",
+                  padding: "12px 22px",
+                  borderRadius: "10px",
+                  fontSize: "14px",
+                  fontWeight: 600,
+                }}
+              >
+                Read more
+              </Link>
+            </div>
+          </div>
+        </div>
+      )}
 
       <DefaultFooter />
     </>

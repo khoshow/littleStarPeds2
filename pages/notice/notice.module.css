@@ -1,0 +1,68 @@
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 80px 20px;
+  margin: 2rem 0;
+  background: linear-gradient(180deg, #f4f8fd 0%, #eef2f8 100%);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.card {
+  max-width: 720px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px 44px;
+  box-shadow:
+    0 4px 24px rgba(24, 95, 165, 0.08),
+    0 1px 4px rgba(0, 0, 0, 0.03);
+  border: 1px solid #e6edf5;
+}
+
+.label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #185fa5;
+  letter-spacing: 0.08em;
+  margin: 0 0 6px;
+  text-transform: uppercase;
+}
+
+.heading {
+  font-size: 19px;
+  font-weight: 600;
+  margin: 0 0 24px;
+  color: #1a2733;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eef2f8;
+}
+
+.content p {
+  font-size: 15px;
+  line-height: 1.75;
+  color: #3c4a58;
+  margin: 0 0 18px;
+}
+
+.signature {
+  margin-top: 28px;
+  color: #1a2733;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 28px 22px;
+    border-radius: 12px;
+  }
+
+  .heading {
+    font-size: 17px;
+  }
+
+  .content p {
+    font-size: 14px;
+  }
+}
