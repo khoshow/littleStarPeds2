@@ -223,7 +223,7 @@ const MainMenu = () => {
           </li>
           <li className="nav-item">
             <Link
-              className=" btn-twentyOne fw-500 tran3s d-none d-lg-block"
+              className="  nav-link"
               href="tel:(480) 747-0045"
               role="button"
               onClick={handlePhoneClick}
