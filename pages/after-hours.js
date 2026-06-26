@@ -63,8 +63,8 @@ const Insurance = () => {
             first and last name. We will call you back within 1 hour. Thank you.
           </p>
           <div style={{ padding: "20px 0 100px 0", textAlign: "center" }}>
-            <a href="tel:480-280-2219" className="btn btn-primary btn-lg m-2">
-              (480)280-2219
+            <a href="tel: 602-667-4583" className="btn btn-primary btn-lg m-2">
+              (602) 6674583
             </a>
             <a
               href="https://doxy.me/littlestar"

@@ -43,12 +43,12 @@ const Hero1 = () => {
             <div className="">
               <div className="text-center xs-mt-40">
                 <Link
-                  href="tel:(480) 747-0045"
+                  href="tel:(602) 6674583"
                   className="btn-twentyTwo fw-500 tran3s m-2"
                   data-aos=""
                   onClick={handlePhoneClick}
                 >
-                  (480) 747-0045
+                  (602) 6674583
                 </Link>
                 <Link
                   href="/forms/new-registration-1"
