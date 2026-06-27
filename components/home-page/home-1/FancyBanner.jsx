@@ -9,7 +9,7 @@ const FancyBanner = () => {
       description:
         "Little Star Pediatrics provides personalized and accessible healthcare to children from birth to age 20. Each child’s health and their parent’s peace of mind is our priority as we provide services ranging from preventive health care, such as well-child checks and immunizations, to diagnosing and treating acute and chronic illnesses. We assure you that we provide a friendly and comfortable environment that revolves around a trusting provider-patient relationship. Childhood health is the foundation of a long and healthy life. Children go through ongoing growth and development until age 21, which is why we believe that a healthy childhood will lead to healthy adulthood. Here at Little Star Pediatrics, we take honor in providing your child with personalized care focusing on their physical growth, emotional well-being, and psycho-social health.",
       buttonLabel: "",
-      illustration: "/images/myImages/pediatrician.jpg",
+      illustration: "/images/myImages/withPediatrician.png",
       illustrationAlt: "illustration",
       illustrationPosition: "left",
     },
