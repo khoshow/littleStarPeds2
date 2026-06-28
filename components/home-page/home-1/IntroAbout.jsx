@@ -68,7 +68,7 @@ const IntroAbout = () => {
               width={372}
               height={485}
               layout="intrinsic"
-              src="/images/myImages/baby.png"
+              src="/images/myImages/baby-girl.webp"
               className="lazy-img avatar-img"
               alt="man"
             />

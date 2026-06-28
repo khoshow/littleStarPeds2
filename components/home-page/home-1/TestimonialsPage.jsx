@@ -423,12 +423,12 @@ const Testimonial = () => {
             </div>
           </div>
           <div className="col-12 col-sm-4" style={{textAlign: "center"}}>
-            <img
+            {/* <img
               src="/images/myImages/ameeta.jpg"
               alt=""
               id="profile1"
               style={{ borderRadius: "50%", marginTop: "2rem", margin:"0 auto" }}
-            />
+            /> */}
             <label htmlFor="profile1" style={{ color: "#f9ba32" }}>
               Ameeta Chowdhary, MSN-FNP-C <br />
               Family Nurse Practitioner located in Avondale, AZ

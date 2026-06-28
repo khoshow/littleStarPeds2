@@ -95,11 +95,11 @@ const Insurance = () => {
               class="col-12 col-sm-5 litte-star-img"
               style={{ size: "100px", paddingTop: "4rem" }}
             >
-              <img
+              {/* <img
                 src="/images/myImages/ameeta.jpg"
                 alt=""
                 style={{ width: "50%", borderRadius: "10px" }}
-              />
+              /> */}
             </div>
             <div class="col-12 col-sm-7" style={{ paddingTop: "2rem" }}>
               <p class="text-justify" style={{ color: "white" }}>

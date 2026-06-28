@@ -6,12 +6,12 @@ const Servicescategory = () => {
     <div className="col-xl-3 col-lg-4 col-md-8 order-lg-0 dontShowMobileView ">
       <div className="service-sidebar pe-xxl-5 md-mt-60">
         <div className="sidebar-quote mb-50">
-          <img
+          {/* <img
             src="/images/myImages/ameeta.jpg"
             alt="icon"
             className="m-auto"
             style={{ borderRadius: "50%" }}
-          />
+          /> */}
           <p className="fw-500">Ameeta Chowdhary, MSN-FNP-C</p>
           <div className="name">
             {" "}
